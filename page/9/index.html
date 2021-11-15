@@ -86,661 +86,776 @@
 
       <div class="outer">
         <section id="main">
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-word文档内存或磁盘空间不足保存失败解决方案" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2013/261.html/">Word文档“内存或磁盘空间不足,保存失败”解决方案</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-10-11T06:46:12.000Z" itemprop="datePublished">2013年10月11日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8/">办公应用</a>
+  </div>
+
+      
+      
+<a href="/2013/261.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>word有时会出现如下的情况： <img src="http://pic.yupoo.com/wm1126_v/Dea5mDXK/Pi6uc.jpg" alt="内在或磁盘空间不足"> 正常情况下有以下几种解决方案： 1、清理系统垃圾：通过360清理文件的工具对系统进行了清理； 2、禁止启动项：利用msconfig对系统启动项进行了一些未知项进行禁止； 3、查看其他：看电脑系统时间显示的非正常时间，自行修改不能改，利用相关工作对系统时间进行了设置，改为正常时间。 4、重启电脑：最后，通过重启电脑，进行word操作，看看是否可以保存了？</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/9/index.html">http://7086.site/page/9/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/word/" rel="tag">word</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-豆丁、百度、道客巴巴文档下载器" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2013/256.html/">豆丁、百度、道客巴巴文档下载器</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-10-10T04:41:44.000Z" itemprop="datePublished">2013年10月10日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8/">办公应用</a> > <a class="article-category-link" href="/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/">资源分享</a>
+  </div>
+
+      
+      
+<a href="/2013/256.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>对于下载豆丁文档，个人建议，要求比较高的，需要下载原word文档的同学，可以去淘宝购买，1个豆是一毛钱，当然也可以用下载器，只不过下的是pdf文档，有水印的。 下载器地址： <a target="_blank" rel="noopener" href="http://www.kuaipan.cn/file/id_12878021350455700.htm">http://www.kuaipan.cn/file/id_12878021350455700.htm</a>   密码：r4PLV7Hm 对于下载百度文库的文档，现在要容易的多，注册个账号每天都有送金币 或到这个地址去免费下载：<a target="_blank" rel="noopener" href="http://www.haiwenku.com/wenku.html">http://www.haiwenku.com/wenku.html</a>，当然这个有限制，要求不高的同学，也可以用上面的冰点下载器下载。 对于下载道客巴巴文档，需要用到下面的神器了，下载地址： <a target="_blank" rel="noopener" href="http://www.kuaipan.cn/file/id_12878021350427868.htm">http://www.kuaipan.cn/file/id_12878021350427868.htm</a>    密码：Urn2Le2F</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/9/index.html">http://7086.site/page/9/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%B8%8B%E8%BD%BD%E5%99%A8/" rel="tag">下载器</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-windows正在设置microsoft-office-professional-plus-2010-解决办法" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2013/241.html/">windows正在设置MIcrosoft Office Professional Plus 2010 解决办法</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-10-09T04:17:04.000Z" itemprop="datePublished">2013年10月09日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8/">办公应用</a>
+  </div>
+
+      
+      
+<a href="/2013/241.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>windows正在设置MIcrosoft Office Professional Plus 2010 ，导致打不到word文档，如下图： <img src="http://pic.yupoo.com/wm1126_v/DdPJnAAD/5FvCH.jpg"> 按上面提示，我们只需要找到安装包中proplusww.msi文件即可。 我们只要需要解压原安装包，这个文件在安装包中的ProPlus.WW目录下，通过浏览找到这个msi，然后点确定即可以修复word了。</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/9/index.html">http://7086.site/page/9/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/word/" rel="tag">word</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-word利用宏一次性选中文档中所有表格" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2013/231.html/">WORD利用宏一次性选中文档中所有表格</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-10-08T02:42:14.000Z" itemprop="datePublished">2013年10月08日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8/">办公应用</a>
+  </div>
+
+      
+      
+<a href="/2013/231.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>做文档时， 我们经常要改变文本中所有表格的格式，如边框加粗等，如果文档是几百页的大文档，表格又较多，手动则比较麻烦了，今天博主为大家推荐一个好方法，那就是利用宏： ALT+F8，打开宏对话框，创建名为SelectAllTables的宏，代码如下： Sub SelectAllTables() Dim tempTable As Table Application.ScreenUpdating = False ‘判断文档是否被保护 If ActiveDocument.ProtectionType = wdAllowOnlyFormFields Then MsgBox “文档已保护，此时不能选中多个表格！” Exit Sub End If ‘删除所有可编辑的区域 ActiveDocument.DeleteAllEditableRanges wdEditorEveryone ‘添加可编辑区域 For Each tempTable In ActiveDocument.Tables tempTable.Range.Editors.Add wdEditorEveryone Next ‘选中所有可编辑区域 ActiveDocument.SelectAllEditableRanges wdEditorEveryone ‘删除所有可编辑的区域 ActiveDocument.DeleteAllEditableRanges wdEditorEveryone Application.ScreenUpdating = True End Sub</p>
+<p> <em>可能上面的格式有点问题，代码下载如下：<a target="_blank" rel="noopener" href="http://www.kuaipan.cn/file/id_12878021350462223.htm?source=1">自动选中表格宏代码</a></em> 好了，下面再通过ALT+F8，运行创建的宏就可以了，是不是所有的表格都被选中了呢？</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/9/index.html">http://7086.site/page/9/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/word/" rel="tag">word</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-一般工业固体废物与危险废物贮存、处置场址与人" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2013/228.html/">一般工业固体废物与危险废物贮存、处置场址与人群距离的确定要求</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-10-08T01:53:01.000Z" itemprop="datePublished">2013年10月08日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E7%8E%AF%E5%A2%83%E8%AF%84%E4%BB%B7/">环境评价</a>
+  </div>
+
+      
+      
+<a href="/2013/228.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><strong>关于发布《一般工业固体废物贮存、处置场污染控制标准》（GB18599- 2001）等3项国家污染物控制标准修改单的公告</strong></p>
+<p>为贯彻《中华人民共和国环境保护法》和《中华人民共和国固体废物污染环境防治法》，防治污染，保护和改善生态环境，保障人体健康，完善国家环保标准体系，我部决定对《一般工业固体废物贮存、处置场污染控制标准》（GB 18599-2001）、《危险废物贮存污染控制标准》（GB 18597-2001）和《危险废物填埋污染控制标准》（GB 18598-2001）等3项国家污染物控制标准进行修改完善，制定了上述3项标准修改单，并由我部与国家质量监督检验检疫总局联合发布。 该标准修改单自发布之日起实施。 该标准修改单由中国环境科学出版社出版，标准内容可在环境保护部网站（bz.mep.gov.cn）查询。 特此公告。 (此公告业经国家质量监督检验检疫总局陈钢会签)</p>
+<p>环境保护部</p>
+<p>2013年6月8日</p>
+<p><strong>附件：</strong> </p>
+<p><strong>《一般工业固体废物贮存、处置场污染控制标准》（GB18599- 2001）等3项国家污染物控制标准修改单</strong></p>
+<p>　　为进一步完善国家污染物排放（控制）标准体系，我部决定修改《一般工业固体废物贮存、处置场污染控制标准》（GB 18599-2001）、《危险废物贮存污染控制标准》（GB 18597-2001）和《危险废物填埋污染控制标准》（GB 18598-2001）等3项国家污染物控制标准，修改内容如下： <strong>一、《一般工业固体废物贮存、处置场污染控制标准》（GB 18599-2001）第5.1.2条修改为：</strong> 应依据环境影响评价结论确定场址的位置及其与周围人群的距离，并经具有审批权的环境保护行政主管部门批准，并可作为规划控制的依据。 在对一般工业固体废物贮存、处置场场址进行环境影响评价时，应重点考虑一般工业固体废物贮存、处置场产生的渗滤液以及粉尘等大气污染物等因素，根据其所在地区的环境功能区类别，综合评价其对周围环境、居住人群的身体健康、日常生活和生产活动的影响，确定其与常住居民居住场所、农用地、地表水体、高速公路、交通主干道（国道或省道）、铁路、飞机场、军事基地等敏感对象之间合理的位置关系。 <strong>二、《危险废物贮存污染控制标准》（GB 18597-2001）第6.1.3条修改为：</strong> 应依据环境影响评价结论确定危险废物集中贮存设施的位置及其与周围人群的距离，并经具有审批权的环境保护行政主管部门批准，并可作为规划控制的依据。 在对危险废物集中贮存设施场址进行环境影响评价时，应重点考虑危险废物集中贮存设施可能产生的有害物质泄漏、大气污染物（含恶臭物质）的产生与扩散以及可能的事故风险等因素，根据其所在地区的环境功能区类别，综合评价其对周围环境、居住人群的身体健康、日常生活和生产活动的影响，确定危险废物集中贮存设施与常住居民居住场所、农用地、地表水体以及其他敏感对象之间合理的位置关系。 <strong>三、《危险废物填埋污染控制标准》（GB 18598-2001）第4.4条、第4.5条、第4.7条合并为一条，内容修改为：</strong> 危险废物填埋场场址的位置及与周围人群的距离应依据环境影响评价结论确定，并经具有审批权的环境保护行政主管部门批准，并可作为规划控制的依据。 在对危险废物填埋场场址进行环境影响评价时，应重点考虑危险废物填埋场渗滤液可能产生的风险、填埋场结构及防渗层长期安全性及其由此造成的渗漏风险等因素，根据其所在地区的环境功能区类别，结合该地区的长期发展规划和填埋场的设计寿命，重点评价其对周围地下水环境、居住人群的身体健康、日常生活和生产活动的长期影响，确定其与常住居民居住场所、农用地、地表水体以及其他敏感对象之间合理的位置关系。</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/9/index.html">http://7086.site/page/9/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9B%BA%E4%BD%93%E5%BA%9F%E7%89%A9/" rel="tag">固体废物</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-关于新建公路、铁路项目噪声评价量的确定。" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2013/119.html/">关于新建公路、铁路项目噪声评价量的确定。</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-09-25T10:26:49.000Z" itemprop="datePublished">2013年09月25日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E7%8E%AF%E5%A2%83%E8%AF%84%E4%BB%B7/">环境评价</a>
+  </div>
+
+      
+      
+<a href="/2013/119.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id=""><a href="#" class="headerlink" title=""></a><img src="http://bigrice.bcs.duapp.com/2013/09/untitled.jpg" title="噪声评价量"></h1>
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/9/index.html">http://7086.site/page/9/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%8E%AF%E8%AF%84/" rel="tag">环评</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-wordpress如何设置文章置顶" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2013/99.html/">wordpress如何设置文章置顶</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-09-25T08:12:04.000Z" itemprop="datePublished">2013年09月25日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/">博客建设</a>
+  </div>
+
+      
+      
+<a href="/2013/99.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>很多博客都有自己的置顶文章，在默认情况下WP对置顶文章只是将它们的位置排在前面，除了位置差异外，跟其他文章是没有任何区别的。那我们怎样才能将它们区别开来呢？我这里有几种方法：</p>
+<p><strong>一、在WordPress****中如何设置文章置顶</strong> 相信很多朋友都还不知道WordPress本身就有置顶文章的功能，而苦苦地去寻找插件来实现置顶功能，真是浪费，我觉得有必要再说明一下怎么置顶文章。WordPress中设置文章置顶很简单，打开文章编辑页，右边栏的公布栏目即可设置，如图： <img src="http://bigrice.bcs.duapp.com/2013/09/11.jpg"></p>
+<p><strong>二、在标题处添加置顶字样</strong> 其实我们这篇文章要用到的函数也只有一个is_sticky()，这个函数用于判断该文章是否为置顶文章。置顶文章一般也只在首页显示，那现在就打开你的主题目录下的index.php，查找：the_title(); 然后将其改成：</p>
+<p>复制代码</p>
+<p>代码如下:</p>
+<p>the_title(); if( is_sticky() ) echo ‘&nbsp;&nbsp;<span style="color:red;">置顶</span>‘;</p>
+<p><strong>三、置顶文章不显示文章摘要</strong> 同样是打开index.php，查找：the_content 或 the_excerpt，给它添加一个判断，这样置顶文章就不显示摘要了，如：</p>
+<p>复制代码</p>
+<p>代码如下:</p>
+<p>if( !is_sticky() ) the_content(….);</p>
+<p>或</p>
+<p>复制代码</p>
+<p>代码如下:</p>
+<p>if( !is_sticky() ) the_excerpt(….);</p>
+<p><strong>四、给置顶文章添加边框或背景等</strong> 这个方法不需要判断是否为置顶文章，我们只需给它添加一个CSS样式即可。打开主题目录下的index.php，找到每篇文章所在的div，一般的主题查找：class=”post” 这个div就是每篇文章所在的div了，我们现在给个这个div添加一个类，如将 <div class="post"> 改成（可将以下代码中的class=”post”去除）：</p>
+<p>复制代码</p>
+<p>代码如下:</p>
+<div <?php post\_class(); ?> class="post">
+
+<p>如果是置顶文章，会自动给这个div添加一个类.sticky，我们现在打开主题目录下的style.css，添加类属性：</p>
+<p>复制代码</p>
+<p>代码如下:</p>
+<p>.sticky { background: #ff0000; border: 1px solid #ccc; }</p>
+<p>这样，置顶文章就有了背景和边框，是不是很难看呢？你可以根据需要修改这个类属性，获得你满意的效果。</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/9/index.html">http://7086.site/page/9/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wordpress/" rel="tag">wordpress</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-修改wordpress-地址url错误导致进不了后台" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2013/94.html/">修改WordPress 地址URL错误导致进不了后台</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-09-24T11:24:45.000Z" itemprop="datePublished">2013年09月24日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/">博客建设</a>
+  </div>
+
+      
+      
+<a href="/2013/94.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><strong>修改WordPress 地址（URL）、站点地址（URL）方法：</strong> 已经转移空间换域名的时候也遇到过这种情况，进Mysql修改数据表“wp_options”中的siteurl和home，或者执行SQL命令修改</p>
+<ol>
+<li> UPDATE wp_options SET option_value = replace(option_value, ‘http://要修改的URL1’,’http://修改后的URL2’) WHERE option_name = ‘home’ OR option_name = ‘siteurl’;</li>
+<li> 上面SQL命令的意思就是：讲URL1修改成URL2</li>
+</ol>
+<p>执行后即可。 以后大家转空间的时候可能会遇到一样或者类似的问题，用上面的方法，可以解决。</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/9/index.html">http://7086.site/page/9/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wordpress/" rel="tag">wordpress</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-如何把gif的头像换成我的" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2013/92.html/">如何把gif的头像换掉</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-09-24T02:59:54.000Z" itemprop="datePublished">2013年09月24日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/">资源分享</a>
+  </div>
+
+      
+      
+<a href="/2013/92.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>网上找了很多方法，发现都比较麻烦，比如用photoshop，利用钢笔工具抠图，然后复制到另一幅图上</p>
+<p>如果动态的gif替换头像，就要一张张对准位置，很麻烦 博主推荐的工具是ulead gif animator 5 具体的操作步骤是，打开你想编辑的gif，然后再添加图像（准备换成的头像），我们发现工具烂那一竖排有套索等选择工具，我们只 需要圈一下我们将换成的头像，然后ctrl+c  ，假如原来的gif有10张图，我们只需要依次切换过去，按下ctrl+v，正常来说不需要调 整就可以了。然后另存为gif吧，当然这软件还可以缩小gif分辨率、改变gif大小，对于diy QQ表情实在是个好东西。 下载地址：<a target="_blank" rel="noopener" href="http://pan.baidu.com/s/1efA11">ulead gif animator 5</a>绿化版。</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/9/index.html">http://7086.site/page/9/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gif/" rel="tag">gif</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-wordpress搬家教程：换空间与换域名" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2013/86.html/">WordPress搬家教程：换空间与换域名</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-09-23T15:56:14.000Z" itemprop="datePublished">2013年09月23日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/">博客建设</a>
+  </div>
+
+      
+      
+<a href="/2013/86.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>大体上来说搬家分为三步： 一、备份博客网站文件和数据库； 二、把网站文件传到新空间，在新空间导入数据库； 三、修改网站配置和数据库； 四、检查转移结果。 <strong>WordPress博客搬家的几种情况：</strong> 1. 换主机不换域名 2. 换域名不换主机 3. 换域名也换主机 <strong>第一步：备份博客网站文件和数据库</strong> 1.在原来的空间中把博客文件下载备份。要是原来空间支持在线解压缩，建议打包下载，这样下载大小变小了，时间也会节省很多。（本人基本时有什么文章更新，就用FTP同步备份到本地的，大家最好也有这个习惯，不然突然而来的事故会让追悔莫及！） 2.备份数据库。可以通过phpadmin，帝国备份王，或者WP-DBManager这样的数据库备份插件，您可以选择您会的，熟悉的一种方式来做。（建议对于sql，gz，zip多种格式尽量都备份一下，你不知道下一个主机会支持哪种） <strong>第二步：上传博客文件，导入数据库</strong> 1.把博客文件用FTP传到新空间，和下载一样，要是新空间支持在线解压缩，建议打包上传，这样时间节省了很多，流量也能节省一部分。（WordPress目录是public_html/下，所以只要把之前在public_html/目录下的文件，上传到新主机的public_html/下即可。） 2.导入数据库.PHPMyAdmin，帝国备份王都可以做到。（你需要在新主机内创建一个数据库，然后将你之前导出的数据库，导入即可） 如图： <a target="_blank" rel="noopener" href="http://upload.chinaz.com/2012/0903/1346643282301.png"><img src="http://upload.chinaz.com/2012/0903/1346643282301.png"></a> <strong>第三步：修改网站配置和数据库（关键）</strong> 1.修改wp-config文件，最好不要用记事本来修改，用notepad++或者UltraEdit等编辑器，把里面的数据库信息改为您新空间的数据库信息，如下： /** WordPress 数据库的名称 */ define(‘DB_NAME’, ‘你的新空间数据库名称’); /** MySQL 数据库用户名 */ define(‘DB_USER’, ‘你的数据库用户名’); /** MySQL 数据库密码 */ define(‘DB_PASSWORD’, ‘你的数据库登录密码’); /** MySQL 主机 */ define(‘DB_HOST’, ‘你的数据库地址’); 将你新的主机空间的数据库名称，数据库用户名和密码填进去即可。注意一下，MySQL主机这一项默认是’localhost’，如果你的是Windows主机，不用修改，如果是Linux主机，可能需要填上数据库的地址。 2. 进入新空间的phpadmin修改数据库：修改数据库表wp_options里的“siteurl”和“home”字段的值，改为你的新域名； 3.把用的域名解析到空间后，登录你wp后台，修改你blog的地址为你新的域名。 4.原来的文章里有链接或者图片是用以前域名的地址，所以还要修改那些地址。可以在phpadmin直接修改数据库或者velvet-blues-update-urls这个插件（推荐）。比如在phpadmin里，执行执行以下语句： UPDATE wp_options SET option_value = REPLACE(option_value,’旧地址’,’新地址’); UPDATE wp_posts SET post_content = replace(post_content,’旧地址’,’新地址’); UPDATE wp_posts SET post_excerpt= replace(post_excerpt,’旧地址’,’新地址’); UPDATE wp_posts SET guid= replace(guid, ‘旧地址’,’新地址’); <strong>第四步：检查转移结果，按照以上做了一般就完好的搬家成功了。</strong> 看看你的Blog，恭喜您成功搬家！</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/9/index.html">http://7086.site/page/9/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wordpress/" rel="tag">wordpress</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
@@ -749,7 +864,7 @@
 
     <nav id="page-nav">
 
-<a class="extend prev" rel="prev" href="/page/8/">上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/10/">下一页</a>
+<a class="extend prev" rel="prev" href="/page/8/">上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/10/">下一页</a>
 </nav>
 
 
@@ -764,14 +879,6 @@
       <ul>
         
           <li>
-            <a href="/2021/ckw0mnw860006y4pjhyhi34yb.html/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2021/211116.html/">test</a>
-          </li>
-        
-          <li>
             <a href="/2021/211115.html/">卫星图几大经纬度坐标系辨识</a>
           </li>
         
@@ -781,6 +888,14 @@
         
           <li>
             <a href="/2021/1034.html/">windows11无TPM升级、在线推送更新无损应用文件</a>
+          </li>
+        
+          <li>
+            <a href="/2021/1033.html/">win10 IDE改AHCI，无需重装系统</a>
+          </li>
+        
+          <li>
+            <a href="/2021/1032.html/">各种排气罩的排气量计算公式</a>
           </li>
         
       </ul>
@@ -793,7 +908,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title"><i class="fa fa-tag"></i> 标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/COD/" style="font-size: 10px;">COD</a> <a href="/tags/NAS/" style="font-size: 15px;">NAS</a> <a href="/tags/PAM/" style="font-size: 10px;">PAM</a> <a href="/tags/cad/" style="font-size: 13.33px;">cad</a> <a href="/tags/excel/" style="font-size: 10px;">excel</a> <a href="/tags/gif/" style="font-size: 10px;">gif</a> <a href="/tags/pdf%E8%BD%AC%E6%8D%A2/" style="font-size: 10px;">pdf转换</a> <a href="/tags/visio/" style="font-size: 10px;">visio</a> <a href="/tags/win/" style="font-size: 10px;">win</a> <a href="/tags/word/" style="font-size: 18.33px;">word</a> <a href="/tags/wordpress/" style="font-size: 20px;">wordpress</a> <a href="/tags/%E4%B8%8B%E8%BD%BD%E5%99%A8/" style="font-size: 10px;">下载器</a> <a href="/tags/%E4%BF%9D%E6%8A%A4%E5%8C%BA/" style="font-size: 10px;">保护区</a> <a href="/tags/%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6/" style="font-size: 10px;">可行性研究</a> <a href="/tags/%E5%90%B8%E9%99%84/" style="font-size: 10px;">吸附</a> <a href="/tags/%E5%9B%BA%E4%BD%93%E5%BA%9F%E7%89%A9/" style="font-size: 10px;">固体废物</a> <a href="/tags/%E5%9D%90%E6%A0%87%E7%B3%BB/" style="font-size: 11.67px;">坐标系</a> <a href="/tags/%E5%B7%A5%E7%A8%8B%E6%8A%80%E6%9C%AF/" style="font-size: 10px;">工程技术</a> <a href="/tags/%E5%B7%A5%E8%89%BA%E6%B5%81%E7%A8%8B/" style="font-size: 10px;">工艺流程</a> <a href="/tags/%E5%BA%9F%E6%B0%94%E8%AE%BE%E8%AE%A1/" style="font-size: 15px;">废气设计</a> <a href="/tags/%E5%BA%9F%E6%B0%B4%E8%AE%BE%E8%AE%A1/" style="font-size: 11.67px;">废水设计</a> <a href="/tags/%E5%BF%83%E6%80%81/" style="font-size: 10px;">心态</a> <a href="/tags/%E6%8E%92%E6%B1%A1%E7%B3%BB%E6%95%B0/" style="font-size: 10px;">排污系数</a> <a href="/tags/%E6%8F%92%E4%BB%B6/" style="font-size: 10px;">插件</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 11.67px;">操作系统</a> <a href="/tags/%E6%94%B6%E7%8E%87/" style="font-size: 10px;">收率</a> <a href="/tags/%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB/" style="font-size: 10px;">文字识别</a> <a href="/tags/%E6%A0%87%E5%87%86/" style="font-size: 10px;">标准</a> <a href="/tags/%E6%B4%BB%E6%80%A7%E7%82%AD/" style="font-size: 13.33px;">活性炭</a> <a href="/tags/%E6%B8%85%E6%B4%81%E7%94%9F%E4%BA%A7/" style="font-size: 10px;">清洁生产</a> <a href="/tags/%E7%8E%AF%E5%A2%83/" style="font-size: 10px;">环境</a> <a href="/tags/%E7%8E%AF%E8%AF%84/" style="font-size: 16.67px;">环评</a> <a href="/tags/%E7%99%BE%E7%A7%91/" style="font-size: 10px;">百科</a> <a href="/tags/%E7%9F%A5%E8%AF%86%E7%82%B9/" style="font-size: 11.67px;">知识点</a> <a href="/tags/%E7%A6%BD%E7%95%9C/" style="font-size: 10px;">禽畜</a> <a href="/tags/%E8%83%BD%E8%80%97/" style="font-size: 10px;">能耗</a> <a href="/tags/%E8%8A%82%E8%83%BD/" style="font-size: 10px;">节能</a> <a href="/tags/%E8%93%9D%E5%85%89%E7%94%B5%E5%BD%B1/" style="font-size: 10px;">蓝光电影</a> <a href="/tags/%E8%A1%A8%E6%83%85/" style="font-size: 10px;">表情</a> <a href="/tags/%E8%AE%BE%E5%A4%87/" style="font-size: 15px;">设备</a> <a href="/tags/%E8%B7%AF%E7%94%B1/" style="font-size: 10px;">路由</a> <a href="/tags/%E8%BF%9E%E7%89%87%E6%95%B4%E6%B2%BB/" style="font-size: 10px;">连片整治</a> <a href="/tags/%E9%99%A4%E5%B0%98/" style="font-size: 10px;">除尘</a> <a href="/tags/%E9%99%A4%E5%B0%98%E5%99%A8/" style="font-size: 10px;">除尘器</a> <a href="/tags/%E9%99%A4%E8%87%AD/" style="font-size: 10px;">除臭</a>
+      <a href="/tags/COD/" style="font-size: 10px;">COD</a> <a href="/tags/NAS/" style="font-size: 15px;">NAS</a> <a href="/tags/PAM/" style="font-size: 10px;">PAM</a> <a href="/tags/cad/" style="font-size: 13.33px;">cad</a> <a href="/tags/excel/" style="font-size: 10px;">excel</a> <a href="/tags/gif/" style="font-size: 10px;">gif</a> <a href="/tags/pdf%E8%BD%AC%E6%8D%A2/" style="font-size: 10px;">pdf转换</a> <a href="/tags/visio/" style="font-size: 10px;">visio</a> <a href="/tags/win/" style="font-size: 10px;">win</a> <a href="/tags/word/" style="font-size: 18.33px;">word</a> <a href="/tags/wordpress/" style="font-size: 20px;">wordpress</a> <a href="/tags/%E4%B8%8B%E8%BD%BD%E5%99%A8/" style="font-size: 10px;">下载器</a> <a href="/tags/%E4%BF%9D%E6%8A%A4%E5%8C%BA/" style="font-size: 10px;">保护区</a> <a href="/tags/%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6/" style="font-size: 10px;">可行性研究</a> <a href="/tags/%E5%90%B8%E9%99%84/" style="font-size: 10px;">吸附</a> <a href="/tags/%E5%9B%BA%E4%BD%93%E5%BA%9F%E7%89%A9/" style="font-size: 10px;">固体废物</a> <a href="/tags/%E5%9D%90%E6%A0%87%E7%B3%BB/" style="font-size: 10px;">坐标系</a> <a href="/tags/%E5%B7%A5%E7%A8%8B%E6%8A%80%E6%9C%AF/" style="font-size: 10px;">工程技术</a> <a href="/tags/%E5%B7%A5%E8%89%BA%E6%B5%81%E7%A8%8B/" style="font-size: 10px;">工艺流程</a> <a href="/tags/%E5%BA%9F%E6%B0%94%E8%AE%BE%E8%AE%A1/" style="font-size: 15px;">废气设计</a> <a href="/tags/%E5%BA%9F%E6%B0%B4%E8%AE%BE%E8%AE%A1/" style="font-size: 11.67px;">废水设计</a> <a href="/tags/%E5%BF%83%E6%80%81/" style="font-size: 10px;">心态</a> <a href="/tags/%E6%8E%92%E6%B1%A1%E7%B3%BB%E6%95%B0/" style="font-size: 10px;">排污系数</a> <a href="/tags/%E6%8F%92%E4%BB%B6/" style="font-size: 10px;">插件</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 11.67px;">操作系统</a> <a href="/tags/%E6%94%B6%E7%8E%87/" style="font-size: 10px;">收率</a> <a href="/tags/%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB/" style="font-size: 10px;">文字识别</a> <a href="/tags/%E6%A0%87%E5%87%86/" style="font-size: 10px;">标准</a> <a href="/tags/%E6%B4%BB%E6%80%A7%E7%82%AD/" style="font-size: 13.33px;">活性炭</a> <a href="/tags/%E6%B8%85%E6%B4%81%E7%94%9F%E4%BA%A7/" style="font-size: 10px;">清洁生产</a> <a href="/tags/%E7%8E%AF%E5%A2%83/" style="font-size: 10px;">环境</a> <a href="/tags/%E7%8E%AF%E8%AF%84/" style="font-size: 16.67px;">环评</a> <a href="/tags/%E7%99%BE%E7%A7%91/" style="font-size: 10px;">百科</a> <a href="/tags/%E7%9F%A5%E8%AF%86%E7%82%B9/" style="font-size: 11.67px;">知识点</a> <a href="/tags/%E7%A6%BD%E7%95%9C/" style="font-size: 10px;">禽畜</a> <a href="/tags/%E8%83%BD%E8%80%97/" style="font-size: 10px;">能耗</a> <a href="/tags/%E8%8A%82%E8%83%BD/" style="font-size: 10px;">节能</a> <a href="/tags/%E8%93%9D%E5%85%89%E7%94%B5%E5%BD%B1/" style="font-size: 10px;">蓝光电影</a> <a href="/tags/%E8%A1%A8%E6%83%85/" style="font-size: 10px;">表情</a> <a href="/tags/%E8%AE%BE%E5%A4%87/" style="font-size: 15px;">设备</a> <a href="/tags/%E8%B7%AF%E7%94%B1/" style="font-size: 10px;">路由</a> <a href="/tags/%E8%BF%9E%E7%89%87%E6%95%B4%E6%B2%BB/" style="font-size: 10px;">连片整治</a> <a href="/tags/%E9%99%A4%E5%B0%98/" style="font-size: 10px;">除尘</a> <a href="/tags/%E9%99%A4%E5%B0%98%E5%99%A8/" style="font-size: 10px;">除尘器</a> <a href="/tags/%E9%99%A4%E8%87%AD/" style="font-size: 10px;">除臭</a>
     </div>
   </div>
 
@@ -802,7 +917,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title"><i class="fa fa-classify"></i> 分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8/">办公应用</a><span class="category-list-count">21</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/">博客建设</a><span class="category-list-count">18</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%A8%B1%E4%B9%90%E7%99%BE%E7%A7%91/">娱乐百科</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E7%A8%8B%E5%92%A8%E8%AF%A2/">工程咨询</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E7%A8%8B%E8%AE%BE%E8%AE%A1/">工程设计</a><span class="category-list-count">22</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B8%85%E6%B4%81%E7%94%9F%E4%BA%A7/">清洁生产</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%8E%AF%E5%A2%83%E8%AF%84%E4%BB%B7/">环境评价</a><span class="category-list-count">19</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/">知识储备</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/">资源分享</a><span class="category-list-count">9</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8/">办公应用</a><span class="category-list-count">21</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/">博客建设</a><span class="category-list-count">18</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%A8%B1%E4%B9%90%E7%99%BE%E7%A7%91/">娱乐百科</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E7%A8%8B%E5%92%A8%E8%AF%A2/">工程咨询</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E7%A8%8B%E8%AE%BE%E8%AE%A1/">工程设计</a><span class="category-list-count">22</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B8%85%E6%B4%81%E7%94%9F%E4%BA%A7/">清洁生产</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%8E%AF%E5%A2%83%E8%AF%84%E4%BB%B7/">环境评价</a><span class="category-list-count">19</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/">知识储备</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/">资源分享</a><span class="category-list-count">9</span></li></ul>
     </div>
   </div>
 
@@ -812,7 +927,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title"><i class="fa fa-archive"></i> 归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021年11月</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020年08月</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017年02月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016年10月</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015年11月</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014年03月</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013年12月</a><span class="archive-list-count">47</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021年11月</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020年08月</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017年02月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016年10月</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015年11月</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014年03月</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013年12月</a><span class="archive-list-count">47</span></li></ul>
     </div>
   </div>
 
@@ -822,7 +937,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title"><i class="fa fa-tag"></i> 标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/COD/" rel="tag">COD</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NAS/" rel="tag">NAS</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PAM/" rel="tag">PAM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cad/" rel="tag">cad</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/excel/" rel="tag">excel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gif/" rel="tag">gif</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pdf%E8%BD%AC%E6%8D%A2/" rel="tag">pdf转换</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/visio/" rel="tag">visio</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/win/" rel="tag">win</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/word/" rel="tag">word</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wordpress/" rel="tag">wordpress</a><span class="tag-list-count">9</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%8B%E8%BD%BD%E5%99%A8/" rel="tag">下载器</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BF%9D%E6%8A%A4%E5%8C%BA/" rel="tag">保护区</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6/" rel="tag">可行性研究</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%90%B8%E9%99%84/" rel="tag">吸附</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BA%E4%BD%93%E5%BA%9F%E7%89%A9/" rel="tag">固体废物</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9D%90%E6%A0%87%E7%B3%BB/" rel="tag">坐标系</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%A5%E7%A8%8B%E6%8A%80%E6%9C%AF/" rel="tag">工程技术</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%A5%E8%89%BA%E6%B5%81%E7%A8%8B/" rel="tag">工艺流程</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BA%9F%E6%B0%94%E8%AE%BE%E8%AE%A1/" rel="tag">废气设计</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BA%9F%E6%B0%B4%E8%AE%BE%E8%AE%A1/" rel="tag">废水设计</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%83%E6%80%81/" rel="tag">心态</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8E%92%E6%B1%A1%E7%B3%BB%E6%95%B0/" rel="tag">排污系数</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8F%92%E4%BB%B6/" rel="tag">插件</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" rel="tag">操作系统</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%94%B6%E7%8E%87/" rel="tag">收率</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB/" rel="tag">文字识别</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A0%87%E5%87%86/" rel="tag">标准</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B4%BB%E6%80%A7%E7%82%AD/" rel="tag">活性炭</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B8%85%E6%B4%81%E7%94%9F%E4%BA%A7/" rel="tag">清洁生产</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%8E%AF%E5%A2%83/" rel="tag">环境</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%8E%AF%E8%AF%84/" rel="tag">环评</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%99%BE%E7%A7%91/" rel="tag">百科</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%9F%A5%E8%AF%86%E7%82%B9/" rel="tag">知识点</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A6%BD%E7%95%9C/" rel="tag">禽畜</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%83%BD%E8%80%97/" rel="tag">能耗</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8A%82%E8%83%BD/" rel="tag">节能</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%93%9D%E5%85%89%E7%94%B5%E5%BD%B1/" rel="tag">蓝光电影</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A1%A8%E6%83%85/" rel="tag">表情</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%BE%E5%A4%87/" rel="tag">设备</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B7%AF%E7%94%B1/" rel="tag">路由</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BF%9E%E7%89%87%E6%95%B4%E6%B2%BB/" rel="tag">连片整治</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%99%A4%E5%B0%98/" rel="tag">除尘</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%99%A4%E5%B0%98%E5%99%A8/" rel="tag">除尘器</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%99%A4%E8%87%AD/" rel="tag">除臭</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/COD/" rel="tag">COD</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NAS/" rel="tag">NAS</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PAM/" rel="tag">PAM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cad/" rel="tag">cad</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/excel/" rel="tag">excel</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gif/" rel="tag">gif</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pdf%E8%BD%AC%E6%8D%A2/" rel="tag">pdf转换</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/visio/" rel="tag">visio</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/win/" rel="tag">win</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/word/" rel="tag">word</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wordpress/" rel="tag">wordpress</a><span class="tag-list-count">9</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%8B%E8%BD%BD%E5%99%A8/" rel="tag">下载器</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BF%9D%E6%8A%A4%E5%8C%BA/" rel="tag">保护区</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6/" rel="tag">可行性研究</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%90%B8%E9%99%84/" rel="tag">吸附</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BA%E4%BD%93%E5%BA%9F%E7%89%A9/" rel="tag">固体废物</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9D%90%E6%A0%87%E7%B3%BB/" rel="tag">坐标系</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%A5%E7%A8%8B%E6%8A%80%E6%9C%AF/" rel="tag">工程技术</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%A5%E8%89%BA%E6%B5%81%E7%A8%8B/" rel="tag">工艺流程</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BA%9F%E6%B0%94%E8%AE%BE%E8%AE%A1/" rel="tag">废气设计</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BA%9F%E6%B0%B4%E8%AE%BE%E8%AE%A1/" rel="tag">废水设计</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%83%E6%80%81/" rel="tag">心态</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8E%92%E6%B1%A1%E7%B3%BB%E6%95%B0/" rel="tag">排污系数</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8F%92%E4%BB%B6/" rel="tag">插件</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" rel="tag">操作系统</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%94%B6%E7%8E%87/" rel="tag">收率</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB/" rel="tag">文字识别</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A0%87%E5%87%86/" rel="tag">标准</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B4%BB%E6%80%A7%E7%82%AD/" rel="tag">活性炭</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B8%85%E6%B4%81%E7%94%9F%E4%BA%A7/" rel="tag">清洁生产</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%8E%AF%E5%A2%83/" rel="tag">环境</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%8E%AF%E8%AF%84/" rel="tag">环评</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%99%BE%E7%A7%91/" rel="tag">百科</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%9F%A5%E8%AF%86%E7%82%B9/" rel="tag">知识点</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A6%BD%E7%95%9C/" rel="tag">禽畜</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%83%BD%E8%80%97/" rel="tag">能耗</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%8A%82%E8%83%BD/" rel="tag">节能</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%93%9D%E5%85%89%E7%94%B5%E5%BD%B1/" rel="tag">蓝光电影</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A1%A8%E6%83%85/" rel="tag">表情</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%BE%E5%A4%87/" rel="tag">设备</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B7%AF%E7%94%B1/" rel="tag">路由</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BF%9E%E7%89%87%E6%95%B4%E6%B2%BB/" rel="tag">连片整治</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%99%A4%E5%B0%98/" rel="tag">除尘</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%99%A4%E5%B0%98%E5%99%A8/" rel="tag">除尘器</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%99%A4%E8%87%AD/" rel="tag">除臭</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 

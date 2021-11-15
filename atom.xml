@@ -6,7 +6,7 @@
   <link href="http://7086.site/atom.xml" rel="self"/>
   
   <link href="http://7086.site/"/>
-  <updated>2021-11-15T12:09:31.749Z</updated>
+  <updated>2021-11-15T12:11:41.609Z</updated>
   <id>http://7086.site/</id>
   
   <author>
@@ -15,51 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://7086.site/2021/ckw0mnw860006y4pjhyhi34yb.html/"/>
-    <id>http://7086.site/2021/ckw0mnw860006y4pjhyhi34yb.html/</id>
-    <published>2021-11-15T12:09:31.391Z</published>
-    <updated>2021-11-15T12:09:31.749Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>test</title>
-    <link href="http://7086.site/2021/211116.html/"/>
-    <id>http://7086.site/2021/211116.html/</id>
-    <published>2021-11-15T11:20:00.000Z</published>
-    <updated>2021-11-15T12:08:25.882Z</updated>
-    
-    <content type="html"><![CDATA[<p>##人生<br>人生<br>人生<br>###人生<br>在<br>###人</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;##人生&lt;br&gt;人生&lt;br&gt;人生&lt;br&gt;###人生&lt;br&gt;在&lt;br&gt;###人&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    <category term="知识储备" scheme="http://7086.site/categories/%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/"/>
-    
-    
-    <category term="坐标系" scheme="http://7086.site/tags/%E5%9D%90%E6%A0%87%E7%B3%BB/"/>
-    
-  </entry>
   
   <entry>
     <title>卫星图几大经纬度坐标系辨识</title>
@@ -478,6 +433,56 @@
     
     
     <category term="路由" scheme="http://7086.site/tags/%E8%B7%AF%E7%94%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于本站端口的选择</title>
+    <link href="http://7086.site/2020/960.html/"/>
+    <id>http://7086.site/2020/960.html/</id>
+    <published>2020-06-30T04:30:00.000Z</published>
+    <updated>2021-11-13T13:22:08.158Z</updated>
+    
+    <content type="html"><![CDATA[<p>外网80被封了，转发的时候要把80转发其他端口（假设88），</p><p>如直接安装，那么外网访问的时候用：http://域名:88/wordpress。</p><p>如果设置了虚拟机，并设置博客目录web/wordpress，设置好外部映射，则可以实现http://域名:88/访问，本站便是。</p><p>如果设置了虚拟主机，且有443，外网用二级域名访问博客：<a href="https://wp/">https://wp.域名.com</a>，也很完美。我自己没成功，可能443被封了。有待进一不研究。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;外网80被封了，转发的时候要把80转发其他端口（假设88），&lt;/p&gt;
+&lt;p&gt;如直接安装，那么外网访问的时候用：http://域名:88/wordpress。&lt;/p&gt;
+&lt;p&gt;如果设置了虚拟机，并设置博客目录web/wordpress，设置好外部映射，则可以实现http://域</summary>
+      
+    
+    
+    
+    <category term="博客建设" scheme="http://7086.site/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/"/>
+    
+    
+    <category term="NAS" scheme="http://7086.site/tags/NAS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>群晖Moments无法识别人像解决方法</title>
+    <link href="http://7086.site/2020/959.html/"/>
+    <id>http://7086.site/2020/959.html/</id>
+    <published>2020-06-30T04:13:00.000Z</published>
+    <updated>2021-11-13T13:22:08.196Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="在第1-3-5-0706版本中，似乎解决了DS1019-DS918-DS718-DS418play-DS218-的识别问题，大家更新到最新版本，等待几个小时，看是否能识别，如果不能识别，建议完全删除moments以及数据再次安装即可解决，如果依然不能识别，请检查下是否洗白，洗白教程自行搜索，最终不行再参考本帖"><a href="#在第1-3-5-0706版本中，似乎解决了DS1019-DS918-DS718-DS418play-DS218-的识别问题，大家更新到最新版本，等待几个小时，看是否能识别，如果不能识别，建议完全删除moments以及数据再次安装即可解决，如果依然不能识别，请检查下是否洗白，洗白教程自行搜索，最终不行再参考本帖" class="headerlink" title="在第1.3.5-0706版本中，似乎解决了DS1019+,DS918+,DS718+,DS418play,DS218+的识别问题，大家更新到最新版本，等待几个小时，看是否能识别，如果不能识别，建议完全删除moments以及数据再次安装即可解决，如果依然不能识别，请检查下是否洗白，洗白教程自行搜索，最终不行再参考本帖"></a><strong>在第1.3.5-0706版本中，似乎解决了DS1019+,DS918+,DS718+,DS418play,DS218+的识别问题，大家更新到最新版本，等待几个小时，看是否能识别，如果不能识别，建议完全删除moments以及数据再次安装即可解决，如果依然不能识别，请检查下是否洗白，洗白教程自行搜索，最终不行再参考本帖</strong></h4><p>关键字：moments不能识别，还有XXX张照片待发现，moments无法分类</p><p>问题：如果你用的黑群晖，安装moments后，人物、主题、位置等栏目无法识别你的照片，并且一直提示：还有XXXX张照片待发现的话，本文可以解决你的问题</p><h4 id="第一步：开启SSH和SCP"><a href="#第一步：开启SSH和SCP" class="headerlink" title="第一步：开启SSH和SCP"></a><strong>第一步：开启SSH和SCP</strong></h4><p>控制面板–文件服务–FTP–SFTP开启</p><p>控制面板–文件服务–rsync–rsync开启</p><p>控制面板–终端机–启用SSH功能</p><h4 id="第二步：安装winscp和putty"><a href="#第二步：安装winscp和putty" class="headerlink" title="第二步：安装winscp和putty"></a><strong>第二步：安装winscp和putty</strong></h4><p>都是百度能直接搜索安装到的</p><h4 id="第三步：开启root登陆权限"><a href="#第三步：开启root登陆权限" class="headerlink" title="第三步：开启root登陆权限"></a><strong>第三步：开启root登陆权限</strong></h4><p>1、打开putty，在Host Name处输入你的NAS内网地址</p><p>2、点击open</p><p>3、输入群晖管理员用户名，回车</p><p>4、输入密码（密码不会显示），回车</p><p>5、输入</p><blockquote><p>sudo -i</p></blockquote><p>回车</p><p>6、再次输入密码</p><p>7、输入</p><blockquote><p>vi /etc/ssh/sshd_config</p></blockquote><p>回车后按 i 键，进入编辑模式</p><p>8、按方向键下，找到#PermitRootLogin prohibit password这一行</p><p>光标停留在这一行最后，按回车，然后输入</p><blockquote><p>PermitRootLogin yes</p></blockquote><p>然后按ESC键，退出编辑模式</p><p>9、输入:wq，回车保存</p><p>10、手动输入</p><blockquote><p>synouser –-setpw root 你的密码</p></blockquote><p>“你的密码”更换为你的密码，如synouser –-setpw root 123456，然后回车</p><p>11、输入reboot重启群晖，等待群晖重启完毕。</p><h4 id="第四步：替换moments插件文件"><a href="#第四步：替换moments插件文件" class="headerlink" title="第四步：替换moments插件文件"></a><strong>第四步：替换moments插件文件</strong></h4><p>1、刚才我们操作的步骤主要是开启通过winscp的root登陆权限，现在我们打开winscp</p><p>2、登陆窗口，文件协议选择SCP，主机名为群晖内网地址，用户名为root，密码为刚才最后一步你设置的密码，然后登陆</p><p>3、登陆后，右侧为你的服务器文件，找到目录：/var/packages/SynologyMoments/target/usr/lib/libsynophoto-plugin-detection.so</p><p>4、下载此文件，放到你的左侧目录（左侧目录为你的本机文件）</p><p>链接: <a href="https://link.zhihu.com/?target=https://pan.baidu.com/s/1WXNt5-rmU-SaVZSNt_G3Ag">https://pan.baidu.com/s/1WXNt5-rmU-SaVZSNt_G3Ag</a> 提取码: cgbr</p><p>确认无误后，右键，上传到服务器（上传前请在群晖安装好moments，并停用moments），替换原有文件</p><p>5、打开moments，上传照片，查看效果。</p><p>PS：出于安全考虑，操作完成后，最好关掉SSH和SCP。</p><p>PSS：如果还有不太懂的，可以在下面回复我。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;在第1-3-5-0706版本中，似乎解决了DS1019-DS918-DS718-DS418play-DS218-的识别问题，大家更新到最新版本，等待几个小时，看是否能识别，如果不能识别，建议完全删除moments以及数据再次安装即可解决，如果依然不能识别，请检查下</summary>
+      
+    
+    
+    
+    <category term="博客建设" scheme="http://7086.site/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/"/>
+    
+    
+    <category term="NAS" scheme="http://7086.site/tags/NAS/"/>
     
   </entry>
   
