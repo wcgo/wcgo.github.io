@@ -6,7 +6,7 @@
   <link href="http://7086.site/atom.xml" rel="self"/>
   
   <link href="http://7086.site/"/>
-  <updated>2021-11-15T11:46:08.770Z</updated>
+  <updated>2021-11-15T12:09:31.749Z</updated>
   <id>http://7086.site/</id>
   
   <author>
@@ -17,18 +17,61 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hello World</title>
+    <link href="http://7086.site/2021/ckw0mnw860006y4pjhyhi34yb.html/"/>
+    <id>http://7086.site/2021/ckw0mnw860006y4pjhyhi34yb.html/</id>
+    <published>2021-11-15T12:09:31.391Z</published>
+    <updated>2021-11-15T12:09:31.749Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://7086.site/2021/211116.html/"/>
+    <id>http://7086.site/2021/211116.html/</id>
+    <published>2021-11-15T11:20:00.000Z</published>
+    <updated>2021-11-15T12:08:25.882Z</updated>
+    
+    <content type="html"><![CDATA[<p>##人生<br>人生<br>人生<br>###人生<br>在<br>###人</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;##人生&lt;br&gt;人生&lt;br&gt;人生&lt;br&gt;###人生&lt;br&gt;在&lt;br&gt;###人&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="知识储备" scheme="http://7086.site/categories/%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87/"/>
+    
+    
+    <category term="坐标系" scheme="http://7086.site/tags/%E5%9D%90%E6%A0%87%E7%B3%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>卫星图几大经纬度坐标系辨识</title>
     <link href="http://7086.site/2021/211115.html/"/>
     <id>http://7086.site/2021/211115.html/</id>
     <published>2021-11-15T11:14:00.000Z</published>
-    <updated>2021-11-15T11:46:08.770Z</updated>
+    <updated>2021-11-15T12:11:41.609Z</updated>
     
-    <content type="html"><![CDATA[<p>#一、经纬度坐标系类型</p><p>##1、WGS-84</p><p>世界标准经纬度坐标系，国际上通用的经纬度坐标系，绝大多数GPS、北斗设备获取的经纬度值就是WGS84坐标系，谷歌地球上获取的也是WGS-84坐标值；奥维互动地图浏览器中国大陆境外地区就是以WGS-84坐标系来显示经纬度值，所以大陆境外的标签、轨迹点、图形点显示的经纬度值后面都不带”GCJ-02”备注，经纬度设置框也不带”GCJ-02”选项。</p><span id="more"></span><p>##2、GCJ-02</p><p>中国加偏移经纬度坐标系，又称为”火星坐标系”，国家测绘地理信息局在02年发布的坐标体系。</p><p>（1）国家规定，互联网地图在国内必须至少使用GCJ-02进行首次加密。</p><p>（2）该坐标系是国内最广泛使用的坐标体系，如百度、高德、腾讯等地图在中国境内都使用它。</p><p>（3）在奥维互动地图浏览器中，中国大陆境内地区就是以GCJ-02坐标系来显示经纬度值，所以大陆境内的标签、轨迹点、图形点显示的经纬度值后面都带”GCJ-02”备注，经纬度设置框也自动添加”GCJ-02”选项并且自动勾选；如果需要将点的经纬度修改为WGS-84坐标系的坐标值，须先去掉”GCJ-02”勾选项再填写，保存后自动以GCJ-02坐标系来显示经纬度值，而不是以WGS-84坐标系显示经纬度。</p><p>特别说明：在奥维互动地图浏览器中，中国大陆境内以GCJ-02来显示点坐标是国家规定的，坐标点的实际位置并未发生偏移，只是坐标值不一致。因此，以GCJ-02来显示点坐标值，不影响该坐标点位置的准确性！</p><p>##3、其他特殊坐标系</p><p>一般都是由火星坐标通过偏移算法计算得出的，如百度地图使用的BD-09坐标系；奥维互动地图浏览器切换到百度地图后，大陆境外的点还是以WGS-84坐标系来显示经纬度值，大陆境内还是以GCJ-02坐标系来显示经纬度值，而不是以他们的坐标系来显示经纬度值。</p><p>举例：天安门在不同类型坐标系下的经纬度值</p><p>WGS-84经纬度：116.391349,39.907375（搜索框输入格式：116.391349,39.907375，直接输入经纬度值）</p><p>GCJ-02经纬度：116.397590,39.908776（搜索框输入格式：g116.397590,39.908776，经纬度值前加字母g）</p><p>BD-09经纬度：116.403963,39.915119（搜索框输入格式：b116.403963,39.915119，经纬度值前加字母b）</p><p>另外，北京54、西安80、CGCS2000等大地坐标系的坐标值也是经纬度。</p><p>其中，CGCS2000的定义与WGS84实质一样，采用的参考椭球非常接近，扁率差异引起椭球面上的纬度和高度变化最大达0.1mm。当前测量精度范围内，可以忽略这点差异。可以说两者相容至cm级水平，但若一点的坐标精度达不到cm水平，则不认为CGCS2000和WGS84的坐标是相容的。</p><p>#二、平面坐标系类型</p><p>1、全球UTM坐标系 （共60个区，需要锁定UTM区号，区号决定平面坐标的原点）</p><p>UTM（UNIVERSAL TRANSVERSE MERCARTOR GRID SYSTEM，通用横墨卡托格网系统）坐标是一种平面直角坐标。在UTM系统中，北纬84度和南纬80度之间的地球表面积按经度6度划分为南北纵带(投影带)。从180度经线开始向东将这些投影带编号，从1编至60（北京处于第50带）。</p><p>2、横轴墨卡托投影坐标</p><p>北京54、西安80以及CGCS2000等平面坐标系均是由相对应的大地坐标系经过横轴墨卡托投影（又称高斯-克吕格投影）建立的。</p><p>（1）北京54平面坐标系 （需要设置中央经线、七参数、三参数、四参数，参数决定平面坐标的原点）</p><p>（2）西安80平面坐标系 （需要设置中央经线、七参数、三参数、四参数，参数决定平面坐标的原点）</p><p>（3）CGCS2000平面坐标系（需要设置中央经线、七参数、三参数、四参数，参数决定平面坐标的原点）</p><p>3、奥维平面坐标系（将所填写的经纬度点或所选择的标签点作为平面坐标的原点）</p><p>4、关联点转换坐标系（将已知平面坐标值也已知经纬度坐标值的几个关联点作为平面坐标的相对原点） （这个坐标系常用于导入即不知道坐标系类型也不知道坐标系参数的CAD图，具体操作请查看使用帮助文档《如何使用关联点将CAD导入到奥维》）。</p><p>举例：天安门在不同类型平面坐标系下的坐标值（搜索框输入方法：在对应的平面坐标系下直接输入平面坐标值）</p><p>UTM坐标：447975.44,4417654.06（UTM区号锁定为50）</p><p>北京54坐标（平面）：447953.73,4419497.34（中央经线为117度，不使用坐标参数）</p><p>西安80坐标（平面）：447954.60,4419423.92（中央经线为117度，不使用坐标参数）</p><p>CGCS2000坐标（平面）：447954.62,4419421.83（中央经线为117度，不使用坐标参数）</p><p>关联点转换坐标（平面）：703795.91,4421761.99（以人民英雄纪念碑为关联点 经纬度坐标： g116.397722,39.904613  平面坐标：703807.21,4421299.79）</p><p>奥维平面坐标：-11.30,462.20 （以人民英雄纪念碑为原点） （西：-11.30 北：462.20）</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="一、经纬度坐标系类型"><a href="#一、经纬度坐标系类型" class="headerlink" title="一、经纬度坐标系类型"></a>一、经纬度坐标系类型</h1><h2 id="1、WGS-84"><a href="#1、WGS-84" class="headerlink" title="1、WGS-84"></a>1、WGS-84</h2><p>世界标准经纬度坐标系，国际上通用的经纬度坐标系，绝大多数GPS、北斗设备获取的经纬度值就是WGS84坐标系，谷歌地球上获取的也是WGS-84坐标值；奥维互动地图浏览器中国大陆境外地区就是以WGS-84坐标系来显示经纬度值，所以大陆境外的标签、轨迹点、图形点显示的经纬度值后面都不带”GCJ-02”备注，经纬度设置框也不带”GCJ-02”选项。</p><span id="more"></span><h2 id="2、GCJ-02"><a href="#2、GCJ-02" class="headerlink" title="2、GCJ-02"></a>2、GCJ-02</h2><p>中国加偏移经纬度坐标系，又称为”火星坐标系”，国家测绘地理信息局在02年发布的坐标体系。<br>（1）国家规定，互联网地图在国内必须至少使用GCJ-02进行首次加密。<br>（2）该坐标系是国内最广泛使用的坐标体系，如百度、高德、腾讯等地图在中国境内都使用它。<br>（3）在奥维互动地图浏览器中，中国大陆境内地区就是以GCJ-02坐标系来显示经纬度值，所以大陆境内的标签、轨迹点、图形点显示的经纬度值后面都带”GCJ-02”备注，经纬度设置框也自动添加”GCJ-02”选项并且自动勾选；如果需要将点的经纬度修改为WGS-84坐标系的坐标值，须先去掉”GCJ-02”勾选项再填写，保存后自动以GCJ-02坐标系来显示经纬度值，而不是以WGS-84坐标系显示经纬度。<br>特别说明：在奥维互动地图浏览器中，中国大陆境内以GCJ-02来显示点坐标是国家规定的，坐标点的实际位置并未发生偏移，只是坐标值不一致。因此，以GCJ-02来显示点坐标值，不影响该坐标点位置的准确性！</p><h2 id="3、其他特殊坐标系"><a href="#3、其他特殊坐标系" class="headerlink" title="3、其他特殊坐标系"></a>3、其他特殊坐标系</h2><p>一般都是由火星坐标通过偏移算法计算得出的，如百度地图使用的BD-09坐标系；奥维互动地图浏览器切换到百度地图后，大陆境外的点还是以WGS-84坐标系来显示经纬度值，大陆境内还是以GCJ-02坐标系来显示经纬度值，而不是以他们的坐标系来显示经纬度值。<br>举例：天安门在不同类型坐标系下的经纬度值<br>WGS-84经纬度：116.391349,39.907375（搜索框输入格式：116.391349,39.907375，直接输入经纬度值）<br>GCJ-02经纬度：116.397590,39.908776（搜索框输入格式：g116.397590,39.908776，经纬度值前加字母g）<br>BD-09经纬度：116.403963,39.915119（搜索框输入格式：b116.403963,39.915119，经纬度值前加字母b）<br>另外，北京54、西安80、CGCS2000等大地坐标系的坐标值也是经纬度。<br>其中，CGCS2000的定义与WGS84实质一样，采用的参考椭球非常接近，扁率差异引起椭球面上的纬度和高度变化最大达0.1mm。当前测量精度范围内，可以忽略这点差异。可以说两者相容至cm级水平，但若一点的坐标精度达不到cm水平，则不认为CGCS2000和WGS84的坐标是相容的。</p><h1 id="二、平面坐标系类型"><a href="#二、平面坐标系类型" class="headerlink" title="二、平面坐标系类型"></a>二、平面坐标系类型</h1><p>1、全球UTM坐标系 （共60个区，需要锁定UTM区号，区号决定平面坐标的原点）<br>UTM（UNIVERSAL TRANSVERSE MERCARTOR GRID SYSTEM，通用横墨卡托格网系统）坐标是一种平面直角坐标。在UTM系统中，北纬84度和南纬80度之间的地球表面积按经度6度划分为南北纵带(投影带)。从180度经线开始向东将这些投影带编号，从1编至60（北京处于第50带）。<br>2、横轴墨卡托投影坐标<br>北京54、西安80以及CGCS2000等平面坐标系均是由相对应的大地坐标系经过横轴墨卡托投影（又称高斯-克吕格投影）建立的。</p><p>（1）北京54平面坐标系 （需要设置中央经线、七参数、三参数、四参数，参数决定平面坐标的原点）</p><p>（2）西安80平面坐标系 （需要设置中央经线、七参数、三参数、四参数，参数决定平面坐标的原点）</p><p>（3）CGCS2000平面坐标系（需要设置中央经线、七参数、三参数、四参数，参数决定平面坐标的原点）</p><p>3、奥维平面坐标系（将所填写的经纬度点或所选择的标签点作为平面坐标的原点）</p><p>4、关联点转换坐标系（将已知平面坐标值也已知经纬度坐标值的几个关联点作为平面坐标的相对原点） （这个坐标系常用于导入即不知道坐标系类型也不知道坐标系参数的CAD图，具体操作请查看使用帮助文档《如何使用关联点将CAD导入到奥维》）。</p><p>举例：天安门在不同类型平面坐标系下的坐标值（搜索框输入方法：在对应的平面坐标系下直接输入平面坐标值）</p><p>UTM坐标：447975.44,4417654.06（UTM区号锁定为50）</p><p>北京54坐标（平面）：447953.73,4419497.34（中央经线为117度，不使用坐标参数）</p><p>西安80坐标（平面）：447954.60,4419423.92（中央经线为117度，不使用坐标参数）</p><p>CGCS2000坐标（平面）：447954.62,4419421.83（中央经线为117度，不使用坐标参数）</p><p>关联点转换坐标（平面）：703795.91,4421761.99（以人民英雄纪念碑为关联点 经纬度坐标： g116.397722,39.904613  平面坐标：703807.21,4421299.79）</p><p>奥维平面坐标：-11.30,462.20 （以人民英雄纪念碑为原点） （西：-11.30 北：462.20）</p>]]></content>
     
     
-    <summary type="html">&lt;p&gt;#一、经纬度坐标系类型&lt;/p&gt;
-&lt;p&gt;##1、WGS-84&lt;/p&gt;
-&lt;p&gt;世界标准经纬度坐标系，国际上通用的经纬度坐标系，绝大多数GPS、北斗设备获取的经纬度值就是WGS84坐标系，谷歌地球上获取的也是WGS-84坐标值；奥维互动地图浏览器中国大陆境外地区就是以WGS-84坐标系来显示经纬度值，所以大陆境外的标签、轨迹点、图形点显示的经纬度值后面都不带”GCJ-02”备注，经纬度设置框也不带”GCJ-02”选项。&lt;/p&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;一、经纬度坐标系类型&quot;&gt;&lt;a href=&quot;#一、经纬度坐标系类型&quot; class=&quot;headerlink&quot; title=&quot;一、经纬度坐标系类型&quot;&gt;&lt;/a&gt;一、经纬度坐标系类型&lt;/h1&gt;&lt;h2 id=&quot;1、WGS-84&quot;&gt;&lt;a href=&quot;#1、WGS-84&quot; class=&quot;headerlink&quot; title=&quot;1、WGS-84&quot;&gt;&lt;/a&gt;1、WGS-84&lt;/h2&gt;&lt;p&gt;世界标准经纬度坐标系，国际上通用的经纬度坐标系，绝大多数GPS、北斗设备获取的经纬度值就是WGS84坐标系，谷歌地球上获取的也是WGS-84坐标值；奥维互动地图浏览器中国大陆境外地区就是以WGS-84坐标系来显示经纬度值，所以大陆境外的标签、轨迹点、图形点显示的经纬度值后面都不带”GCJ-02”备注，经纬度设置框也不带”GCJ-02”选项。&lt;/p&gt;</summary>
     
     
     
@@ -435,56 +478,6 @@
     
     
     <category term="路由" scheme="http://7086.site/tags/%E8%B7%AF%E7%94%B1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于本站端口的选择</title>
-    <link href="http://7086.site/2020/960.html/"/>
-    <id>http://7086.site/2020/960.html/</id>
-    <published>2020-06-30T04:30:00.000Z</published>
-    <updated>2021-11-13T13:22:08.158Z</updated>
-    
-    <content type="html"><![CDATA[<p>外网80被封了，转发的时候要把80转发其他端口（假设88），</p><p>如直接安装，那么外网访问的时候用：http://域名:88/wordpress。</p><p>如果设置了虚拟机，并设置博客目录web/wordpress，设置好外部映射，则可以实现http://域名:88/访问，本站便是。</p><p>如果设置了虚拟主机，且有443，外网用二级域名访问博客：<a href="https://wp/">https://wp.域名.com</a>，也很完美。我自己没成功，可能443被封了。有待进一不研究。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;外网80被封了，转发的时候要把80转发其他端口（假设88），&lt;/p&gt;
-&lt;p&gt;如直接安装，那么外网访问的时候用：http://域名:88/wordpress。&lt;/p&gt;
-&lt;p&gt;如果设置了虚拟机，并设置博客目录web/wordpress，设置好外部映射，则可以实现http://域</summary>
-      
-    
-    
-    
-    <category term="博客建设" scheme="http://7086.site/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/"/>
-    
-    
-    <category term="NAS" scheme="http://7086.site/tags/NAS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>群晖Moments无法识别人像解决方法</title>
-    <link href="http://7086.site/2020/959.html/"/>
-    <id>http://7086.site/2020/959.html/</id>
-    <published>2020-06-30T04:13:00.000Z</published>
-    <updated>2021-11-13T13:22:08.196Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="在第1-3-5-0706版本中，似乎解决了DS1019-DS918-DS718-DS418play-DS218-的识别问题，大家更新到最新版本，等待几个小时，看是否能识别，如果不能识别，建议完全删除moments以及数据再次安装即可解决，如果依然不能识别，请检查下是否洗白，洗白教程自行搜索，最终不行再参考本帖"><a href="#在第1-3-5-0706版本中，似乎解决了DS1019-DS918-DS718-DS418play-DS218-的识别问题，大家更新到最新版本，等待几个小时，看是否能识别，如果不能识别，建议完全删除moments以及数据再次安装即可解决，如果依然不能识别，请检查下是否洗白，洗白教程自行搜索，最终不行再参考本帖" class="headerlink" title="在第1.3.5-0706版本中，似乎解决了DS1019+,DS918+,DS718+,DS418play,DS218+的识别问题，大家更新到最新版本，等待几个小时，看是否能识别，如果不能识别，建议完全删除moments以及数据再次安装即可解决，如果依然不能识别，请检查下是否洗白，洗白教程自行搜索，最终不行再参考本帖"></a><strong>在第1.3.5-0706版本中，似乎解决了DS1019+,DS918+,DS718+,DS418play,DS218+的识别问题，大家更新到最新版本，等待几个小时，看是否能识别，如果不能识别，建议完全删除moments以及数据再次安装即可解决，如果依然不能识别，请检查下是否洗白，洗白教程自行搜索，最终不行再参考本帖</strong></h4><p>关键字：moments不能识别，还有XXX张照片待发现，moments无法分类</p><p>问题：如果你用的黑群晖，安装moments后，人物、主题、位置等栏目无法识别你的照片，并且一直提示：还有XXXX张照片待发现的话，本文可以解决你的问题</p><h4 id="第一步：开启SSH和SCP"><a href="#第一步：开启SSH和SCP" class="headerlink" title="第一步：开启SSH和SCP"></a><strong>第一步：开启SSH和SCP</strong></h4><p>控制面板–文件服务–FTP–SFTP开启</p><p>控制面板–文件服务–rsync–rsync开启</p><p>控制面板–终端机–启用SSH功能</p><h4 id="第二步：安装winscp和putty"><a href="#第二步：安装winscp和putty" class="headerlink" title="第二步：安装winscp和putty"></a><strong>第二步：安装winscp和putty</strong></h4><p>都是百度能直接搜索安装到的</p><h4 id="第三步：开启root登陆权限"><a href="#第三步：开启root登陆权限" class="headerlink" title="第三步：开启root登陆权限"></a><strong>第三步：开启root登陆权限</strong></h4><p>1、打开putty，在Host Name处输入你的NAS内网地址</p><p>2、点击open</p><p>3、输入群晖管理员用户名，回车</p><p>4、输入密码（密码不会显示），回车</p><p>5、输入</p><blockquote><p>sudo -i</p></blockquote><p>回车</p><p>6、再次输入密码</p><p>7、输入</p><blockquote><p>vi /etc/ssh/sshd_config</p></blockquote><p>回车后按 i 键，进入编辑模式</p><p>8、按方向键下，找到#PermitRootLogin prohibit password这一行</p><p>光标停留在这一行最后，按回车，然后输入</p><blockquote><p>PermitRootLogin yes</p></blockquote><p>然后按ESC键，退出编辑模式</p><p>9、输入:wq，回车保存</p><p>10、手动输入</p><blockquote><p>synouser –-setpw root 你的密码</p></blockquote><p>“你的密码”更换为你的密码，如synouser –-setpw root 123456，然后回车</p><p>11、输入reboot重启群晖，等待群晖重启完毕。</p><h4 id="第四步：替换moments插件文件"><a href="#第四步：替换moments插件文件" class="headerlink" title="第四步：替换moments插件文件"></a><strong>第四步：替换moments插件文件</strong></h4><p>1、刚才我们操作的步骤主要是开启通过winscp的root登陆权限，现在我们打开winscp</p><p>2、登陆窗口，文件协议选择SCP，主机名为群晖内网地址，用户名为root，密码为刚才最后一步你设置的密码，然后登陆</p><p>3、登陆后，右侧为你的服务器文件，找到目录：/var/packages/SynologyMoments/target/usr/lib/libsynophoto-plugin-detection.so</p><p>4、下载此文件，放到你的左侧目录（左侧目录为你的本机文件）</p><p>链接: <a href="https://link.zhihu.com/?target=https://pan.baidu.com/s/1WXNt5-rmU-SaVZSNt_G3Ag">https://pan.baidu.com/s/1WXNt5-rmU-SaVZSNt_G3Ag</a> 提取码: cgbr</p><p>确认无误后，右键，上传到服务器（上传前请在群晖安装好moments，并停用moments），替换原有文件</p><p>5、打开moments，上传照片，查看效果。</p><p>PS：出于安全考虑，操作完成后，最好关掉SSH和SCP。</p><p>PSS：如果还有不太懂的，可以在下面回复我。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h4 id=&quot;在第1-3-5-0706版本中，似乎解决了DS1019-DS918-DS718-DS418play-DS218-的识别问题，大家更新到最新版本，等待几个小时，看是否能识别，如果不能识别，建议完全删除moments以及数据再次安装即可解决，如果依然不能识别，请检查下</summary>
-      
-    
-    
-    
-    <category term="博客建设" scheme="http://7086.site/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/"/>
-    
-    
-    <category term="NAS" scheme="http://7086.site/tags/NAS/"/>
     
   </entry>
   
