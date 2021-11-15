@@ -725,21 +725,7 @@
   </url>
   
   <url>
-    <loc>http://7086.site/tags/excel/</loc>
-    <lastmod>2021-11-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://7086.site/tags/pdf%E8%BD%AC%E6%8D%A2/</loc>
-    <lastmod>2021-11-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://7086.site/tags/word/</loc>
     <lastmod>2021-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -753,7 +739,7 @@
   </url>
   
   <url>
-    <loc>http://7086.site/tags/%E5%B7%A5%E7%A8%8B%E6%8A%80%E6%9C%AF/</loc>
+    <loc>http://7086.site/tags/excel/</loc>
     <lastmod>2021-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -761,6 +747,20 @@
   
   <url>
     <loc>http://7086.site/tags/PAM/</loc>
+    <lastmod>2021-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://7086.site/tags/word/</loc>
+    <lastmod>2021-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://7086.site/tags/%E5%B7%A5%E7%A8%8B%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2021-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -837,7 +837,7 @@
   </url>
   
   <url>
-    <loc>http://7086.site/tags/%E8%AE%BE%E5%A4%87/</loc>
+    <loc>http://7086.site/tags/%E5%BA%9F%E6%B0%B4%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2021-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -845,6 +845,13 @@
   
   <url>
     <loc>http://7086.site/tags/%E8%B7%AF%E7%94%B1/</loc>
+    <lastmod>2021-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://7086.site/tags/%E8%AE%BE%E5%A4%87/</loc>
     <lastmod>2021-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -866,13 +873,6 @@
   
   <url>
     <loc>http://7086.site/tags/%E7%8E%AF%E5%A2%83/</loc>
-    <lastmod>2021-11-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://7086.site/tags/%E5%BA%9F%E6%B0%B4%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2021-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -949,6 +949,13 @@
   </url>
   
   <url>
+    <loc>http://7086.site/tags/%E9%99%A4%E8%87%AD/</loc>
+    <lastmod>2021-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://7086.site/tags/%E5%B7%A5%E8%89%BA%E6%B5%81%E7%A8%8B/</loc>
     <lastmod>2021-11-15</lastmod>
     <changefreq>daily</changefreq>
@@ -970,14 +977,14 @@
   </url>
   
   <url>
-    <loc>http://7086.site/tags/%E7%A6%BD%E7%95%9C/</loc>
+    <loc>http://7086.site/tags/%E8%A1%A8%E6%83%85/</loc>
     <lastmod>2021-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://7086.site/tags/%E8%A1%A8%E6%83%85/</loc>
+    <loc>http://7086.site/tags/%E7%A6%BD%E7%95%9C/</loc>
     <lastmod>2021-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -991,14 +998,14 @@
   </url>
   
   <url>
-    <loc>http://7086.site/tags/%E8%93%9D%E5%85%89%E7%94%B5%E5%BD%B1/</loc>
+    <loc>http://7086.site/tags/%E9%99%A4%E5%B0%98%E5%99%A8/</loc>
     <lastmod>2021-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://7086.site/tags/%E9%99%A4%E5%B0%98%E5%99%A8/</loc>
+    <loc>http://7086.site/tags/%E8%93%9D%E5%85%89%E7%94%B5%E5%BD%B1/</loc>
     <lastmod>2021-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1012,21 +1019,14 @@
   </url>
   
   <url>
-    <loc>http://7086.site/tags/%E6%A0%87%E5%87%86/</loc>
-    <lastmod>2021-11-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://7086.site/tags/%E9%99%A4%E8%87%AD/</loc>
-    <lastmod>2021-11-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://7086.site/tags/%E8%83%BD%E8%80%97/</loc>
+    <lastmod>2021-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://7086.site/tags/%E6%A0%87%E5%87%86/</loc>
     <lastmod>2021-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
