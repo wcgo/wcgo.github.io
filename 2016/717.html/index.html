@@ -85,67 +85,137 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-风机和电机的区别" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      风机、水泵和电机的区别
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2016-07-27T15:04:36.000Z" itemprop="datePublished">2016年07月27日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%B7%A5%E7%A8%8B%E8%AE%BE%E8%AE%A1/">工程设计</a>
+  </div>
+
+      
+        <span class="article-views">
+  <i class="fa fa-views"></i>
+  <i id="busuanzi_container_page_pv">
+      <i id="busuanzi_value_page_pv"></i>
+  </i>
+</span>
+
+      
+      
+<a href="/2016/717.html/#comments" class="article-comment-link">
+  
+    
+      <span class="post-comments-count valine-comment-count" data-xid="/2016/717.html/" itemprop="commentCount"></span>
+    
+    
+    
+    
+    
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>电机，俗称“马达电动机”，是指依据电磁感应定律实现电能的转换或传递的一种电磁装置。是一种将电能转化成机械能的动力装置；风机是依靠输入的机械能，提高气体压力并排送气体的机械，它是一种从动的流体机械。有的风机是用电机带动的，有的可以是发动机带动的。</p>
+<p>在电机的机头上安装上风叶就成了风机.</p>
+<p>风机是送风排风的<br>水泵是吸水排水的</p>
+
+        
+            <div id="toc-article">
+                
+  <div class="widget-wrap" id="toc-wrap">
+    <h3 class="widget-title"><i class="fa fa-toc"></i> 文章目录</h3>
+    <div class="widget">
+      
     </div>
-	
+  </div>
+
+
+            </div>
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/2016/717.html/">http://7086.site/2016/717.html/</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
+    </div>
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BA%9F%E6%B0%94%E8%AE%BE%E8%AE%A1/" rel="tag">废气设计</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+        
+<nav id="article-nav">
+  
+    <a href="/2016/752.html/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">newer</strong>
+      <div class="article-nav-title">
+        
+          石墨降膜吸收器的设计计算
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/586.html/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <div class="article-nav-title">ppm、ppb、ppt是什么单位？</div>
+    </a>
+  
+</nav>
+
+      
+      
+        
+
+  <section id="comments" class="vcomment"></section>
+
+
+
+
+
+
+
+      
     </footer>
   </div>
 </article>

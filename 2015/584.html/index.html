@@ -85,67 +85,140 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-事故水池、消防水池、初期雨水池相关规定" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      事故水池、消防水池、初期雨水池相关规定
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2015-11-14T11:16:56.000Z" itemprop="datePublished">2015年11月14日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%B7%A5%E7%A8%8B%E8%AE%BE%E8%AE%A1/">工程设计</a>
+  </div>
+
+      
+        <span class="article-views">
+  <i class="fa fa-views"></i>
+  <i id="busuanzi_container_page_pv">
+      <i id="busuanzi_value_page_pv"></i>
+  </i>
+</span>
+
+      
+      
+<a href="/2015/584.html/#comments" class="article-comment-link">
+  
+    
+      <span class="post-comments-count valine-comment-count" data-xid="/2015/584.html/" itemprop="commentCount"></span>
+    
+    
+    
+    
+    
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>事故水池、消防水池、初期雨水池相关规定</p>
+<p>（1）事故池容积确定应执行的标准或规范主要有：《化工建设项目环境保护设计规范》GB50483-2009、中国石化安环[2006]10号等，GB50483规定的应急事故水池容积确定方法，对所有涉及危险化学品环境风险事故排水的项目均应适用执行。且必须根据项目特点、行业标准或规范、事故池容积确定的具体要求等，注意区分各标准规范的适用范围和具体规定条款的执行。</p>
+<p>对一般的小化工项目,是否需要设置消防水池应当依据消防水供给能力来确定;是否需要设计前期雨水池,应当根据前期雨水量污水处理站处理能力以及是否可与事故池共用等综合判断;是否需要设置事故池,应当根据GB50483-2009有关规定确定,以上三者可能需要设计单位建设单位安全评价单位环评单位等综合确定,环评只是复核责任,即保证前期雨水事故废水的得到处理并不污染外环境.</p>
+<p>（2）前期雨水池确定的依据及应执行的标准主要有：《化工建设项目环境保护设计规范》GB50483-2009，《室外排水设计规范》（GB50014-2006），《石油化工企业给水排水系统设计规范》SH3015-2003，《石油化工企业环境保护设计规范等》SH3024-95。</p>
+<p>（3）消防水池确定的依据主要有：消防用水量确定、围堰或防火堤有效容积确定时应按《建筑设计防火规范》（GB50016-2006）、《石油化工企业设计防火规范》（GB50160-2008）、《石油库设计规范》（GB50074-2002）、《储罐区防火堤设计规范》（GB50351-2005）等有关规定执行。工厂水源直接供给不能满足消防用水量、水压和火灾延续时间内消防用水总量要求时，应建消防水池（罐），并应符合有关规定。</p>
+<p>按GB50483的规定,如果罐区围堰足够容积并可用,可不建事故池,只需配事故水导排系统,提升至围堰内,然后再送污水处理设施.但一般考虑建设一个事故池，且事故水池宜采取地下式。容量计算也有相应要求。</p>
+<p>（4）必须注意事故时进入事故水池的雨水量，与正常生产时初期雨水量（即前期雨水）的本质区别，不可混淆。</p>
+<p>一是降雨历时不同，正常生产运营过程中初期雨水是指刚下的雨水，一次降雨过程中的前10～20min最大降水量[1]，其设计参数计算必须按GB50014规定的短历时暴雨强度公式确定；而事故时降水量应根据事故消防时间（参照GB50016、GB50160规定一般为2～6h）确定。二是汇水面积不同，初期雨水的汇水面积必须考虑生产区和储存区总的汇水面积；事故时只考虑装置区或罐区单独的能进入事故排水系统的最大降雨量，不作同时汇水考虑，且应采取措施尽量减少进入事故排水收集系统的雨水汇集面积。</p>
+
+        
+            <div id="toc-article">
+                
+  <div class="widget-wrap" id="toc-wrap">
+    <h3 class="widget-title"><i class="fa fa-toc"></i> 文章目录</h3>
+    <div class="widget">
+      
     </div>
-	
+  </div>
+
+
+            </div>
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/2015/584.html/">http://7086.site/2015/584.html/</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
+    </div>
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+        
+<nav id="article-nav">
+  
+    <a href="/2015/585.html/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">newer</strong>
+      <div class="article-nav-title">
+        
+          去除废水中重金属离子的综述
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/558.html/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <div class="article-nav-title">COD的理论计算</div>
+    </a>
+  
+</nav>
+
+      
+      
+        
+
+  <section id="comments" class="vcomment"></section>
+
+
+
+
+
+
+
+      
     </footer>
   </div>
 </article>

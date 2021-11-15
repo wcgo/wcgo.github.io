@@ -85,67 +85,162 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-ceb转pdf文件的终极办法" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      CEB转PDF文件的终极办法
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-11-14T07:14:23.000Z" itemprop="datePublished">2013年11月14日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8/">办公应用</a>
+  </div>
+
+      
+        <span class="article-views">
+  <i class="fa fa-views"></i>
+  <i id="busuanzi_container_page_pv">
+      <i id="busuanzi_value_page_pv"></i>
+  </i>
+</span>
+
+      
+      
+<a href="/2013/415.html/#comments" class="article-comment-link">
+  
+    
+      <span class="post-comments-count valine-comment-count" data-xid="/2013/415.html/" itemprop="commentCount"></span>
+    
+    
+    
+    
+    
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>经网上查询CEB转PDF文件的办法较多，不是乱码，就是过程复杂不实用，涉及专业商业软件较多，需要付费。</p>
+<p>        本文涉及到的必备软件有：Adobe Acrobat（版本不限），Apabi Reader 4.4（经使用可行），Apabi Maker 5.0（经使用可行）。</p>
+<p><strong>一、 准备工作：</strong></p>
+<p>         1. 安装以上三个文件。</p>
+<p>         2. 用Apabi Reader 打开CEB文件，选取“Adobe PDF”打印机无法打印，会弹出以下警示对话框：</p>
+<p><img src="http://pic.yupoo.com/wm1126_v/DjkSLz6O/Ddemm.jpg"></p>
+<p>        3. 点击打开：开始——打印机和传真，将已安装的“Adobe PDF” <strong>打印机改名</strong>，比如中间加一个下划线，改成“<strong>Adobe_PDF</strong>”。破解完成，知道如何点破窗户纸可不是那么容易！</p>
+<p><strong>二、业余级CEB转换PDF</strong></p>
+<p>  1. 用Apabi Reader 打开CEB文件，点击打印，选取“Adobe_PDF”打印机，点确定，即可直接在指定目录下转换出PDF文件。</p>
+<p>  2.   问题：该方法转换的PDF文件将字符转变为图像，大约72dpi，放大后“文字”不清楚，也无法选取，只适合今后<strong>阅读使用</strong>。经用排版文件打开此PDF文件后发现，每个字符图像均为单独的对象，可以编辑。</p>
+<p><strong>三、专业级CEB转换PDF</strong></p>
+<p>1. 本办法思想是先将CEB文件转为CEBX文件（好处见后面介绍），再将CEBX文件转为PDF文件。</p>
+<p>        2.   在安装了Apabi Maker后，在鼠标右键后会多出“转换为CEBX文件”选项。</p>
+<p>        3.   右键点击要转换的文件，弹出对话框:</p>
+<p><img src="http://pic.yupoo.com/wm1126_v/DjkSLtod/yxgL1.jpg"></p>
+<p>选“<strong>转换为CEBX文件</strong>”选项，电脑自动打开“Apabi Maker ”，会在同目录下转出一个新的同名CEBX文件（因为格式不同，旧文件仍存在，不会被覆盖）。</p>
+<p>         4.  点击新的CEBX文件，电脑会用Apabi Reader 打开此文件。</p>
+<p>         5.   点击打印，选取“Adobe_PDF”打印机，点确定，即可直接在指定目录下转换出PDF文件。</p>
+<p>         6.   优缺点：该方法转换的PDF文件将字符转变为曲线字，放大后“文字”清楚，但仍无法选取，适合今后<strong>打印及其他特殊的使用</strong>。经用排版文件打开此PDF文件后发现，每个字符均为单独的曲线文字，可以编辑，放大、删除均可。</p>
+<p>         7.  以上2种方法产生的PDF文件将会较大，但2种方法产生的PDF文件大小差不多。</p>
+<p>         8.  如果有超长文件打印转换时发生乱码，可以采用分段打印的办法克服乱码现象。</p>
+<p>以上方法经多次使用没有发现问题，当然用Apabi Reader 打不开的文件不在此列。</p>
+<p>附：曾发现转换数百页文件时发生乱码，解决办法是每次转换100页即可解决。（然后再合并成一个文件，不会合并？用Adobe Acrobat 可以把多个文件合并成一个文件）</p>
+<p>   曾发现转换打印时发生错误提示，取消后再次打印即可。</p>
+<p> 注意：1. Apabi Reader 3.0版打不开cebx，4.5版已经不能采用此方法。</p>
+<ol start="2">
+<li>使用Apabi Reader 4.0-4.4版时请不要升级！（弹出升级窗口时关掉）</li>
+</ol>
+
+        
+            <div id="toc-article">
+                
+  <div class="widget-wrap" id="toc-wrap">
+    <h3 class="widget-title"><i class="fa fa-toc"></i> 文章目录</h3>
+    <div class="widget">
+      
     </div>
-	
+  </div>
+
+
+            </div>
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/2013/415.html/">http://7086.site/2013/415.html/</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
+    </div>
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pdf%E8%BD%AC%E6%8D%A2/" rel="tag">pdf转换</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+        
+<nav id="article-nav">
+  
+    <a href="/2013/417.html/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">newer</strong>
+      <div class="article-nav-title">
+        
+          冷却塔的工作原理及选取
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2013/411.html/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <div class="article-nav-title">畜禽养殖鼓励模式（核审减排）</div>
+    </a>
+  
+</nav>
+
+      
+      
+        
+
+  <section id="comments" class="vcomment"></section>
+
+
+
+
+
+
+
+      
     </footer>
   </div>
 </article>

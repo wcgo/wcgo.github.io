@@ -85,67 +85,135 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-不同类型交通干线的定义" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      不同类型交通干线的定义
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2014-03-04T08:40:09.000Z" itemprop="datePublished">2014年03月04日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E7%8E%AF%E5%A2%83%E8%AF%84%E4%BB%B7/">环境评价</a>
+  </div>
+
+      
+        <span class="article-views">
+  <i class="fa fa-views"></i>
+  <i id="busuanzi_container_page_pv">
+      <i id="busuanzi_value_page_pv"></i>
+  </i>
+</span>
+
+      
+      
+<a href="/2014/482.html/#comments" class="article-comment-link">
+  
+    
+      <span class="post-comments-count valine-comment-count" data-xid="/2014/482.html/" itemprop="commentCount"></span>
+    
+    
+    
+    
+    
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>A.1  铁路 以动力集中方式或动力分散方式牵引，行驶于固定钢轨线路上的客货运输系统。 A2   高速公路 根据JTGB01，定义如下： 专供汽车分向、分车道行驶，并应全部控制出入的多车道公路，其中： 四车道高速公路应能适应将各种汽车折合成小客车的年平均日交通量 25000～55000辆： 六车道高速公路应能适应将各种汽车折合成小客车的年平均日交通量 45000～80000辆： 八车道高速公路应能适应将各种汽车折合成小客车的年平均日交通量 45000～80000辆： A3  一级公路 根据JTGB01，定义如下： 供汽车分向、分车道行驶，并可根据需要控制出入的多车道公路，其中： 四车道一级公路应能适应将各种汽车折合成小客车的年平均日交通量 15000～30000辆： 六车道一级公路应能适应将各种汽车折合成小客车的年平均日交通量 25000～55000辆： A4  二级公路 根据JTGB01，定义如下： 供汽车行驶的双车道公路。 双车道二级公路应能适应将各种汽车折合成小客车的年平均日交通量 5000～15000辆： A5  城市快速路 根据GB/T 50280，定义如下： 城市道路中设有中央分隔带，具有四条以上的机动车道，全部或部分采用立体交叉与控制出入，供汽车以较高速度行驶的道路，又称汽车专用道。 城市快速路一般在特大城市或大城市中设置，主要起连续城市内各主要地区、沟通对外联系的作用。 A6  城市主干路 联系城市各主要地区（住宅区、工业区以及港口、机场和车站等客货运中心等），承担城市主要交通任务的交通干道，是城市道路网的骨架。主干线沿线两侧不宜修建过多的车辆和行人出入口。 A7  城市次干路 城市各区域内部的主要道路，与城市主干路结合成道路网，起集散交通的作用兼有服务功能。 A8  城市轨道交通 以电能为主要动力，采用钢轮—钢轨为导向的城市公共客运系统。安装运量及运行方式的不同，城市轨道交通分为地铁、轻轨以及有轨电车。 A9  内河航道 船舶、排筏可以通航的内河水域及其港口。</p>
+
+        
+            <div id="toc-article">
+                
+  <div class="widget-wrap" id="toc-wrap">
+    <h3 class="widget-title"><i class="fa fa-toc"></i> 文章目录</h3>
+    <div class="widget">
+      
     </div>
-	
+  </div>
+
+
+            </div>
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/2014/482.html/">http://7086.site/2014/482.html/</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
+    </div>
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%8E%AF%E8%AF%84/" rel="tag">环评</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+        
+<nav id="article-nav">
+  
+    <a href="/2014/491.html/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">newer</strong>
+      <div class="article-nav-title">
+        
+          废液算固体废物吗？
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/478.html/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <div class="article-nav-title">环评报告书的类别</div>
+    </a>
+  
+</nav>
+
+      
+      
+        
+
+  <section id="comments" class="vcomment"></section>
+
+
+
+
+
+
+
+      
     </footer>
   </div>
 </article>

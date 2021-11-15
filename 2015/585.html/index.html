@@ -85,67 +85,157 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-去除废水中重金属离子的综述" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      去除废水中重金属离子的综述
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2015-11-14T15:00:19.000Z" itemprop="datePublished">2015年11月14日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E7%8E%AF%E5%A2%83%E8%AF%84%E4%BB%B7/">环境评价</a>
+  </div>
+
+      
+        <span class="article-views">
+  <i class="fa fa-views"></i>
+  <i id="busuanzi_container_page_pv">
+      <i id="busuanzi_value_page_pv"></i>
+  </i>
+</span>
+
+      
+      
+<a href="/2015/585.html/#comments" class="article-comment-link">
+  
+    
+      <span class="post-comments-count valine-comment-count" data-xid="/2015/585.html/" itemprop="commentCount"></span>
+    
+    
+    
+    
+    
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>摘要：重金属污染已成为今天最严重的环境问题之一，因为它们对环境顽固不化和持久性的危害，所以重金属污染受到特别关注。近年来，把重金属从废水中去除的方法已被广泛研究。本文综述了当前已被应用于治理重金属废水的方法，并对这些技术进行了评估。这些技术包括：化学沉淀法、离子交换法、吸附法。</p>
+<p>1.介绍</p>
+<p>重金属元素的原子的重量在63.5和200.6之间，有一个特定的大于5.0的引力（Srivastava and Majumder, 2008）。随着金属电镀设备、矿业、化肥工业、制革厂、电池、造纸行业和杀从剂等这些行业的快速发展，越来越多的重金属污水直接或间接的排入环境，特别是发展中国家。与有机污染物不同，重金属是不能被生物降解的，它们很容易积聚在生物体内，有很多重金属我们都知道我有毒或致癌的。在工业废水的处理中，特别被关注的有毒重金属包括：锌、铜、镍、汞、镉、铅、铬。</p>
+<p>锌是一种微量元素，对人体健康至关重要。它对活体组织的生理功能和调节许多生化工程具有重要的作用。然而，过多的锌又会导致严重的健康问题，如胃痉挛，皮肤过敏，呕吐，恶心和贫血（Oyaro et al., 2007）。铜是生物新陈代谢不可或缺，但过度的摄入铜则会带来极其严重的毒性问题，如，呕吐、痉挛、抽搐、甚至死亡(Paulino et al., 2006)。</p>
+<p>镍超过其临界水平除了会带来肠胃不适，肺纤维症和皮肤皮炎（Borba et al., 2006）还有可能会带来严重的肺和肾脏问题。我们都知道镍是人类致癌物。汞是一种神经毒素，它会伤害到我们的中枢神经系统。高浓度的汞会造成肺和肾功能的损害，胸痛和呼吸困难(Namasivayam and Kadirvelu, 1999)。水银中毒的典型例子是水俣湾事件。镉已被美国环境保护机构列为很可能是人类致癌物，隔使人类的健康收到严重的威胁。慢性接触镉会导致肾功能异常，高水平的接触将会导致死亡。</p>
+<p>铅可引起中央神经系统的损害。铅还可损害肾脏、肝脏和生殖系统，基本细胞流程和大脑功能。中毒的症状有，贫血、失眠、头痛、头晕、易怒、肌肉萎缩、幻觉和肾损伤(Naseem and Tahir, 2001)。铬在水中以两种形式存在：:铬((III)和铬(VI)。一般来说，铬(VI)毒性比铬((III)大，铬(VI)影响人体生理通过食物链的积累导致严重的健康问题，包括从简单的皮肤发炎到肺癌(Khezami and Capart, 2005)。</p>
+<p>面对越来越严厉的法规，重金属已被列为环境优先污染物并成为其中最重要的环境问题。所以，为了保护人类和环境，这些有毒重金属应该从废水中去除。许多方法用于清除重金属离子包括化学沉淀法、离子交换法、吸附法、膜过滤法、电化学处理技术等。这篇文章讲述了目前用于处理重金属离子废水的技术以及对它们在应用程序上的优点和局限的评论。</p>
+<p>2.重金属废水处理技术</p>
+<p>2.1 化学沉淀法</p>
+<p>化学沉淀法是有效的，到目前为止在工业中使用最广泛的方法(Ku and Jung, 2001)。因为，它操作起来相对而言比较简单和便宜。在沉淀反应过程中，化学物质与重金属离子形成不溶性颗粒。形成的沉淀物可以通过沉淀或过滤而从水中分离。然后，处理过的水可以适当的排放和重用。传统的化学沉淀法包括氢氧化物沉淀和硫化沉淀。</p>
+<p>2.1.1.氢氧化物沉淀</p>
+<p>氢氧化物沉淀由于其相对简单，成本低和易于pH值控制而成为最广泛使用的化学沉淀技术(Huisman et al., 2006)。</p>
+<p>各种金属氢氧化物的溶解度最小化的pH范围在8.0-11.0之间。金属氢氧化物沉淀可以通过凝聚和沉淀去除。各种各样的氢氧化物一直被用来处理分水中的金属，基于其成本低和易于处理。在工业环境中石灰是首先的基本物质用于氢氧化物沉淀。</p>
+<p>氢氧化物沉淀法使用Ca(OH)2和NaOH去除废水中的Cu(II)和Cr(VI)离子已被Mirbagheri and Hosseini (2005)核实。用硫酸亚铁将Cr(VI)转化成Cr(III)，Cr(III)的最大沉淀值在pH为8.7与Ca(OH)2反应，铬酸盐的浓度从30mg/L减少到0.01mg/L。铜铵的最佳去除量是在曝气的情况下，pH为12.0同时加入Ca(OH)2和NaOH铜离子的浓度可以从48.51 mg/L降低到0.694 mg/L。为了提高石灰沉淀法的效率，常用飞灰作为种子材料(Chen et al., 2009b)。这种用飞灰、石灰碳化法增大了沉淀物的体积，明显的提高了重金属的去除率。一定浓度的铬、铜、铅、锌等物质可以从初始浓度100.0mg/L分别降到0.08,0.14,0.03和0.45mg/L。</p>
+<p>在氢氧化物沉淀过程中，增加的混凝剂如明矾，铁盐和有机聚合物能增强废水中重金属的去除率。Charerntanyarak(1999)通过石灰采用化学混凝、沉淀法来处理废水中的锌、哥、锰、镁，其初始浓度分别为450、150、1085和3154mg/L。他发现最佳pH值超过9.5时处理后的废水可以达到Wastewater教育部的标准。此外，如果添加了混凝剂，重金属浓度会进一步减少。</p>
+<p>尽管氢氧化物沉淀法被广泛使用，但也有一些限制。首先，氢氧化物沉淀生成体积大密度相对较低的油泥，会呈现脱水和处理问题(Kongsricharoern and Polprasert,1995）。其次，一些金属氢氧化物是两性物质，对于混合金属就会出现另一个问题，用氢氧化物沉淀法，可能一种金属的理想pH值会让另一种金属又回到离子的状态。第三，当污水中混有络合剂，它们可能会抑制金属氢氧化物沉淀。</p>
+<p>2.1.2.硫化物沉淀</p>
+<p>硫化沉淀也是一个有效的治理有毒重金属的方法。其中使用硫化物的一个最主要的优点是金属硫化物沉淀的溶解度要大大的低于氢氧化物沉淀而且硫化物沉淀不是两性物质。因此，相对于氢氧化物沉淀，硫化沉淀可实现在较广pH值范围内金属污染程度较大的情况。相对氢氧化物沉底，硫化沉淀物也表现出更好的增厚和脱水特性。Özverdi and Erdem (2006)研究了黄铁矿和合成硫化铁去除Cu2+, Cd2+和Pb2+。金属去除反应的机制被确定为化学沉淀在低pH值（＜3），由于H2S一级反应(Eqs.(1)and(2))，和在高pH下的吸附(in the range of 3e6)。</p>
+<p>FeS(s)+2H+(aq)→H2S（g)+Fe2+(aq) (1)</p>
+<p>M2+(aq)+H2S（g)→MS(s)+2H+(aq) (2)</p>
+<p>最近，新的硫化物去除方法在硫酸盐还原菌（SRB)的基础上已开发出来。SBR氧化简单的有机化合物在厌氧条件下，SBR硫酸盐转化为硫化氢。</p>
+<p>3SO42- + 2CH3CH(OH)COOH→ 3H2S + 6HCO3— （3）</p>
+<p>这里CH3CH(OH)COOH代表简单的有机化合物。硫化氢与可溶性二价金属发生反应，形成不溶性金属硫化物(Eq. (2)）。</p>
+<p>一些有吸引力的发现被Kousi（2007）等报道，并开发了一个上流式固定床SBR来监测治理过的锌轴承废水。他们发现，这个反应有相当大的能力能完全去除初始浓度高达6000mg/L的硫酸盐，完全去除初始浓度高达400mg/L的可溶性锌，并完全消除初始浓度为1500mg/L的TOC。使用SBR治理一种酸性矿山废水的可能性也在被研究(Alvarez et al., 2007)。</p>
+<p>不过，在使用硫化物处理的过程中也存在隐患。因为我们知道，重金属往往在酸条件和硫化物沉淀剂在酸性条件下产生有毒的H2S烟雾。至关重要的是这种反应会在中性或碱性介质中进行。此外，金属硫化物沉淀容易形成胶体沉淀，引发在沉淀和过滤过程中的分离问题。</p>
+
+        
+            <div id="toc-article">
+                
+  <div class="widget-wrap" id="toc-wrap">
+    <h3 class="widget-title"><i class="fa fa-toc"></i> 文章目录</h3>
+    <div class="widget">
+      
     </div>
-	
+  </div>
+
+
+            </div>
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/2015/585.html/">http://7086.site/2015/585.html/</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
+    </div>
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+        
+<nav id="article-nav">
+  
+    <a href="/2015/586.html/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">newer</strong>
+      <div class="article-nav-title">
+        
+          ppm、ppb、ppt是什么单位？
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/584.html/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <div class="article-nav-title">事故水池、消防水池、初期雨水池相关规定</div>
+    </a>
+  
+</nav>
+
+      
+      
+        
+
+  <section id="comments" class="vcomment"></section>
+
+
+
+
+
+
+
+      
     </footer>
   </div>
 </article>

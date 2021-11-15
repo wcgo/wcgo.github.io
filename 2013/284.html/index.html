@@ -85,67 +85,135 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-wordpress默认编辑器的增强代码" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Wordpress默认编辑器的增强代码
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-10-14T06:38:30.000Z" itemprop="datePublished">2013年10月14日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/">博客建设</a>
+  </div>
+
+      
+        <span class="article-views">
+  <i class="fa fa-views"></i>
+  <i id="busuanzi_container_page_pv">
+      <i id="busuanzi_value_page_pv"></i>
+  </i>
+</span>
+
+      
+      
+<a href="/2013/284.html/#comments" class="article-comment-link">
+  
+    
+      <span class="post-comments-count valine-comment-count" data-xid="/2013/284.html/" itemprop="commentCount"></span>
+    
+    
+    
+    
+    
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>找到你正在使用的那个主题的模版函数文件（也就是functions.php这个文件），在其中加入下面这段代码： //增强编辑器开始 function add_editor_buttons($buttons) { $buttons[] = ‘fontselect’; $buttons[] = ‘fontsizeselect’; $buttons[] = ‘cleanup’; $buttons[] = ‘styleselect’; $buttons[] = ‘hr’; $buttons[] = ‘del’; $buttons[] = ‘sub’; $buttons[] = ‘sup’; $buttons[] = ‘copy’; $buttons[] = ‘paste’; $buttons[] = ‘cut’; $buttons[] = ‘undo’; $buttons[] = ‘image’; $buttons[] = ‘anchor’; $buttons[] = ‘backcolor’; $buttons[] = ‘wp_page’; $buttons[] = ‘charmap’; return $buttons; } add_filter(“mce_buttons_3”, “add_editor_buttons”); //增强编辑器结束   在开始前编辑框： <img src="http://pic.yupoo.com/wm1126_v/DeChfEKr/R9Hqg.jpg" alt="编辑框"> 代码插入后： <img src="http://pic.yupoo.com/wm1126_v/DeChfe3f/k3krE.jpg" alt="编辑框"> 附上搜集的按钮调用的Key： <img src="http://pic.yupoo.com/wm1126_v/DeCiguNI/3P8Sj.jpg" alt="框"> 1.剪切（cut）复制（copy）粘贴（paste）撤销（undo）重做（redo）居中（justifycenter） 2.加粗（bold）斜体（italic）左对齐（justifyleft）右对齐（justfyright） 3.两端对齐（justfyfull）插入超链接（link）取消超链接（unlink）插入图片（image） 4.清除格式（removeformat）下划线（underline）删除线（strikethrough） 5.锚文本（anchor）新建文本（newdocument） 6.字体颜色（forecolor）字体背景色（backcolor） 7.格式选择（formmatselect）字体选择（fontselect）字号选择（fontsizeselect） 8.样式选择（styleselect）无序列表（bullist）编号列表（numlist） 9.减少缩进（outdent）缩进（indent）帮助（wp_help） 10打开HTML代码编辑器（code）水平线（hr）清除冗余代码（cleanup） 11.上标（sub）下标（sup）特殊符号（charmap）插入more标签（wp_more） 12.插入分页标签（wp_page） 13.隐藏按钮显示开关（wp_adv） 14.隐藏按钮区起始部分（wp_adv_start） 15.隐藏按钮区结束部分（wp_adv_end） 16.拼写检查（spellchecker）</p>
+
+        
+            <div id="toc-article">
+                
+  <div class="widget-wrap" id="toc-wrap">
+    <h3 class="widget-title"><i class="fa fa-toc"></i> 文章目录</h3>
+    <div class="widget">
+      
     </div>
-	
+  </div>
+
+
+            </div>
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/2013/284.html/">http://7086.site/2013/284.html/</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
+    </div>
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wordpress/" rel="tag">wordpress</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+        
+<nav id="article-nav">
+  
+    <a href="/2013/290.html/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">newer</strong>
+      <div class="article-nav-title">
+        
+          编辑cad转换的pdf文件，扣出高清底图
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2013/279.html/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <div class="article-nav-title">开word文档时出现&#39;无效的加载项模版&#39;错误标签解决办法</div>
+    </a>
+  
+</nav>
+
+      
+      
+        
+
+  <section id="comments" class="vcomment"></section>
+
+
+
+
+
+
+
+      
     </footer>
   </div>
 </article>

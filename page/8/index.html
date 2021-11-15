@@ -86,661 +86,948 @@
 
       <div class="outer">
         <section id="main">
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-在word2010中快速插入microsoft公式3-0" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2013/358.html/">在Word2010中快速插入microsoft公式3.0</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-10-26T08:29:56.000Z" itemprop="datePublished">2013年10月26日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8/">办公应用</a>
+  </div>
+
+      
+      
+<a href="/2013/358.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>上面一篇文章我已经介绍了，如何设置word 2010中公式的字体，以及在word2010中插入microsoft公式3.0的方法，需要以下步骤：插入－对象－ Microsoft 公式 3.0 ，才可以实现，感觉太繁琐，今天博主介绍的方法是利用宏，快速快速插入公式3.0，对习惯使用旧版本公式的同学是福音了。</p>
+<hr>
+<p>1、由于需要借助“宏”完成这一任务，若要在 Office Word 2010中使用宏，需要显示“开发工具”选项卡。</p>
+<p>　　①单击“文件” ，然后单击“选项”。</p>
+<p>　　②单击“自定义功能区”，勾选“开发工具”选项。</p>
+<p>          这时候word导航栏视图右边会多了一项开发工具</p>
+<p>2 、在“开发工具”选项卡上的“代码”组中，单击“录制宏”。</p>
+<p>3 、在“宏名”框中，键入宏名称，这里输入“公式”。</p>
+<p>4 、单击“确定”按钮。</p>
+<p>5 、在“插入”选项卡上的“文本”组中，单击“对象”。</p>
+<p>6 、在弹出的“对象”对话框中，选择“对象类型”：“ Microsoft 公式 3.0 ”，单击“确定”按钮。</p>
+<p>7 、此时即进入旧版的公式编辑器输入界面，不作任何输入，直接左键单击页面空白部分退出公式编辑器输入界面。</p>
+<p>8 、单击“开发工具”选项卡上的“停止录制”。</p>
+<p>9 、在选项卡上单击鼠标右键，单击“自定义快速访问工具栏”。</p>
+<p>10 、在“ Word 选项”对话框中，单击“自定义功能区”，将“从下列位置选择命令”下面的列表框选为“宏”，选中刚录制的宏“ Normal.NewMacros. 公式”，单击“添加”按钮将其添加到右侧。这时候我们发现根本添加不了，我们只需要添加一个自定义选项卡，然后添加到该选项卡下就可以上了。<img src="http://pic.yupoo.com/wm1126_v/Dgqbu4cl/qRTpX.jpg"></p>
+<p>11 、当然可以通过下方的自定义键盘来设置快捷键，单击“自定义”按钮，将“显示名称”改为“公式”，输入快捷键“ctrl+j”，（其他的快捷键都很长用不便改设，唯“ctrl+j”分散居中可以不用）然后单击“指定”按钮即可（如上图）。</p>
+<hr>
+<p>其实半仙写了这么多，还是要和大家说一下，新版的公式很不错，没必要一直守旧，没有特殊要求的话，就用新版的公式的吧，只不过要求文件后缀要为docx才行。</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/8/index.html">http://7086.site/page/8/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/word/" rel="tag">word</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-加密word文档破解教程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2013/344.html/">加密word文档破解教程</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-10-26T05:40:52.000Z" itemprop="datePublished">2013年10月26日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8/">办公应用</a>
+  </div>
+
+      
+      
+<a href="/2013/344.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>办公时，经常遇到业主给我们发的文档是加了密码的，今天半仙介绍的是破解加密的word文档，这些密码当然是设计单位加的了，但是有方法可以搞定。</p>
+<hr>
+<p>方法1：插入法启动WORD，新建一个空白文档，执行“插入——〉文件”命令，打开“插入文件”对话框，定位到需要解除保护的文档所在的文件夹，选中相应文档，单击“插入”按钮，将加密保护的文档插入到新文档中，文档保护会被自动撤销。</p>
+<p>方法2：文件另存法 打开保护的文档，执行“文件——〉另存为”命令，打开“另存为”对话框，将“文件类型”选定为“WORD97—2003&amp;6.0/95—RTF(*.doc)”，然后取名保存，关闭该文档，重新打开一下，执行“工具——〉取消文档保护”命令即可。或者将文件类型另存为HTML，然后将其中的内容，复制粘贴到新建文档中。</p>
+<p>方法3：写字板法 启动写字板，打开保护的WORD文档，另存为WORD文档，同时可以取消对文档的保护。但此方法可能会使文档中的图片等要素丢失。</p>
+<p>方法4：第三方软件法（即一般所说的解密软件）</p>
+<hr>
+<p>好了，正常以上方法就可以搞定了，word的解密就到这里，有空半仙继续为大家介绍，cad的解密技巧。</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/8/index.html">http://7086.site/page/8/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/word/" rel="tag">word</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-化工里产率、得率、收率、出率、转化率、利用率" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2013/340.html/">化工里产率、得率、收率、出率、转化率、利用率、选择性详解</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-10-25T07:14:06.000Z" itemprop="datePublished">2013年10月25日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E6%B8%85%E6%B4%81%E7%94%9F%E4%BA%A7/">清洁生产</a>
+  </div>
+
+      
+      
+<a href="/2013/340.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>作为一名环保工作者，在接触到化工项目时，半仙也被化工里产率、得率、收率、出率、转化率、利用率、选择性等概念搞得头大，在此半仙就整理一下：</p>
+<hr>
+<p>1、收率 我们也看一下概念：<strong>收率</strong>（yield 或percent yield）或称作<strong>反应收率</strong>，一般用于化学及工业生产，是指在化学反应或相关的化学工业生产中，投入单位数量原料获得的实际生产的产品产量与理论计算的产品产量的比值。同样的一个化学反应在不同的气压、温度下会有不同的收率。一般而言，收率在90%以上是很高的收率，75%以上是不错的收率，60%左右是一般的收率，30%以下是很低的收率。 也就是说：</p>
+<p>收率=实际产品产量/理论产品产量                              这是以产品作为基准</p>
+<p>理论产量——指按反应方程式,实际消耗的基准原料全部转化成产物的质量。 在实际的化学反应中，由于存在副反应、反应进行不完全以及分离提纯过程中引起的损失等原因，实际产量往往低于理论产量。 在实际生产过程中要求产量高，而不是产率高，因为未反应的原料可循环使用。 其实化工正常应用中，我也经常把收率以全部反应原料为基准来测算。收率是指按反应物进行量计算，生成目的产物的百分数。一般用质量百分数或体积百分数表示。                            即收率=（目的产物生成量/反应物进料量）×100%。 反应物料一次通过催化剂床层转化为目的产物的百分数称为单程收率。常用来衡量催化剂活性。 也可用生成某产物的实际产量占按加入的某一反应物计算生成该产物的理论产量的百分数来表示。 所以遇到这种纠结的问题搞清楚就可以了，半仙还是正常按照定义来计算收率。 2、产率、得率</p>
+<p>产率=得率=收率=实际产品产量/理论产品产量  </p>
+<p>3、出率</p>
+<p>在这里要点一下，出率通常是用于固液分离，液液分离，计算</p>
+<p>出率=实际产出量/原有物料总量</p>
+<p>4、转化率、原料利用率</p>
+<p>是指反应物消耗占全部反应物的分率</p>
+<p>转化率=利用率=反应消耗的量/全部该反应物的量</p>
+<p>5、选择性 选择性是指生成目的产物所消耗的反应物与生成其它产物消耗反应物的比 收率与转化率及选择性的关系为：收率=转化率×选择性。</p>
+<hr>
+<p>这都是概念性的东西，希望帮助到需要的人。</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/8/index.html">http://7086.site/page/8/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%94%B6%E7%8E%87/" rel="tag">收率</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-工业项目建议书的内容与深度要求（2000年试行版）" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2013/334.html/">工业项目建议书的内容与深度要求（2000年试行版）</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-10-24T07:03:35.000Z" itemprop="datePublished">2013年10月24日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%B7%A5%E7%A8%8B%E5%92%A8%E8%AF%A2/">工程咨询</a>
+  </div>
+
+      
+      
+<a href="/2013/334.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><strong>工业项目建议书的内容与深度</strong></p>
+<p><strong>（2000年试行版）</strong></p>
+<p>项目名称：</p>
+<p>建设单位：</p>
+<p>法人代表：</p>
+<p>项目负责人：</p>
+<p>联系地址：</p>
+<p>邮编：</p>
+<p>电话：</p>
+<p>传真（或e-mail）:<strong>【内容提要】</strong></p>
+<p>投资项目提出的必要性：2拟建项目和产品的方案3简述建设条件和资源情况4投资估算和资金筹措设想5项目大体进度安排6经济效益和社会初步评价。</p>
+<p><strong>一、承办企业的基本情况</strong></p>
+<p>企业概况（企业名称，注册日期，所有制，经营体制类别，联属关系。地理位置，主要生产经营范围）；</p>
+<p>企业主要生产产品，规模，生产，经营情况。</p>
+<p><strong>二、项目建设项目的意义</strong></p>
+<p><strong>1****、项目建设的必要性</strong></p>
+<p>扼要说明项目的背景；</p>
+<p>根据国家，行业，地区规划，宏观经济政策，产业发展政策，说明项目建设的必要性；</p>
+<p>技改项目或引进技术，设备项目说明技术差距及引进理由。</p>
+<p><strong>2****、项目建设意义</strong></p>
+<p>初步分析项目对地区，行业，企业发展影响，对国名经济效益，和社会效益影响。</p>
+<p><strong>三、产品方案，拟建规模</strong></p>
+<p><strong>1****、产品市场初步预测</strong></p>
+<p>初步论述产品方案是否符合国家产业政策，技术政策。</p>
+<p>初步分析产品生产量及市场需求量，销售情况，进出口情况，项目目标销售市场等。</p>
+<p><strong>2****、拟建规模和产品方案</strong></p>
+<p>拟建项目的产品品种，规格和产量；</p>
+<p>分期建设设想（技改项目需说明原有生产能力及条件）。</p>
+<p><strong>四、工艺技术及设备</strong></p>
+<p><strong>1****、工艺技术及生产流程</strong></p>
+<p>简述可选择的工艺技术，技术来源，初步分析七特点（先进性，成熟性。可靠性等）；</p>
+<p>初步选择的工艺流程。</p>
+<p><strong>2****、工艺设备</strong></p>
+<p>说明项目需求设备的名称，规格，数量，制造厂商；</p>
+<p>引进设备需说明引进的理由，引进设备名称，技术水平，规格，数量，进口国别厂商的初步考虑。</p>
+<p><strong>五、资源（原辅材料），建设条件，协作条件</strong></p>
+<p><strong>1****、资源及主要原辅材料，燃料</strong></p>
+<p>简述资源供给的可能性和可靠性（如不涉及资源的作用，可略）；</p>
+<p>主要原辅材料，燃料需求种类，规格，年需求量及来源；</p>
+<p><strong>2****、建设条件及厂址选择</strong></p>
+<p>建设地点区位条件及厂址的初步选择</p>
+<p>l 建设地点自然条件，社会经济条件，交通运输条件；</p>
+<p>l 项目建设地点水电及其他公用设施条件；</p>
+<p>l 项目建设地点协作条件</p>
+<p>附：厂址区域位置图和厂址初步方案示意图</p>
+<p>老厂技改项目，应简要说明老厂的总图布置，拟安排项目在厂内的位置，老厂可提供项目建设的有利条件。</p>
+<p><strong>3****、协作条件</strong></p>
+<p><strong>六、工程方案</strong></p>
+<p><strong>1****、土建</strong></p>
+<p>土建初步方案（征地方案，占地面积，建筑面积主要建筑物结构考虑）</p>
+<p><strong>2****、公用工程</strong></p>
+<p>项目对水，电。汽等公用工程需求量，解决方案；</p>
+<p>老厂技改项目说明应说明企业原有公用工程能力，富余量，技改中心对公用工程扩容的打算；</p>
+<p><strong>3****、辅助设施</strong></p>
+<p>辅助设施（仓库，运输，机修，试验中心，生活设施等）建设方案。</p>
+<p><strong>七、生态环境影响初步分析</strong></p>
+<p><strong>1****、环境保护</strong></p>
+<p>（1） 项目建设地区环境质量现状。</p>
+<p>（2） 拟建项目对环境影响预测。</p>
+<p>说明项目生产中废气，废水，废渣，噪声的等污染物产生情况，预测对环境的影响。</p>
+<p>（3） 项目“三同时”措施</p>
+<p>拟建项目用的治理工艺及装置及预计效果。</p>
+<p><strong>2****、劳动保护与安全卫生</strong></p>
+<p>职业安全卫生防护措施。</p>
+<p><strong>3****、消防</strong></p>
+<p>项目特征及消防要求。</p>
+<p><strong>八、项目筹建计划及进度安排</strong></p>
+<p>1．工厂组织和管理机构设置打算</p>
+<p>2．可行性研究计划</p>
+<p>3．项目实施进度安排</p>
+<p><strong>九、投资估算和资金筹措</strong></p>
+<p><strong>1****、总投资估算</strong></p>
+<p>1）固定资产投资总额估算</p>
+<p>（1）固定资产投资估算编制的范围及依据。</p>
+<p>简述项目建设性质，规模。</p>
+<p>固定资产投资估算依据，范围。</p>
+<p>明确估算中包括及不包括的投资内容及费用。</p>
+<p>（2）固定资产投资内容及说明</p>
+<p>固定资产投资按照费用性质，划分为建筑工程费，设备购置费。安装工程费，工程建设其他费用，预备费，固定资产投资方向调节税，建设期贷款利息等费用并分别予以说明估算依据</p>
+<p>说明投资估算所选用的定额，设备购置，材料价格依据，以及各项费用的取费标准，依据或计算规定文件依据。</p>
+<p>预备费，项目费包括基本预备费包括基本预备费和涨价预备费，基本预备费按行业规定计算，一般为5—10%。涨价预备费按国家计委《关于加强对基本建设大中型项目概算中“价差预备费”管理有关问题的通知》（计投资[1999]1340号）精神，投资价格指数按零计算。</p>
+<p>说明估算中存在的问题及其他有关事项。</p>
+<p>（3）固定资产投资方向调节税，说明项目性质，适应的税率及征税范围。按财政部，国家税务总局，国家发展计划委员会《关于暂停征收固定资产投资方向调节税的通知》（财税学）[1999]299号）规定，自2000年1月1日起新发生的投资额，暂停征收固定资产投资方向调节税。</p>
+<p>（4）建设期借款利息</p>
+<p>（5）固定资产投资总额</p>
+<p>固定资产投资总额一般由固定资产投资，建设期利息两部分组成。</p>
+<p>改建项目与企业已有生产经营活动，存在错综复杂的联系，因此。企业已有固定资产。凡继续使用的，一般采用账面减值或采取重估办法确定其原值和净值。继续使用的固定资产说明其资产名称，使用（折旧）年限，原值，净值。</p>
+<p>2）流动资金估算</p>
+<p>流动资金估算一般应采用分项详细法估算，遇特殊情况也可以采用扩大指标估算方法估算，采用分项详细估算方法估算流动资金时，应说明各项流动资产和流动负责的最低周转天数及其他依据。</p>
+<p>3）项目总资金和总投资</p>
+<p>项目总资金有固定资产投资总额和全部流动资金两部分组成。</p>
+<p>项目总投资由固定资产投资总额和铺底流动资金两部分组成，铺底流动资金按项目正常流动资金的30%计算。</p>
+<p><strong>2****、资金筹措</strong></p>
+<p>1）融资方案</p>
+<p>（1）固定资产投资资金来源</p>
+<p>项目资本金，就资本金不同来源简要说明资本金金额，来源及其可靠性。</p>
+<p>负债融资，简要说明负债融资的金额，来源，可靠性及其负债条件。</p>
+<p>（2）流动资金来源</p>
+<p>资本金，可用作项目铺底流动资金。</p>
+<p>负债融资，说明流动资金贷款渠道，金额及贷款条件。</p>
+<p>2）资金使用情况</p>
+<p>（1）说明固定资产投资逐年资金筹措额和安排使用计划。</p>
+<p>流动资金各年投入情况。</p>
+<p><strong>十、财务评价</strong></p>
+<p><strong>1****、总成本费用估算</strong></p>
+<p>1）总成本费用估算方法、范围及说明</p>
+<p>（1）总成本费用估算方法及范围。是按生产费用要素计算总成本费用还是按制造成本为基础计算总成本费用。</p>
+<p>（2）总成本估算基本数据，说明项目计算期、建设期、投产期、达产期及生产期产品生产销售计划。</p>
+<p>2）总成本费用估算依据说明</p>
+<p>（1）原辅材料、燃料动力、包装物消耗定额、年耗用量及价格。</p>
+<p>（2）人工工资、福利费估算依据。</p>
+<p>（3）固定资产折旧方法、折旧年限、残值率、无形资产及递延资产摊销年限说明。固定资产折旧一般应采用分类直线折旧。</p>
+<p>（4）修理费估算依据。</p>
+<p>（5）销售费用估算衣服。</p>
+<p>（6）其他费用：指制造费用、管理费用、财务费用和销售费用中扣除工资及福利、修理费、摊销费、利息支出后的费用。分别逐项说明其他费用内容、估算方法及取值依据。</p>
+<p>（7）财务费用：财务费用由固定资产投资长期借款利息和流动资金借款利息两部分组成。</p>
+<p>3）年总成本费用、经营成本、固定成本及可变成本的估算。</p>
+<p>计算正常年总成本费用、年经营成本、年固定成本、年可变成本，说明总成本费用构成。</p>
+<p>注：技术改造项目应就“有项目”“无项目”分别说明总成本费用估算依据，并计算增量指标。</p>
+<p><strong>2****、财务评价</strong></p>
+<p>1）年销售收入、销售税金及附加估算</p>
+<p>（1）说明项目生产经营期各年各产品的生产销售量、销售价格（含增值税）。计算各年销售收入。</p>
+<p>（2）说明项目生产经营期发生的消费税、营业税、资源税、城乡维护建设税和教育费附加计算方法及比率，计算销售税金及附加。</p>
+<p>（3）按现行税法规定，产品销售税金及附加中不包含增值税。根据《方法与参数》（第二版），为方便计算，项目财务效益分析中将增值税与销售税金一并计算。</p>
+<p>2）利润总额及分配</p>
+<p>（1）正常年利润总额估算。</p>
+<p>（2）所得税税率，法定公积金、法定公积金提取比例。</p>
+<p>3）财务盈利能力分析</p>
+<p>（1）静态指标</p>
+<p>投资利润率</p>
+<p>投资利税率</p>
+<p>资本金净利润率</p>
+<p>财务内部收益率（FIRR）。全部投资税前，前部投资税后。</p>
+<p>财务净现值（FNPV）。全部投资税前，全部投资税后。</p>
+<p>投资回收期。全部投资税前，全部投资税后。</p>
+<p>列表说明全部投资税前和所得税后财务内部收益率、财务净现值、投资回收期。</p>
+<p>4）清偿能力分析</p>
+<p>固定资产投资借款还期计算应分资金渠道分别计算并说明还款期限及还款方式。外国政府贷款计算偿贷比。</p>
+<p><strong>3****、不确定性分析</strong></p>
+<p>1）盈亏平衡分析</p>
+<p>计算正常生产年生产能力利用率表示的盈亏平衡点，并说明生产能力利用率变化的项目风险。</p>
+<p>2）敏感性分析</p>
+<p>对固定资产投资、销售收入、经营成本、生产负荷对项目财务效益进行敏感性分析，分析敏感性因素变化的项目风险。</p>
+<p><strong>4****、财务评价结论</strong></p>
+<p>1）财务评价结果汇总</p>
+<p>以列表形式将主要经济数据经济评价指标进行汇总。</p>
+<p>2）财务评价结论</p>
+<p>从总投资、资金来源、财务指标、项目风险等方面对项目财务评价指标做出简要结论。</p>
+<p><strong>附表</strong>：</p>
+<p>辅助报表1 固定资产投资估算表</p>
+<p>辅助报表2 流动资金估算表</p>
+<p>辅助报表3 投资使用计划于资金筹措表</p>
+<p>辅助报表4 固定资产折旧无形资产与递延资产摊销估算表</p>
+<p>辅助报表5 总成本费用估算表</p>
+<p>辅助报表6 销售收入、销售税金及附加资产摊销估算表</p>
+<p>辅助报表7 固定资产投资几款还本付息表</p>
+<p>基本报表1 财务现金流量表（全部投资）</p>
+<p>基本报表2 损益表</p>
+<p>基本报表3 资金来源与运用表</p>
+<hr>
+<p>总体感觉要求的内容已经灰常的细了，再此分享一下。</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/8/index.html">http://7086.site/page/8/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6/" rel="tag">可行性研究</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-wordpress插入背景音乐与文章音乐的选择方案-2" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2013/309.html/">wordpress插入背景音乐与文章音乐的选择方案</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-10-22T05:56:00.000Z" itemprop="datePublished">2013年10月22日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/">博客建设</a> > <a class="article-category-link" href="/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/">资源分享</a>
+  </div>
+
+      
+      
+<a href="/2013/309.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>前一段时间在研究怎么在博客首页及文章中插入背景音乐，在网上搜罗了一大圈，在此就做个简单的总结： <strong>一、侧边栏音乐</strong> 就我个人而言，我更倾向于在博客首页加一个像小工具一样的音乐列表，当然不是每个选择方案都可以形成列表的，下面4种方案比较可行： 1、插件：flash-mp3-player.10.1.9 这款播放器除了是插件外，也是个widget，你可以在后台管理-&gt;外观-&gt;小工具中拖动此插件到右侧，以使得此播放器能显示在页面右侧中。 下载地址： <a target="_blank" rel="noopener" href="http://wordpress.org/extend/plugins/flash-mp3-player/">http://wordpress.org/extend/plugins/flash-mp3-player/</a> 下载后也是解压至插件目录，然后激活，激活后在后台管理的设置可以对此插件进行设置，分别是： Settings/FMP、Settings/FMP，其中Settings/FMP是设置是否显示播放面板、字体颜色、以及播放器背景图片等等，背景图片插件自带一张图片，但建议将此背景只为空，另外你可以新建一个配置文件，此配置文件是一个XML格式的文件，你上传的音乐信息都会以一定的格式保存在文件中，但建议选择默认文件就够了 Settings/FMP中可以添加你的音乐链接，值得说明的是，各音乐位置之间是可以上下移动的，这点非常地不错！ 最后在后台管理-&gt;外观-&gt;小工具中拖动此插件到右侧，拖动后可以设置播放器宽高、XML文件等信息，一般除了宽高外，其他都可以不动。 这一款插件博主之前在用，但是后来还是放弃了，因为发生过列表丢失的现象，我看网上评价很高，建议优先选择这个尝试下吧，功能比较强大。 界面如图：<img src="http://pic.yupoo.com/wm1126_v/DfPU9qoJ/6bA5T.jpg" alt="音乐"> 2、虾米音乐 吓米音乐易用性灰常高，注册一个号，可以直接把列表生成html代码，能过小工具中的文本放入侧边栏，可以对颜色等进行设置，个人感觉易用性高，唯一不足的是博主感觉音质不是很好，不能自定义歌曲地址，对于没有这个要求的同学，那一定是首选了。 下载地址：<a target="_blank" rel="noopener" href="http://www.kuaipan.cn/file/id_12878021350456951.htm" title="http://www.kuaipan.cn/file/id_12878021350456951.htm">http://www.kuaipan.cn/file/id_12878021350456951.htm</a></p>
+<p>  3、抽屉音乐 抽屉音乐，下载地址：<a target="_blank" rel="noopener" href="http://www.chouti.com/service/outputMp3.htm">http://www.chouti.com/service/outputMp3.htm</a> 这个我的博客正在用，主要优点就是更新歌曲不需要再次修改代码，注册个账号后，可以直接添加歌曲，虽然添加歌曲的界面让人匪夷所思。缺点就是不能改变歌曲的顺序，默认后添加的在最前。 试试就知道。播放界面见下图： <img src="http://www.hbgzz.com/wp-includes/js/tinymce/themes/advanced/img/trans.gif">   4、豆瓣音乐 网上搜罗的，代码如下： <embed src="http://www.douban.com/swf/player.swf?url=[MP3](http://music.qqshe.net/mp3.php/1qsGat.mp3)&amp;autoplay=0" type="application/x-shockwave-flash" wmode="transparent" allowscriptaccess="always" width="262" height="23"> 提醒：用时替换掉MP3地址，同时，加入文章时需要以代码形式加入。 小工具截图：<img src="http://pic.yupoo.com/wm1126_v/DfPRyhiT/khmXD.jpg" alt="image" title="image"> src：媒体文件地址。 autostart：是否自动播放，true为自动，false为手动。 loop：是否循环，true为循环，false只播放一次，也可直接设置数字，2表示播放2次，同理。 width：播放界面的宽度，一般在300到500之间最好。 height：播放界面的高度。根据视频、音频来定（音频时此值不必设太大）。 hidden：是否隐藏播放界面，true为不可见，false表示可见。</p>
+<hr>
+<p><strong>二、文章中音乐</strong> 可以选择上前文介绍4款音乐解决方案，当然对插入文中的音乐，还有其它更多的更好的解决方案： 1、Audio Player 下载地址：<a target="_blank" rel="noopener" href="http://wordpress.org/plugins/audio-player/">http://wordpress.org/plugins/audio-player/</a> 这个插件值得注意的是要设置一个默认音频目录的效验，其实就是检测下音频文件的默认搜索位置是否存在。当我们使用 [audio] 语法在日志或者页面里插入音乐的时候，如果没有提供 mp3 文件的绝对 URL （包含 “http://” 的完整 URL），Audio Player 会在这个目录中查找相关文件。默认音频目录的效验就是让你给Audio Player 指定一个有效的目录以便它进行查找，通常情况下Audio Player 会默认选择网站根目录下的 audio 文件夹，但是一般情况下我们没有建立audio文件夹，所以它是无效的，你在进行效验的时候则会显示：未找到音频目录。请检查您的服务器上是否存在下列目录，所以我们需要指定一个存在的目录，或者你可以直接使用根目录。 <img src="http://ifonder.com/wp-content/uploads/2012/03/wordpress-plugin-audio-player.png" alt="WordPress音乐播放插件：Audio Player 设置">   WordPress音乐播放插件：Audio Player 使用： 一般情况下，建议HTML编辑模式下添加代码，代码范例如图： <img src="http://pic.yupoo.com/wm1126_v/DfPRy4Y3/10g39c.jpg"> 2、 Dewplayer 这款播放器的样式如图（截图，别点）： <a target="_blank" rel="noopener" href="http://www.zihou.me/wp-content/uploads/2010/12/bofangqi1.png"><img src="http://www.zihou.me/wp-content/uploads/2010/12/bofangqi1.png" title="bofangqi1"></a> 下载地址： <a target="_blank" rel="noopener" href="http://wordpress.org/extend/plugins/dewplayer-flash-mp3-player/">http://wordpress.org/extend/plugins/dewplayer-flash-mp3-player/</a> 下载后解压至插件目录，然后激活，在后台设置中进行设置，可以设置此播放器的显示样式、歌曲是否循环播放、是否自动播放等等，非常简单。 播放器可以插入到文章页面中，只需插入如下代码即可： [      dewplayer:<a target="_blank" rel="noopener" href="http://www.hbgzz.com.com/mysong.mp3/]">http://www.hbgzz.com.com/mysong.mp3\]</a> 或多首歌曲： [      dewplayer:song1.mp3song2.mp3song3.mp3] 多首歌曲间以分隔。 注：将[后的空格全部去掉 不过此播放器不能像widget那样通过拖动放在页面的右侧等位置。 3、XiamiPlayer for WordPress 说明：XiamiPlayer 虾米Html5和Flash播放器 使用方法：登陆 WordPress 后台 》插件 》安装插件 》上传，把下载的 xiamiplayer for wordpress 1.0.0.zip 上传，然后激活就OK了 插件设置: 登陆 WordPress 后台 》设置 》安装插件 》XiamiPlayer 设置，来设置js、css加入位置。 <img src="http://pic.yupoo.com/wm1126_v/DfPRxVjr/11mupj.jpg"> 播放界面截图： <a target="_blank" rel="noopener" href="http://pic.yupoo.com/wm1126_v/Dg2qiRnx/fO5yC.jpg"><img src="http://pic.yupoo.com/wm1126_v/Dg2qiRnx/fO5yC.jpg" alt="image" title="image"></a>  </p>
+<hr>
+<p>综上所述， 大家选择自己最喜欢的音乐样式吧。</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/8/index.html">http://7086.site/page/8/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8F%92%E4%BB%B6/" rel="tag">插件</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-最强大的pdf文字识别软件" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2013/299.html/">最强大的PDF文字识别软件</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-10-20T07:07:28.000Z" itemprop="datePublished">2013年10月20日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8/">办公应用</a> > <a class="article-category-link" href="/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/">资源分享</a>
+  </div>
+
+      
+      
+<a href="/2013/299.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>办公时，我们经常会遇到把扫描版的pdf文件或图片转换成可编辑的文字，这类软件比较优秀的有pdf OCR  、汉王OCR、CAJ等，CAJ算是识别度比较高的了，但是对pdf支持不是太好，而且只能一段一段的识别，对于识别量较大时，反而比较麻烦了，汉王OCR的操作体验不是很好。 今天博主给大家介绍的是重量给的pdf全能软件，同时包含精准的文字识别功能 软件名：adobe acrobat x1 pro <a target="_blank" rel="noopener" href="http://pic.yupoo.com/wm1126_v/DfR5kf5k/yfTch.jpg"><img src="http://pic.yupoo.com/wm1126_v/DfR5kf5k/yfTch.jpg" alt="image" title="image"></a>   软件功能当然十分强大，最重要的是，文本识别时，可以直接进行一键识别，识别后可以在pdf上直接对文字进行选中：</p>
+<p><a target="_blank" rel="noopener" href="http://pic.yupoo.com/wm1126_v/DfR5jyG8/12xJ7u.jpg"><img src="http://pic.yupoo.com/wm1126_v/DfR5jyG8/12xJ7u.jpg" alt="image" title="image"></a></p>
+<p>  当然，更简单的是可以直接将文档另存为word文档，只要原始文档的清晰度不是太模糊，效果真的好过你的想象。 软件下载地址，可以点我<a target="_blank" rel="noopener" href="http://pan.baidu.com/s/17TDaQ">adobe acrobat x1 pro及破解教程</a>，按教程破解，问题不大。 下载密码：wlbz</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/8/index.html">http://7086.site/page/8/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB/" rel="tag">文字识别</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-插入u盘或运行某个程序后，桌面图标突然不见解决" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2013/294.html/">插入u盘或运行某个程序后，桌面图标突然不见解决办法</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-10-17T09:19:24.000Z" itemprop="datePublished">2013年10月17日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8/">办公应用</a>
+  </div>
+
+      
+      
+<a href="/2013/294.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>插入u盘或运行某个程序后，桌面图标有时会消失，今天博主给大家介绍个小方法，不用重启找回桌面： 图标消失界面如下图：</p>
+<p><img src="http://pic.yupoo.com/wm1126_v/Df5zyDXQ/153AsH.jpg"></p>
+<p>我们能过右击任务栏，打开资源管理器： <img src="http://pic.yupoo.com/wm1126_v/Df5zzoXR/P2Svj.jpg">   我们要找到explorer.exe进程，我们点击结束进程，然后会发现任务栏消失，没有关系，我们通过点文件、创建新任务，如下图： <img src="http://pic.yupoo.com/wm1126_v/Df5zwUwD/15riPB.jpg"> 能过浏览找到explorer.exe文件，然后点击确定，桌面成功找回！！！</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/8/index.html">http://7086.site/page/8/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" rel="tag">操作系统</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-编辑cad转换的pdf文件，扣出高清底图" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2013/290.html/">编辑cad转换的pdf文件，扣出高清底图</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-10-16T11:21:32.000Z" itemprop="datePublished">2013年10月16日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8/">办公应用</a>
+  </div>
+
+      
+      
+<a href="/2013/290.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>在日常工作中，我们经常遇到需要把一个pdf文件，转换成图片。 如果这个pdf是由cad转换而来，如果我们需要的图片是这个文件的底图，我们应该如何操作？ 通常的办法，是先截图，然后用ps处理一下，但是当这个图片ps处理工程量浩大时，我们其实还可以用更简单的方法：、 这是我的原图： <img src="http://pic.yupoo.com/wm1126_v/DeWY3oqI/medium.jpg"> 一条长长的红线，我们如果用ps处理的画，可能要浪费不少时间。 博主今天为大家介绍一款软件，那就是<a target="_blank" rel="noopener" href="http://www.kuaipan.cn/file/id_12878021350456701.htm?source=1">福昕PDF套件高级编辑器</a> 这个编辑器大家可能有人用过，可以满足我们的要求，但凡是通过cad添加在图片上的元素，我们都可以选中，然后删除。 软件下载密码：vdgcCU</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/8/index.html">http://7086.site/page/8/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cad/" rel="tag">cad</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-wordpress默认编辑器的增强代码" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2013/284.html/">Wordpress默认编辑器的增强代码</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-10-14T06:38:30.000Z" itemprop="datePublished">2013年10月14日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/">博客建设</a>
+  </div>
+
+      
+      
+<a href="/2013/284.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>找到你正在使用的那个主题的模版函数文件（也就是functions.php这个文件），在其中加入下面这段代码： //增强编辑器开始 function add_editor_buttons($buttons) { $buttons[] = ‘fontselect’; $buttons[] = ‘fontsizeselect’; $buttons[] = ‘cleanup’; $buttons[] = ‘styleselect’; $buttons[] = ‘hr’; $buttons[] = ‘del’; $buttons[] = ‘sub’; $buttons[] = ‘sup’; $buttons[] = ‘copy’; $buttons[] = ‘paste’; $buttons[] = ‘cut’; $buttons[] = ‘undo’; $buttons[] = ‘image’; $buttons[] = ‘anchor’; $buttons[] = ‘backcolor’; $buttons[] = ‘wp_page’; $buttons[] = ‘charmap’; return $buttons; } add_filter(“mce_buttons_3”, “add_editor_buttons”); //增强编辑器结束   在开始前编辑框： <img src="http://pic.yupoo.com/wm1126_v/DeChfEKr/R9Hqg.jpg" alt="编辑框"> 代码插入后： <img src="http://pic.yupoo.com/wm1126_v/DeChfe3f/k3krE.jpg" alt="编辑框"> 附上搜集的按钮调用的Key： <img src="http://pic.yupoo.com/wm1126_v/DeCiguNI/3P8Sj.jpg" alt="框"> 1.剪切（cut）复制（copy）粘贴（paste）撤销（undo）重做（redo）居中（justifycenter） 2.加粗（bold）斜体（italic）左对齐（justifyleft）右对齐（justfyright） 3.两端对齐（justfyfull）插入超链接（link）取消超链接（unlink）插入图片（image） 4.清除格式（removeformat）下划线（underline）删除线（strikethrough） 5.锚文本（anchor）新建文本（newdocument） 6.字体颜色（forecolor）字体背景色（backcolor） 7.格式选择（formmatselect）字体选择（fontselect）字号选择（fontsizeselect） 8.样式选择（styleselect）无序列表（bullist）编号列表（numlist） 9.减少缩进（outdent）缩进（indent）帮助（wp_help） 10打开HTML代码编辑器（code）水平线（hr）清除冗余代码（cleanup） 11.上标（sub）下标（sup）特殊符号（charmap）插入more标签（wp_more） 12.插入分页标签（wp_page） 13.隐藏按钮显示开关（wp_adv） 14.隐藏按钮区起始部分（wp_adv_start） 15.隐藏按钮区结束部分（wp_adv_end） 16.拼写检查（spellchecker）</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/8/index.html">http://7086.site/page/8/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wordpress/" rel="tag">wordpress</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-开word文档时出现无效的加载项模版错误标签解决办" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2013/279.html/">开word文档时出现&#39;无效的加载项模版&#39;错误标签解决办法</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-10-13T08:29:20.000Z" itemprop="datePublished">2013年10月13日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8/">办公应用</a>
+  </div>
+
+      
+      
+<a href="/2013/279.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>1、打开时命令无法执行。单击“确定”，然后关闭对话框以继续。 2、无效的加载项模版。（C:…STARTUP~$werword.dot） 解决办法： 打开word打开word－工具－选项－文件位置 将“启动”项改为word的安装位置就可以了.如 C:Documents and SettingsAdministratorApplication DataMicrosoftWord 如果上面方法没有成功，就删除C:Documents and SettingsAdministratorApplication DataMicrosoftWordSTARTUP下面的所有文件，再从C:Documents and SettingsAdministratorApplication DataMicrosofttemplates下拷贝normal.dot到C:Documents and SettingsAdministratorApplication DataMicrosoftWordSTARTUP 3、将 C:Documents and Settings用户名Application DataMicrosoftWordSTARTUP下 对应的无效模板的文件删除即可。</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/8/index.html">http://7086.site/page/8/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/word/" rel="tag">word</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>

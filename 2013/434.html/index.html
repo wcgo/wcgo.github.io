@@ -85,67 +85,142 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-重点用能单位确定依据" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      重点用能单位确定依据
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-12-04T04:42:02.000Z" itemprop="datePublished">2013年12月04日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E6%B8%85%E6%B4%81%E7%94%9F%E4%BA%A7/">清洁生产</a>
+  </div>
+
+      
+        <span class="article-views">
+  <i class="fa fa-views"></i>
+  <i id="busuanzi_container_page_pv">
+      <i id="busuanzi_value_page_pv"></i>
+  </i>
+</span>
+
+      
+      
+<a href="/2013/434.html/#comments" class="article-comment-link">
+  
+    
+      <span class="post-comments-count valine-comment-count" data-xid="/2013/434.html/" itemprop="commentCount"></span>
+    
+    
+    
+    
+    
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>中华人民共和国国家经济贸易委员会令</p>
+<p>第7号</p>
+<p>根据《中华人民共和国节约能源法》，现将《重点用能单位节能管理办法》予以公布，自公布之日起施行。</p>
+<p>国家经济贸易委员会主任：盛华仁</p>
+<p>一九九九年三月十日</p>
+<h3 id="重点用能单位节能管理办法"><a href="#重点用能单位节能管理办法" class="headerlink" title="重点用能单位节能管理办法"></a>重点用能单位节能管理办法</h3><p>第一章　总则 第一条　为加强重点用能单位的节能管理，提高能源利用效率和经济效益，保护环境，根据《中华人民共和国节约能源法》的规定，制定本办法。 第二条　本办法所称重点用能单位是指： （一）年综合能源消费量1万吨标准煤以上（含1万吨，下同）的用能单位； （二）各省、自治区、直辖市经济贸易委员会（经济委员会、计划与经济委员会，下同）指定的年综合能源消费量5000吨标准煤以上（含5000吨，下同）、不足1万吨标准煤的用能单位。能源消费的核算单位是法人企业。 第三条　重点用能单位应遵守《中华人民共和国节约能源法》及本办法的规定，按照合理用能的原则，加强节能管理，推进技术进步，提高能源利用效率，降低成本，提高效益，减少环境污染。 第二章　监督管理 第四条　国家经济贸易委员会负责全国重点用能单位节能监督管理工作。国务院有关部门在各自的职责范围内协助做好重点用能单位节能监督管理工作。各省、自治区、直辖市经济贸易委员会负责本行政区内重点用能单位节能监督管理工作。 第五条　国家经济贸易委员会会同国家统计局定期公布年综合能源消费量1万吨标准煤以上的重点用能单位名单，并定期发布年综合能源消费量1万吨标准煤以上的重点用能单位能源利用状况公报。 第六条　各省、自治区、直辖市经济贸易委员会会同同级统计部门，定期公布本行政区内年综合能源消费量5000吨标准煤以上、不足1万吨标准煤的重点用能单位名单，并报国家经济贸易委员会备案；定期发布本行政区内年综合能源消费量5000吨标准煤以上、不足1万吨标准煤的重点用能单位能源利用状况公报。 第七条　各省、自治区、直辖市经济贸易委员会按照年综合能源消费量制定重点用能单位分级管理方案并报国家经济贸易委员会备案。 实施分级管理的主管经济贸易委员会履行下列职责： （一）组织对重点用能单位的固定资产投资工程项目可行性研究报告中的节能篇（章）提出评价意见； （二）监督检查重点用能单位的主要耗能设备和工艺系统能源利用状况，委托具有检验测试资格的单位对重点用能单位进行节能的检验测试； （三）会同同级质量技术监督管理部门检查重点用能单位能源计量工作，会同同级统计管理部门检查重点用能单位能源消费和能源利用状况统计工作。 第八条　国家经济贸易委员会和省、自治区、直辖市经济贸易委员会负责委托具有培训条件的单位，对重点用能单位的能源管理人员进行节能培训。 第三章　重点用能单位的节能管理 第九条　重点用能单位应贯彻执行国家的节能法律、法规、方针、政策和标准。 第十条　重点用能单位应接受主管经济贸易委员会对其能源利用状况的监督、检查。 第十一条　重点用能单位应建立健全节能管理制度，运用科学的管理方法和先进的技术手段，制定并组织实施本单位节能计划和节能技术进步措施，合理有效地利用能源。 第十二条　重点用能单位每年应安排一定数额资金用于节能科研开发、节能技术改造和节能宣传与培训。 第十三条　重点用能单位应健全能源计量、监测管理制度，配备合格的能源计量器具、仪表，能源计量器具的配备和管理应达到《企业能源计量器具配备和管理导则》规定的国家标准。 第十四条　重点用能单位应建立能源消费统计和能源利用状况报告制度。重点用能单位应指定专人负责能源统计，建立健全原始记录和统计台帐。 重点用能单位应在每年1月底前向主管经济贸易委员会报送上一年度的能源利用状况报告。报告应包括能源购入、能源加工转换与消费、单位产品能耗、主要耗能设备和工艺能耗、能源利用效率、能源管理、节能措施和节能经济效益分析、预测能源消费等。 第十五条　重点用能单位应建立能源消耗成本管理制度。重点用能单位应根据国家经济贸易委员会和省、自治区、直辖市经济贸易委员会会同有关部门制定的单位产品能耗限额，制定先进、合理的企业单位产品能耗限额，实行能源消耗成本管理。 第十六条　重点用能单位应建立有利于节约能源、降低消耗、提高经济效益的节能工作责任制。明确节能工作岗位的任务和责任，通过岗位责任制和能耗定额管理等形式将能源使用管理制度化、落实到人，纳入经济责任制。 第十七条　重点用能单位应开展节能宣传与培训。主要耗能设备操作人员未经节能培训不得上岗。 第十八条　重点用能单位应设立能源管理岗位，聘任的能源管理人员应熟悉国家有关节能法律、法规、方针、政策，具有节能知识、三年以上实际工作经验和工程师以上（含工程师）职称，并报主管经济贸易委员会备案。能源管理人员负责对本单位的能源利用状况进行监督检查。 第四章　奖惩 第十九条　各级人民政府对在节能管理和节能技术进步中取得显著成绩的重点用能单位和个人给予表彰和奖励。 第二十条　重点用能单位应制定节奖超罚办法，安排一定的节能奖励资金，对节能工作中取得成绩的集体和个人给予奖励；对浪费能源的集体和个人给予惩罚。 第二十一条　重点用能单位违反本办法第十条规定，拒绝接受监督、检查的；或违反本办法第十四条规定，未建立能源消费统计和能源利用状况报告制度的；或违反本办法第十八条规定，未设立能源管理岗位或所聘能源管理人员不符合要求的，由主管经济贸易委员会以书面形式责令限期改正。逾期未改正的，对其及有关负责人给予通报批评。 第二十二条　重点用能单位虚报、瞒报、拒报、迟报、伪造、篡改能源消费统计资料的，按《中华人民共和国统计法》的有关规定予以处罚。 第五章　附则 第二十三条　本办法由国家经济贸易委员会负责解释。 第二十四条 本办法自公布之日起施行。</p>
+<hr>
+<p>注：年综合能源消费总量是指一年内用能单位的物质生产部门和非物质生产部门实际消费的各种能源的总和。在计算时，用能单位的各种能源消费需要折算成标准煤，并扣除本用能单位能源加工转换产出的能源折标准煤的总量。用能单位的年综合能源消费总量只要达到或者超过了1万吨标准煤，该用能单位即为重点用能单位。（根据“综合能耗计算通则（GB/T2589—2008）”的规定：“计算综合能耗时，各种能源折算为一次能源的单位为标准煤当量。”）。</p>
+
+        
+            <div id="toc-article">
+                
+  <div class="widget-wrap" id="toc-wrap">
+    <h3 class="widget-title"><i class="fa fa-toc"></i> 文章目录</h3>
+    <div class="widget">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E7%82%B9%E7%94%A8%E8%83%BD%E5%8D%95%E4%BD%8D%E8%8A%82%E8%83%BD%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95"><span class="toc-text">重点用能单位节能管理办法</span></a></li></ol>
     </div>
-	
+  </div>
+
+
+            </div>
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/2013/434.html/">http://7086.site/2013/434.html/</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
+    </div>
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%83%BD%E8%80%97/" rel="tag">能耗</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+        
+<nav id="article-nav">
+  
+    <a href="/2013/437.html/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">newer</strong>
+      <div class="article-nav-title">
+        
+          EXCEL中“相对引用和绝对引用”
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2013/431.html/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <div class="article-nav-title">生活污水排放系数0.8的确定依据</div>
+    </a>
+  
+</nav>
+
+      
+      
+        
+
+  <section id="comments" class="vcomment"></section>
+
+
+
+
+
+
+
+      
     </footer>
   </div>
 </article>

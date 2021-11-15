@@ -85,67 +85,180 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-活性炭更换周期和吸附量的计算" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      活性炭更换周期和吸附量的计算
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2016-07-29T04:39:00.000Z" itemprop="datePublished">2016年07月29日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%B7%A5%E7%A8%8B%E8%AE%BE%E8%AE%A1/">工程设计</a>
+  </div>
+
+      
+        <span class="article-views">
+  <i class="fa fa-views"></i>
+  <i id="busuanzi_container_page_pv">
+      <i id="busuanzi_value_page_pv"></i>
+  </i>
+</span>
+
+      
+      
+<a href="/2016/862.html/#comments" class="article-comment-link">
+  
+    
+      <span class="post-comments-count valine-comment-count" data-xid="/2016/862.html/" itemprop="commentCount"></span>
+    
+    
+    
+    
+    
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><strong>来自环保之家论坛-废气处理版</strong></p>
+<p><strong>案例：</strong></p>
+<p>活性炭的吸附量以及使用时间活性炭对不同的有机气体其吸附能力（用S表示）是不一样的，有以下表（参考《工业通风》，孙一坚主编第四版）：</p>
+<p><a target="_blank" rel="noopener" href="http://eeblog.top/wp-content/uploads/2016/07/image-21.png"><img src="http://eeblog.top/wp-content/uploads/2016/07/image_thumb-21.png" alt="image" title="image"></a></p>
+<p>按一个排污企业150mg/m3，风量在50000m3/h，一天工作时长15小时算，活性炭的平衡保持量取30%，1t活性炭达到饱合的时间为：</p>
+<p><strong>T(d)=m*S/C*10-6（kg/mg）*F*t(15h/d)</strong></p>
+<p>m：活性炭的质量，kg；</p>
+<p>S：平衡保持量，%；</p>
+<p>C:VOCs总浓度，mg/m3；</p>
+<p>F:风量，m3/h。</p>
+<p><strong>则T=1000*0.3/150*10-6*50000*15=2.67d</strong></p>
+<p>也就是1t的活性炭在上述条件下，2.67天就达到饱合了。</p>
+<p>实例</p>
+<p>方法一：</p>
+<p>蜂窝活性炭比重：0.45g/cm3</p>
+<p>1克/立方厘米=1000千克/立方米</p>
+<p>参数：单套设备排风量：25000m3/h，废气总浓度为119.5mg/m3，运行8h/d</p>
+<p>所采用蜂窝活性炭吸附的平衡保持量取75%计。</p>
+<p>一块蜂窝活性炭质量：0.1×0.1×0.1×450kg/m3=0.45kg</p>
+<p>单套设备需要蜂窝活性炭量为：0.8×1.31×1.33÷0.001=1400块×0.45=630kg</p>
+<p>根据活性炭更换周期计算公式：</p>
+<p><strong>T=m×S÷C×10-6×Q×t</strong></p>
+<p>式中：</p>
+<p>T—周期，单位天</p>
+<p>M—活性炭的质量，单位kg</p>
+<p>S—平衡保持量，%</p>
+<p>10-6—系数</p>
+<p>Q—风量，单位m3/h</p>
+<p>T—运行时间，单位h/d</p>
+<p><strong>T1=630×0.75÷119.5×10-6×25000×8=7.91天</strong></p>
+<p>所以单套设备蜂窝炭更换周期为约8天</p>
+<p>方法二：</p>
+<p>蜂窝炭1g能吸附600mg的有机废气</p>
+<p>一块蜂窝活性炭质量：0.1×0.1×0.1×450kg/m3=0.45kg</p>
+<p>单套设备蜂窝炭重量</p>
+<p>0.8×1.31×1.33÷0.001=1400块×0.45=630kg</p>
+<p>设备蜂窝炭的吸附能力为：</p>
+<p>630kg=630000g</p>
+<p>630000g×600mg=378000000mg</p>
+<p>总过滤量为25000m3/h×119.5mg/m3=2987500mg/h</p>
+<p>吸附满周期T2</p>
+<p>378000000mg÷2987500mg/h=126.52h</p>
+<p>每天工作8小时算</p>
+<p>T2=126.52h÷8=15.81天</p>
+<p>因为T2&gt;T1所以本项目活性炭更换周期为8—15天、建议10天一换</p>
+<p><strong>来自环保之家论坛-废气处理版，</strong>进入原帖发表你的观点</p>
+
+        
+            <div id="toc-article">
+                
+  <div class="widget-wrap" id="toc-wrap">
+    <h3 class="widget-title"><i class="fa fa-toc"></i> 文章目录</h3>
+    <div class="widget">
+      
     </div>
-	
+  </div>
+
+
+            </div>
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/2016/862.html/">http://7086.site/2016/862.html/</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
+    </div>
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%B4%BB%E6%80%A7%E7%82%AD/" rel="tag">活性炭</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+        
+<nav id="article-nav">
+  
+    <a href="/2016/874.html/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">newer</strong>
+      <div class="article-nav-title">
+        
+          PAM与PAC使用说明分析
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/858.html/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <div class="article-nav-title">有机废气吸附设计与计算</div>
+    </a>
+  
+</nav>
+
+      
+      
+        
+
+  <section id="comments" class="vcomment"></section>
+
+
+
+
+
+
+
+      
     </footer>
   </div>
 </article>

@@ -85,67 +85,149 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-化工里产率、得率、收率、出率、转化率、利用率" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      化工里产率、得率、收率、出率、转化率、利用率、选择性详解
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-10-25T07:14:06.000Z" itemprop="datePublished">2013年10月25日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E6%B8%85%E6%B4%81%E7%94%9F%E4%BA%A7/">清洁生产</a>
+  </div>
+
+      
+        <span class="article-views">
+  <i class="fa fa-views"></i>
+  <i id="busuanzi_container_page_pv">
+      <i id="busuanzi_value_page_pv"></i>
+  </i>
+</span>
+
+      
+      
+<a href="/2013/340.html/#comments" class="article-comment-link">
+  
+    
+      <span class="post-comments-count valine-comment-count" data-xid="/2013/340.html/" itemprop="commentCount"></span>
+    
+    
+    
+    
+    
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>作为一名环保工作者，在接触到化工项目时，半仙也被化工里产率、得率、收率、出率、转化率、利用率、选择性等概念搞得头大，在此半仙就整理一下：</p>
+<hr>
+<p>1、收率 我们也看一下概念：<strong>收率</strong>（yield 或percent yield）或称作<strong>反应收率</strong>，一般用于化学及工业生产，是指在化学反应或相关的化学工业生产中，投入单位数量原料获得的实际生产的产品产量与理论计算的产品产量的比值。同样的一个化学反应在不同的气压、温度下会有不同的收率。一般而言，收率在90%以上是很高的收率，75%以上是不错的收率，60%左右是一般的收率，30%以下是很低的收率。 也就是说：</p>
+<p>收率=实际产品产量/理论产品产量                              这是以产品作为基准</p>
+<p>理论产量——指按反应方程式,实际消耗的基准原料全部转化成产物的质量。 在实际的化学反应中，由于存在副反应、反应进行不完全以及分离提纯过程中引起的损失等原因，实际产量往往低于理论产量。 在实际生产过程中要求产量高，而不是产率高，因为未反应的原料可循环使用。 其实化工正常应用中，我也经常把收率以全部反应原料为基准来测算。收率是指按反应物进行量计算，生成目的产物的百分数。一般用质量百分数或体积百分数表示。                            即收率=（目的产物生成量/反应物进料量）×100%。 反应物料一次通过催化剂床层转化为目的产物的百分数称为单程收率。常用来衡量催化剂活性。 也可用生成某产物的实际产量占按加入的某一反应物计算生成该产物的理论产量的百分数来表示。 所以遇到这种纠结的问题搞清楚就可以了，半仙还是正常按照定义来计算收率。 2、产率、得率</p>
+<p>产率=得率=收率=实际产品产量/理论产品产量  </p>
+<p>3、出率</p>
+<p>在这里要点一下，出率通常是用于固液分离，液液分离，计算</p>
+<p>出率=实际产出量/原有物料总量</p>
+<p>4、转化率、原料利用率</p>
+<p>是指反应物消耗占全部反应物的分率</p>
+<p>转化率=利用率=反应消耗的量/全部该反应物的量</p>
+<p>5、选择性 选择性是指生成目的产物所消耗的反应物与生成其它产物消耗反应物的比 收率与转化率及选择性的关系为：收率=转化率×选择性。</p>
+<hr>
+<p>这都是概念性的东西，希望帮助到需要的人。</p>
+
+        
+            <div id="toc-article">
+                
+  <div class="widget-wrap" id="toc-wrap">
+    <h3 class="widget-title"><i class="fa fa-toc"></i> 文章目录</h3>
+    <div class="widget">
+      
     </div>
-	
+  </div>
+
+
+            </div>
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/2013/340.html/">http://7086.site/2013/340.html/</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
+    </div>
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%94%B6%E7%8E%87/" rel="tag">收率</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+        
+<nav id="article-nav">
+  
+    <a href="/2013/344.html/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">newer</strong>
+      <div class="article-nav-title">
+        
+          加密word文档破解教程
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2013/334.html/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <div class="article-nav-title">工业项目建议书的内容与深度要求（2000年试行版）</div>
+    </a>
+  
+</nav>
+
+      
+      
+        
+
+  <section id="comments" class="vcomment"></section>
+
+
+
+
+
+
+
+      
     </footer>
   </div>
 </article>

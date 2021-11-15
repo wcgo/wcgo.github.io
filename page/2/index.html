@@ -86,661 +86,916 @@
 
       <div class="outer">
         <section id="main">
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-移动宽带之桥接" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/1008.html/">移动宽带之桥接</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2020-08-16T13:31:41.000Z" itemprop="datePublished">2020年08月16日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8/">办公应用</a>
+  </div>
+
+      
+      
+<a href="/2020/1008.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h4 id="1-获取超级管理员账号"><a href="#1-获取超级管理员账号" class="headerlink" title="1. 获取超级管理员账号"></a>1. 获取超级管理员账号</h4><p>好！</p>
+<p>网上找到的账号是这样的</p>
+<p>账号：CMCCAdmin<br>密码：aDm8H%MdA</p>
+<p>然而我的型号并不能行，最终通过打客服，找到维修人员索取到</p>
+<p>CMCCAdmin</p>
+<p>CMCCAdmintCGPw3dt</p>
+<h4 id="2-怎么改成我上述想改的模式"><a href="#2-怎么改成我上述想改的模式" class="headerlink" title="2. 怎么改成我上述想改的模式"></a>2. 怎么改成我上述想改的模式</h4><h5 id="2-1-登录超级账号"><a href="#2-1-登录超级账号" class="headerlink" title="2.1 登录超级账号"></a>2.1 登录超级账号</h5><p>打开浏览器，输入192.168.1.1</p>
+<p>然后输入我上面的账号密码</p>
+<p><img src="https://img-blog.csdn.net/20180525225752147?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zNDY1Mjc5Nw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述"></p>
+<h5 id="2-2-把无线功能关掉"><a href="#2-2-把无线功能关掉" class="headerlink" title="2.2 把无线功能关掉"></a>2.2 把无线功能关掉</h5><p><img src="https://img-blog.csdn.net/20180525230127898?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zNDY1Mjc5Nw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述"></p>
+<h5 id="2-3-改成桥接模式"><a href="#2-3-改成桥接模式" class="headerlink" title="2.3 改成桥接模式"></a>2.3 改成桥接模式</h5><p><img src="https://img-blog.csdn.net/20180525230212222?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zNDY1Mjc5Nw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述"></p>
+<h5 id=""><a href="#" class="headerlink" title=""></a></h5><p>这里先删除原来的带有INTERNET，再新建一个，考虑实际只勾选了LAN1，最后id用的50，使能0</p>
+<h5 id="-1"><a href="#-1" class="headerlink" title=""></a></h5><h5 id="2-4-完成"><a href="#2-4-完成" class="headerlink" title="2.4 完成"></a>2.4 完成</h5><p>然后重启光猫、重新设置路由器即可！</p>
+<p>京东无线宝内的拨号设置，</p>
+<p><img src="https://img03.sogoucdn.com/app/a/200698/1080_759_20200506224506-59904142.png"></p>
+<p>发现，拨号设置情况下，光猫后台打不开，切换成自动ip即可。</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/2/index.html">http://7086.site/page/2/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-重大变动还是技改？" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/1007.html/">重大变动还是技改？</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2020-07-30T07:49:00.000Z" itemprop="datePublished">2020年07月30日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E7%8E%AF%E5%A2%83%E8%AF%84%E4%BB%B7/">环境评价</a>
+  </div>
+
+      
+      
+<a href="/2020/1007.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>在实际工作中，技改项目往往要求项目先进行三同时验收，再进行技改，可操作性较高</p>
+<p>重大变动应重新报批环评的，通过编制报告书，应重点评价变动前后的影响分析，对于已经建成的项目，也要有实际的监测数据，通过监测评价影响分析的变化。</p>
+<p>在编制难度上，技改项目有比较成熟的模式，容易操作。</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/2/index.html">http://7086.site/page/2/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%8E%AF%E8%AF%84/" rel="tag">环评</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-水电站涉饮用水源保护区，也面临关停的风险" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/1005.html/">水电站涉饮用水源保护区，也面临关停的风险</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2020-07-21T08:01:00.000Z" itemprop="datePublished">2020年07月21日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E7%8E%AF%E5%A2%83%E8%AF%84%E4%BB%B7/">环境评价</a>
+  </div>
+
+      
+      
+<a href="/2020/1005.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>在当下的环保高压中，涉及环保问题，特别是涉及自然保护区的水电站，均面临关停的风险。而针对<strong>饮用水源保护区</strong>的水电站，目前这方面的监管并未特别明朗，不过早前部分省市政府亦有展开调查。</p>
+<p><strong>涉饮用水水源相关法律规定</strong></p>
+<p>目前针对饮用水源保护的法律法规主要有：《水污染防治法》、《饮用水水源保护区污染防治管理规定》。</p>
+<ul>
+<li>  有关饮用水水源一级保护区的相关规定，《水污染防治法》第六十五条：“禁止在饮用水水源一级保护区内新建、改建、扩建与供水设施和保护水源无关的建设项目；已建成的与供水设施和保护水源无关的建设项目，由县级以上人民政府责令拆除或者关闭。” 因此，涉及饮用水水源一级保护区的电站，面临关停的风险极高。</li>
+<li>  对饮用水水源二级保护区的相关规定，水污染防治法第六十六条：“禁止在饮用水水源二级保护区内新建、改建、扩建排放污染物的建设项目；已建成的排放污染物的建设项目，由县级以上人民政府责令拆除或者关闭。” 因此，据此条款，涉及饮用水水源二级保护区的电站，需注意废弃油污的处置，一般不会关停。</li>
+</ul>
+<p><strong>水电站涉饮用水水源相关事件</strong></p>
+<p><strong>案例之一：福建漳州诏安县环境保护局依法提请拆除或者关闭北蔗四级电站</strong></p>
+<p>据诏安县政府网站的公开消息报道：“诏安县环保局在水源地保护区及周边敏感区全面摸底排查行动中，发现我县<strong>亚湖水库饮用水源保护区一级保护区内有北蔗四级电站</strong>，该电站虽然在饮用水源保护区一级保护区规划批复前已建成，但属于与供水设施和保护水源无关的建设项目。根据《中华人民共和国水污染防治法》第六十五条第一款：“禁止在饮用水水源一级保护区内新建、改建、扩建与供水设施和保护水源无关的建设项目。”<strong>县环保局已向县人民政府申请拆除或者关闭北蔗四级电站，不得对饮用水源造成影响</strong>。”</p>
+<p>根据2018年5月10日，《福建省政府关于报送4月份饮用水水源地环境问题清理整治进展情况的函》【闽政函〔2018〕32 号】，目前诏安县正在制定方案关闭北蔗四级电站。</p>
+<p><strong>案例之二：浙江杭州临安区饮用水水源一级保护区内农村水电站调查及处置建议</strong></p>
+<p>无有独偶，2018年3月13日，杭州市临安区水利水电局、杭州市临安区环境保护局发布的《关于省政府批准的饮用水水源一级保护区内农村水电站调查及处置建议情况汇报》【临水〔2018〕46号】，其中对涉及<strong>饮用水水源一级保护区的电站里畈水库水电站（国有）</strong>作出了处置建议，“本着“尊重历史、照顾现实、依法依规、协商解决”的原则，经请示领导同意，并根据多年来电站运行情况与供水现状，建议保留临安饮用水源区一级保护区内里畈水库水电站”， <strong>提请省水利厅、环保厅予以保留该电站</strong>。</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/2/index.html">http://7086.site/page/2/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BF%9D%E6%8A%A4%E5%8C%BA/" rel="tag">保护区</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-全面解读建设项目重大变动" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/1004.html/">全面解读建设项目&amp;ldquo;重大变动&amp;rdquo;</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2020-07-08T07:45:00.000Z" itemprop="datePublished">2020年07月08日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E7%8E%AF%E5%A2%83%E8%AF%84%E4%BB%B7/">环境评价</a>
+  </div>
+
+      
+      
+<a href="/2020/1004.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>日前，生态环境部就淀粉等五个行业的重大变动清单公开征求意见。继已经发布的二十四个行业清单之后，清单家族将再添五位新成员。</p>
+<p>对建设单位而言，项目发生重大变动，如处理不当将被罚款甚至被责令关闭。对环评单位而言，项目变更可能涉及重大变动时，需要了解相关的规定及应当注意的问题，确保环评文件编制质量。对环保部门而言，对涉重大变动的违法行为进行立案处理时，应当充分理解重大变动的含义和界定规则，做到依法行政。</p>
+<p>那么，到底何为“重大变动”，又应该注意哪些问题？</p>
+<p><strong>一、“重大变动”表述变迁</strong></p>
+<p>1986年《建设项目环境保护管理办法》(已失效)第十八条规定：建设项目的性质、规模、建设地点等发生较大改变时，报审建设项目的单位应当适时地修改环境影响报告书或环境影响报告表，并按照规定的审批程序重新报批。此时已有“重大变动”概念雏形，表述上使用的是“较大改变”。</p>
+<p>1990年《建设项目环境保护管理程序》(已失效)规定：建设项目如有重大变动，建设单位及评价单位应及时向环保部门报告。此时表述为“重大变动”。</p>
+<p>1993年《国家环保局、国家计委、财政部、中国人民银行关于加强国际金融组织贷款建设项目环境影响评价管理工作的通知》(已失效)、1995年《电力工业部关于加强利用外资电力建设项目环境影响评价管理工作的通知》(已失效)、1998年硬核环保法规《建设项目环境保护管理条例》以及1999年《海洋石油勘探开发环境保护管理若干问题暂行规定》(已失效)转而使用“重大变化”。</p>
+<p>直到2003年环评影响评价专门法律《环境影响评价法》出台，重新使用“重大变动”并沿用至今。为了与《环境影响评价法》的表述一致，2017年《建设项目环境保护管理条例》(下称《管理条例》)将“重大变化”改为“重大变动”。</p>
+<p>无论“变化”还是“变动”，仅表述不同，含义基本相同。以上可以看出，我国自1986年开始在环境影响评价领域对建设项目重大变动进行立法规制，迄今已有三十多年历史。</p>
+<p><strong>二、现行法律法规对重大变动的定义</strong></p>
+<p>现行《<a target="_blank" rel="noopener" href="http://www.51lvh.com/web/law/lawDetail.do?id=470">环境影响评价法</a>》(下称《环评法》)第二十四条规定：建设项目的环境影响评价文件经批准后，建设项目的性质、规模、地点、采用的生产工艺或者防治污染、防止生态破坏的措施发生重大变动的，建设单位应当重新报批建设项目的环境影响评价文件。</p>
+<p>《管理条例》第十二条规定：建设项目环境影响报告书、环境影响报告表经批准后，建设项目的性质、规模、地点、采用的生产工艺或者防治污染、防止生态破坏的措施发生重大变动的，建设单位应当重新报批建设项目环境影响报告书、环境影响报告表。</p>
+<p>两者在表述上的唯一差别是“环境影响评价文件”与“环境影响报告书、环境影响报告表”。</p>
+<p>依据《环评法》第十六条，环境影响报告书、环境影响报告表或者环境影响登记表统称环境影响评价文件。《环评法》第二十二条和《管理条例》第九条均规定环境影响登记表实行备案制，而非审批制。因此《环评法》第二十四条所指“环境影响评价文件”，实际只能是环境影响报告书和环境影响报告表。《环评法》与《管理条例》对重大变动的定义是一致的。</p>
+<p>据此，重大变动是指建设项目的性质、规模、地点、采用的生产工艺或者防治污染、防止生态破坏的措施发生重大变动。从字面理解，界定建设项目的重大变动，一要看是否落在“性质、规模、地点、采用的生产工艺或者防治污染、防止生态破坏的措施”(下称五个因素)范围之内，二要看是否达到“重大”的程度。同时符合这两个条件时，界定为重大变动，建设单位应当重新报批项目环评文件。</p>
+<p>该定义并不考虑变动带来的环境影响变化，侧重于变动的形式，而非变动的结果。</p>
+<p><strong>三、重大变动清单制度</strong></p>
+<p>虽然法律法规层面对重大变动作出定义，但规定得较为原则、不够具体，实务操作时尺度不易把握。环保部门出于履职尽责的目的，易将重大变动范围搞得过大。这也是偏重形式判断的弊端。</p>
+<p>譬如，五个因素各自的具体内容是什么？拿“性质”来说，项目资金来源、项目投资主体、项目开发任务等是否属于项目性质的范畴？拿“生产工艺”来说，污染影响为主的项目其生产工艺所指内容较易把握，但生态影响为主的项目如水利水电、油气管道等，其生产工艺到底包含哪些内容，边界比较模糊。再譬如，关于“重大”，变动程度达到多大可以认定为重大？轻影响工程与重影响工程的选址选线，同样变动程度产生的环境影响变化却差别很大，是平等对待还是区分把握？</p>
+<p>另外，一些与项目相关、涉及环境影响显著变化的因素可能不在五个因素之内(至少从字面理解是不包含的)。譬如项目因选线变化致使周边的环境敏感点数量显著增加，项目的不利环境影响将明显加重。但选线变化本身未必达到“重大”的程度。类似这种情形，如果界定为重大变动，缺少明确依据；如果不界定，又很不合理。</p>
+<p>考虑到诸多实务问题，为了规范重大变动的界定，生态环境部及其办公厅相继出台了一系列文件，开始建立并逐步完善重大变动清单制度。</p>
+<p>2012年1月21日《关于铁路建设项目变更环境影响评价有关问题的通知》对铁路项目的重大变动进行了界定。但是该《通知》规定“项目变更如包括三项或三项以上重大变动的，应开展该项目的全面环境影响评价并报批环境影响评价文件”，与《环评法》及《管理条例》有冲突。该《通知》于2016年6月30日废止。</p>
+<p>2012年7月3日《关于进一步加强环境影响评价管理防范环境风险的通知》指出：相关建设项目的环境影响评价文件经批准后，环境风险防范设施发生重大变动的，建设单位应按《环评法》要求重新办理报批手续。该《通知》精神被之后陆续颁布的行业重大变动清单贯彻。</p>
+<p>2012年12月18日《关于独立中央空调系统办理环境影响评价手续有关问题的复函》指出：我部认为粤环报〔2012〕76号文件中所提到的独立中央空调系统办理环评手续问题应属于《环境影响评价法》第二十四条第一款规定的情形，而不应将其作为独立的项目纳入《建设项目环境影响评价分类管理名录》进行管理。该《复函》明确将新增独立中央空调系统纳入项目重大变动范畴。</p>
+<p>2015年6月4日《关于印发环评管理中部分行业建设项目重大变动清单的通知》(下称《九清单》)制定了水利等九个行业建设项目重大变动清单。《九清单》还提出了重大变动的界定原则、一般变动的管理原则，并赋予省级环保部门制定本省特殊行业重大变动清单的权力。该文件对重大变动清单制度意义非凡。</p>
+<p>2016年7月15日《“十三五”环境影响评价改革实施方案》提出“更新和补充项目环评重大变动清单”。</p>
+<p>2016年8月8日《关于印发&lt;输变电建设项目重大变动清单(试行)&gt;的通知》(下称《输变电清单》)制定了输变电行业建设项目重大变动清单。</p>
+<p>2017年11月14日《关于做好环境影响评价制度与排污许可制衔接相关工作的通知》(下称《衔接通知》)提出“国家将分行业制定建设项目重大变动清单”，明确重大变动清单制度将继续走“行业”之路。</p>
+<p>2018年1月25日《关于强化建设项目环境影响评价事中事后监管的实施意见》提出：地方各级环保部门应严格执行建设项目环评文件审批和重大变动界定要求，统一建设项目环评管理尺度。这意味着，地级、县级环保部门暂时只有清单执行权(执行义务)，没有解释权及制定权。</p>
+<p>2018年1月29日《关于印发制浆造纸等十四个行业建设项目重大变动清单的通知》(下称《十四清单》)制定了制浆造纸等十四个行业建设项目重大变动清单。《十四清单》还进一步厘清了重大变动清单与产业政策之间的关系：清单虽列出了有关产能增加的变动事项，但不等于认可该变动符合产业政策。</p>
+<p>2019年9月18日《关于征求淀粉等五个行业建设项目重大变动清单(试行)(征求意见稿)意见的函》(下称《五清单征》)意味着重大变动清单制度将进一步完善。</p>
+<p><img src="http://wcg.vip8.8x6x.com:808/ns/dv/RNHt6/bbe0ad96599f3ad9923c251c1b21884fa603ee92/_Sn-q1ExDRoVofFFLLjpLFw/ns_attach_image_621573525379394094326.png?SynoToken=hN91nwcSjEev2&_sid=%22gAAV25SCOX1pAphiXRtmZrGSvtoiWvduTFNyyzmgq-QQzTbtFDjYXePfOwwfbIU_5zKTHEUzeUfuEBeo3UWRZw%22&thumb=true" alt="image.png" title="1573525379394094326.png"></p>
+<p>从各清单的行文结构来看：第二批、第四批以及第五批(征求意见)采用了统一行文结构，即按照性质、规模、地点、生产工艺、环境保护措施(基本与五个因素对应)分类，每类之下细化列举若干重大变动事项。第三批并未依此分类，而是直接列出十项重大变动事项。这可能与起草机构的不同有关。《输变电清单》是辐射源安全监管司负责起草，《九清单》、《十四清单》及《五清单征》均系环境影响评价与排放管理司(原环境影响评价司)负责起草。</p>
+<p><strong>四、清单制度下两种重大变动界定原则</strong></p>
+<p>以上清单文件里，《九清单》地位比较特殊。它提出了界定重大变动的基本原则：建设项目的性质、规模、地点、生产工艺和环境保护措施五个因素中的一项或一项以上发生重大变动，且可能导致环境影响显著变化(特别是不利环境影响加重)的，界定为重大变动。</p>
+<p>相比《环评法》和《管理条例》的定义，这一原则增加了“且可能导致环境影响显著变化(特别是不利环境影响加重)”的界定条件，使重大变动的界定更加严格。也就是说，如果发生了重大的变动事项，但不会导致环境影响显著变化，则不应被界定为重大变动。</p>
+<p>该原则使重大变动的界定从“形式判断”走向考虑环境影响变化的“形式和实质判断”，更切合环境影响评价制度精神。</p>
+<p>那么，“可能导致环境影响显著变化(特别是不利环境影响加重)”如何具体判断？是由环保部门直接认定，还是经专门技术机构评估认定，抑或其他方式？</p>
+<p>生态环境部部长信箱《关于建设项目变动的疑问的回复》(2017年5月8日)中明确：已在《九清单》中列明的变动，属于重大变动，无需单独通过确认其环境影响是否显著变化来判定是否属于重大变动。即，清单内的变动无需再判断“可能导致环境影响显著变化(特别是不利环境影响加重)”。这符合清单制度的本意。至于尚未制定清单的行业如何具体判断，目前生态环境部未明确。一些省级环保部门已经制定了本省行业清单及界定程序，这个问题有望被逐步解决。</p>
+<p>《九清单》之后的《输变电清单》提出了输变电行业的界定原则，与《九清单》原则略有不同。《输变电清单》规定：输变电建设项目发生清单中一项或一项以上，且可能导致不利环境影响显著加重的，界定为重大变动。</p>
+<p>这表达了两层重要意思。先说第一层意思：落在清单内的变动，还须符合“可能导致不利环境影响显著加重”的条件，才能界定为重大变动。部长信箱《关于输变电建设项目重大变动如何认定的回复》(2018年5月18日)提到：根据《输变电清单》，输变电建设项目发生清单中一项或一项以上，且可能导致不利环境影响显著加重的，界定为重大变动。若经环境影响评价，工程变更未导致不利环境影响显著加重的，应当界定为一般变动，无需重新报批环境影响评价文件。即“可能导致不利环境影响显著加重”需要经环境影响评价确认。这是对第一层意思的确认。</p>
+<p>这其中有困惑需要解决。清单本意是为了操作方便并统一尺度，如果有清单可对照的情况下还要动用环评手段，清单的存在意义就大大降低。在生态环境部网站搜索相关涉重大变动输变电项目的变更环评报告，基本都是直接比照清单进行界定，走的是“界定→编制→报批”路径，而不是先环评再界定。所以《输变电清单》提出的界定原则以及部长信箱的回复，与实务操作有不尽一致之处，我们需谨慎对待。</p>
+<p>再说第二层意思：将《九清单》“可能导致环境影响显著变化(特别是不利环境影响加重)”的表述限缩为“可能导致不利环境影响显著加重”，排除了不利影响显著减弱的情形。</p>
+<p>另外，《输变电清单》没有以《九清单》为制定依据，这有异于《十四清单》及《五清单征》。可以认为，《输变电清单》不受《九清单》的约束，输变电行业重大变动界定自成一体。</p>
+<p>总之，两部清单在界定原则上的差异，体现了非辐射类行业与辐射类行业在环评管理思路上的不同。</p>
+<p><strong>五、“不利影响显著减弱”是否应排除重大变动范畴</strong></p>
+<p>《九清单》原则虽然更多关注不利环境影响显著加重，但没有排除不利影响显著减弱的情形。</p>
+<p>项目不利环境影响显著减弱对环境质量有益无害，但并不意味着对环境管理秩序没有影响。不利环境影响减弱往往意味着环境容量的增加。譬如本项目排放总量减少意味着其他新增同类污染物排放总量的项目具有指标空间。如果企业不履行重新报批程序，那么环保部门可能经过较长时间才能得知该项目腾出了总量指标。在此期间，一些本可以被批准的潜在项目未能通过环评审批，对潜在项目和地方经济都是一种损失。再譬如项目重大变动后环评类别降级，甚至变成登记表项目，如果仍按照原审批意见实施监管，将造成执法资源浪费。</p>
+<p>所以《九清单》原则未排除不利影响显著减弱的情形，有其合理原因。</p>
+<p><strong>六、尚未制定清单的行业重大变动界定原则</strong></p>
+<p>从监管思路及清单格式来看，《九清单》原则应当是非辐射类行业界定重大变动应遵循的原则。例如原上海市环保局《上海市建设项目变更重新报批环境影响评价文件工作指南(2016年版)》将重大变动清单分为“非辐射类”和“辐射类”。</p>
+<p>部长信箱《关于明确VOCs等环境工程环评类别建议的回复》(2017年9月7日)指出：关于“环境保护措施发生变化使得不利环境影响减弱的情形，是否属于重大变动”的问题，在操作过程中，应结合项目实际情况，按照《九清单》相关要求，界定项目变动是否属于重大变动。该回复确认对VOCs及其他污染物环境治理行业重大变动界定应遵循《九清单》原则。</p>
+<p>《输变电清单》原则只适用于输变电行业。辐射类的其他行业是否可以参照执行，目前并未明确。</p>
+<p><strong>七、重大变动清单设有兜底条款是否恰当</strong></p>
+<p>《上海市建设项目变更重新报批环境影响评价文件工作指南(2016年版)》在“未纳入环办﹝2015﹞52号文的其他非产业类建设项目”一节中规定“其他经环保部门审查认为属于重大变动的情况”。原江苏省环保厅《关于加强建设项目重大变动环评管理的通知》规定“其他可能导致环境影响或环境风险增大的环保措施变动”。</p>
+<p>生态环境部《关于生态环境领域进一步深化“放管服”改革，推动经济高质量发展的指导意见》在“进一步深化简政放权，转变政府职能”一节中提到“健全并严格落实重大变动清单”。这表明清单意在“收缩”而不是“放大”监管范围。部制清单中设有兜底条款的：《九清单》石油炼制与石油化工行业的“环境保护措施”一节，《十四清单》钢铁行业的“环境保护措施”一节，《五清单征》没有。可见，生态环境部对兜底条款持谨慎态度。</p>
+<p>省级环保部门清单之所以设定兜底条款，或有“挂万漏一”之担忧，或为让重大变动的界定更为灵活。但无论如何，应尽量贴近部制清单制定思路，贯彻简政放权的政策要求。</p>
+<p><strong>八、地市、区县环保部门是否有清单制定权</strong></p>
+<p>部分地市、区县环保部门对清单制定进行了探索。例如原池州市环保局于2018年7月发布《池州市建设项目重大变动认定原则(试行)》，原慈溪市环保局于2016年5月发布《关于印发环评管理中建设项目重大变动清单的通知》。</p>
+<p>但是，目前地市、区县环保部门未被赋予清单制定权，省级环保部门可否授权其制定也无明确依据。甚至有的清单偏严，如池州市清单将变动幅度基准线普遍定为15%，相较部制清单普遍30%的基准线，其合理性及政策符合性有待商榷。而且，在已有部制清单、省级环保部门清单的情况下，再去制定地市甚至区县的清单，是否确有必要？</p>
+<p>由此引发的顾虑是，地市、区县环保部门如依据其制定的清单界定重大变动，继而实施行政许可或行政处罚，恐惹争议。</p>
+<p><strong>九、重大变动的“白名单”</strong></p>
+<p>重大变动的界定，除依照重大变动清单制度进行直接界定外，还可依据“白名单”进行排除。白名单对于尚未制定清单的行业尤为重要。</p>
+<p>2004年原国家环境保护总局《关于企业工商变更登记环境影响评价制度适用问题的复函》指出：办理工商变更登记的企业如果只是变更法人代表、企业名称，项目的性质、规模、地点或者采用的生产工艺未发生重大变动的，无须报批或者重新报批建设项目环境影响评价文件。</p>
+<p>部长信箱《关于验收过程中总量指标变动的问题回复》(2018年6月26日)和《关于建设项目环保验收总量超标的回复》(2019年5月21日)明确：排放总量超标不属于重大变动。实际上，排放总量超标根本不属于“变动”的范畴。</p>
+<p>此外，一些省级环保部门也对白名单进行了探索。</p>
+<p>原山东省环保厅曾在2012年《关于办理环境影响评价文件变更有关事项的通知》中将“投资主体发生变更”、“变更后产业政策、环境风险、污染治理措施、防止生态破坏的措施及污染源强等不易判断”、“增加重金属污染物或危险废物排放”、“环境风险隐患较大”以及兜底条款“其他可能对周围环境产生重大影响”列入须重新报批环评文件范围。不过在《九清单》及《十四清单》(征求意见稿)出台之后，该《通知》于2018年1月废止。照此精神，上述情形是不被直接视为重大变动的。</p>
+<p>原重庆市环保局2014年印发《重庆市建设项目重大变动界定程序规定》，规定下列情形原则上不界定为重大变动：项目名称、建设单位、投资金额等发生变化，但项目实际建设内容未发生变化的；项目建设内容部分发生变化，但新方案有利于环境保护，减轻了不良环境影响的。</p>
+<p>原广东省环保厅2018年《关于企业吸收合并环境影响评价手续办理问题的复函》指出：若企业间吸收合并经合法程序完成后，相关项目的性质、规模、地点、采用的生产工艺和污染防治措施均未发生重大变动，则企业无须报批或者重新报批建设项目环境影响评价文件。</p>
+<p>安徽省生态环境厅被问及“项目环评已获批，只是建设主体发生变更，其他内容没有变动，是否需要重新报批环评手续”，于2019年2月12日答复：建设主体变更不在《环评法》规定的应当重新报批建设项目的环境影响评价文件的范畴内。</p>
+<p><strong>十、登记表项目发生重大变动如何处理</strong></p>
+<p>环境影响登记表实行备案管理，不须报批，所以《环评法》和《管理条例》关于重大变动的规定不适用于登记表项目。既然如此，登记表项目发生重大变动可否置之不理？</p>
+<p>《建设项目环境影响登记表备案管理办法》规定：建设单位对其填报的建设项目环境影响登记表内容的真实性、准确性和完整性负责，在填报登记表时弄虚作假致使备案内容失实的给予行政处理。这意味着项目实际情况要与登记表的记载相一致，项目发生重大变动不能“不管不问”，应当有所行动。</p>
+<p>关于项目变更的处理，该《办法》仅规定：建设项目环境影响登记表备案完成后，建设单位或者其法定代表人或者主要负责人在建设项目建成并投入生产运营前发生变更的，建设单位应当依照本办法规定再次办理备案手续。该条指出可以“再次办理备案手续”，但适用的情形不包括项目重大变动，且仅指项目投产运营前发生的变更。如果参照“再次办理备案手续”方式处理重大变动，需要将整个项目(包含重大变动部分)再备案一次。有些地区对再次办理备案手续作出了更细致的规定，各位读者可以到当地环保部门网站或者登记表备案系统查看。至于“变更备案手续”，《办法》尚无相关规定，生态环境部登记表备案系统（全国统一平台）也未见变更操作入口。</p>
+<p>如果项目发生重大变动后，按照《建设项目环境影响评价分类管理名录》不再属于登记表项目，变为应报批报告书、报告表的项目，则应依法履行相应的报批手续，而非备案。否则，环保部门将依据《办法》第二十条作出备案无效及行政处罚等处理。</p>
+<p>由此延申出的问题是：因重大变动导致报告书、报告表项目变为登记表项目的如何处理？虽然依法应重新报批，但由于编制的是登记表，本身又无须报批。参考《九清单》(因输变电行业没有登记表项目所以不考虑《输变电清单》)确定的重大变动界定原则，不利环境影响显著减弱不是监管重点。结合简政放权的政策要求，笔者认为报告书、报告表项目发生重大变动变为登记表项目的，备案即可。</p>
+<p><strong>十一、重大变动重新报批的适用时段</strong></p>
+<p>《环评法》及《管理条例》对重大变动重新报批适用时段的规定是“建设项目的环境影响评价文件经批准后”，并未明确截止时点。《九清单》指出：属于重大变动的应当重新报批环境影响评价文件，不属于重大变动的纳入竣工环境保护验收管理。从字面理解，《九清单》为重大变动重新报批加上了一个截止时点，即通过验收。这种理解是否正确？笔者从三个方面分析。</p>
+<p>首先，如果不以通过验收为截止时点，已验收项目的重大变动重新报批必然涉及重新组织验收的问题。但重新组织验收并无明确法律规定。同时，《管理条例》关于验收的规定，是针对“项目”而言，不是针对项目的“重大变动部分”。所以重新验收意味着整个项目须重新验收。如重新审批和重新验收都通过，新验收手续生效，原验收手续不再有效，倒没什么问题；如重新审批通过但重新验收未通过，原验收手续因原审批意见失效而失效，新验收手续却未取得，致使整个项目(不仅是重大变动部分)都不能投产，等于剥夺了原项目合法的生产权利，显然不合理。</p>
+<p>其次，已验收项目都已投产或预期投产，建设单位可享有经营收益。重新报批期间，项目被“冻结”，应当停止生产。建设单位的经营收益减少，经济秩序稳定性也受到冲击。已验收项目发生重大变动并非必须以重新报批的方式解决，可以通过报批新建、改建、扩建及技术改造项目的方式将变动部分“拿出”单独作为一个项目处理，对建设单位和经济秩序的影响更小。环保部门实施行政管理可以采取多种措施实现行政目的的，应当选择最有利于保护建设单位合法权益的措施。</p>
+<p>最后，环评文件编制报批实务的一般做法是：未验收项目发生重大变动的，编制调整或变更环境影响评价报告(具体名称范式依各地环保部门要求)重新报批；已验收项目发生变动的，根据变动的内容按照新建、改建、扩建或技改项目编制并报批环评文件。</p>
+<p>综合上述分析，重大变动重新报批的截止时点应为项目通过验收。</p>
+<p>另外需要注意，未经验收擅自投产的项目，因不具备验收手续也不应享有经营收益，无需考虑前述因素，仍然适用重大变动重新报批的规定。这在原环保部2015年2月25日行政处罚决定书(安徽马钢罗河矿业有限责任公司)和2015年2月25日行政处罚决定书(铁法煤业集团大强煤矿有限责任公司)，以及最高法于2016年3月30日发布的人民法院环境保护行政案件十大案例之一“威海阿科帝斯电子有限公司诉威海市环境保护局环保行政处罚案”中均得到体现。</p>
+<p><strong>十二、重新报批期间原环评文件及审批意见的有效性</strong></p>
+<p>首先需要说明环评文件与审批意见的关系。两者关系可从两方面理解。</p>
+<p>第一，环评文件是环保部门作出审批意见的主要依据。</p>
+<p>第二，环评文件和审批意见均具有强制力，但环评文件的强制力来自于审批意见。在获得批准之前，环评文件只是一册技术文件，无论环保部门是否已经受理该环评文件，其对企业履行环境责任不具有强制力。但在获得同意批复之后，环评文件即可视为审批意见的附件，对审批意见具有释明作用。这是因为审批意见限于文件性质及篇幅，一般只以相对固定的行文结构提出基本环保要求，不会对环评文件的主要内容铺开论述。无论对于企业的建设运营还是环保部门的日常监管，审批意见的可操作性都是有限的，必须结合环评文件中对应的具体内容来理解审批意见提出的要求。</p>
+<p>《环评法》第二十六条、第二十七条以及《管理条例》第二十条对环评文件和审批意见的强制力作了具体规定，在此不作赘述。</p>
+<p>然后谈一谈重新报批期间环评文件和审批意见的有效性问题。</p>
+<p>前文述及，环评文件的强制力来自于审批意见，所以这个问题实质是审批意见的有效性问题。审批意见的法律性质是行政许可。《行政许可法》规定：准予行政许可所依据的客观情况发生重大变化的，为了公共利益的需要，行政机关可以依法变更或者撤回已经生效的行政许可。据此，在依法被变更或撤回之前，行政许可有效。</p>
+<p>当项目内容发生重大变动，建设单位须重新报批环评文件，审批意见也应当重新作出。当新审批意见作出，原审批意见即应视为被撤回，从而失效。</p>
+<p>然而，实务中的撤回可能是不完全的。譬如生态环境部2019年5月24日《关于山西中煤华晋晋城能源有限责任公司里必矿井及选煤厂变更环境影响报告书的批复》明确指出“其他要求仍按照环审〔2011〕86号(原批复意见)执行”。类似批复还有若干。此时相当于只对原审批意见进行了部分撤回，未被撤回的部分仍有效。于是就存在一份有效审批意见和一份部分有效的审批意见。</p>
+<p>如果重新编制的环评文件未被批准，即不予许可，建设单位因此停止执行重大变动甚至恢复原状，整个项目的环境影响仍落在原环评文件及审批意见范围内，原审批意见理应有效。如果建设单位因各种原因必须执行重大变动，将面临行政处罚，行政处罚认定重大变动的事实必须以原环评文件及审批意见为依据，原审批意见应当有效。</p>
+<p>所以原环评文件和审批意见只有在批准重大变动的审批意见作出后且新审批意见中未保留原审批意见强制力的情况下，才视为失效。</p>
+<p><strong>十三、重新报批的环评文件由谁审批</strong></p>
+<p>环评审批权力下放，可能导致原环评文件审批部门在重新报批时已不是有权审批的部门。此时应报原审批部门批准，还是报有审批权的部门批准？</p>
+<p>原环保部2015年7月30日《关于建设项目重大变动环境影响评价文件审批权限的复函》指出：发生重大变动的，建设单位应当按现行分级审批规定，向有审批权的环保部门报批项目重大变动环境影响评价文件。</p>
+<p>所以原环评文件审批部门与重新报批时的审批部门未必一致。建设单位应当注意，避免多跑腿；环保部门更要留神，切勿越权审批。</p>
+<p><strong>十四、重新报批后排污许可证如何处理</strong></p>
+<p>依据《衔接通知》和《排污许可管理办法(试行)》(下称《许可办法》)，申请及核发排污许可证的时段为项目环评审批之后、试生产或投产之前。这一时段与重大变动重新报批的适用时段存在重合。核发排污许可证之后，如果项目发生重大变动须重新报批环评文件，以环评文件及审批意见为前提和依据的排污许可证应如何处理？《衔接通知》仅规定：发生重大变动的，建设单位应当依法重新报批环境影响评价文件，并在申请排污许可时提交重新报批的环评批复(文号)。并未规定已有排污许可证的项目重大变动重新报批后原排污许可证如何处理。</p>
+<p>可能的处理方式无非两种，重新核发或变更。</p>
+<p>关于重新核发，《许可办法》并未规定这项制度，《衔接通知》及其他相关文件也未见提及。关于变更，《许可办法》规定：下列与排污单位有关的事项发生变化的，排污单位应当在规定时间内向核发环保部门提出变更排污许可证的申请：……(二)因排污单位原因许可事项发生变更之日前三十个工作日内。据此，在重新报批的环评文件获得批准之后，排污单位应及时就变更事项向核发部门提出变更申请。</p>
+<p><strong>十五、以“未批先建”为由处罚重大变动，投资额如何确定</strong></p>
+<p>《环评法》第三十一条规定：建设单位未依法报批建设项目环境影响报告书、报告表，或者未依照本法第二十四条的规定重新报批或者报请重新审核环境影响报告书、报告表，擅自开工建设的……。此即“未批先建”。对该行为应“处建设项目总投资额1%以上5%以下的罚款”。</p>
+<p>对于重大变动的建设项目，虽然要求重新报批环评文件，但未批先建实际仅涉及重大变动部分。如果一律以项目总投资额为处罚依据，或有失公允。如果只考虑重大变动部分的投资额，又无明确法律依据。</p>
+<p>生态环境部办公厅2019年4月1日《关于建设项目总投资额认定有关意见的复函》指出：分期建设的项目可以当期工程总投资额作为处罚依据。该《复函》开启了以项目内容的一部分而非整个项目确定投资额的先河。似乎可以推断出：未批先建部分可以明确投资额的，可以该部分投资额作为处罚依据。然而这仅是推断。</p>
+<p>笔者认为，以“未批先建”为由对建设项目重大变动进行处罚时，以重大变动部分的投资额为依据，符合过罚相当原则，是比较合理的。如果环保部门认为项目的环境影响变化不局限于重大变动直接引起的部分，可以收集证据加以证明，继而扩大投资额认定范围。</p>
+<p>结语</p>
+<p>建设项目重大变动有关问题，既涉及环境影响评价制度和建设项目管理法律体系，也关乎环境技术，还与实务操作联系紧密，具有系统性、综合性、动态发展的特点。虽然重大变动已经提了三十多年，但仍有许多问题需要逐步界定清楚。本文抛砖引玉，对这些问题略涉一二，希望对各位同仁能有所启发。</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/2/index.html">http://7086.site/page/2/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%8E%AF%E8%AF%84/" rel="tag">环评</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-sqlite3在wordpress中的使用" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/986.html/">sqlite3在wordpress中的使用</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2020-07-05T12:39:00.000Z" itemprop="datePublished">2020年07月05日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/">博客建设</a>
+  </div>
+
+      
+      
+<a href="/2020/986.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>作为个人的笔记中心（博客），并没有什么访问量，数据也不会很多，所以我并不打算用mariadb数据库。这里使用sqlite3作为数据库。而且<strong>使用sqlite3的好处是，数据库、照片直接保存在<a target="_blank" rel="noopener" href="https://www.smzdm.com/fenlei/wenjianjia/">文件夹</a>内，wordpress备份只需要把整个文件夹拷贝一下就OK了</strong>，无需操作mariadb数据库。</p>
+<p>在套件中心安装好 Web Station 和 P<a target="_blank" rel="noopener" href="https://pinpai.smzdm.com/1673/">HP</a> 7.3这2个应用就好了。</p>
+<p><a target="_blank" rel="noopener" href="https://post.smzdm.com/p/ax02p0n2/pic_3/"><img src="https://qnam.smzdm.com/202004/05/5e89b3622d52a9799.jpg_e680.jpg" alt="群晖在非标端口运行https WordPress的教程"></a></p>
+<h5 id="Web-Station配置"><a href="#Web-Station配置" class="headerlink" title="Web Station配置"></a>Web Station配置</h5><p>1. 在常规设置里选择PHP 7.3作为运行环境</p>
+<p><a target="_blank" rel="noopener" href="https://post.smzdm.com/p/ax02p0n2/pic_4/"><img src="https://qnam.smzdm.com/202004/05/5e89b384139559695.jpg_e680.jpg" alt="群晖在非标端口运行https WordPress的教程"></a></p>
+<p>2. 在PHP 设置里把扩展全部打勾</p>
+<p><a target="_blank" rel="noopener" href="https://post.smzdm.com/p/ax02p0n2/pic_5/"><img src="https://am.zdmimg.com/202004/05/5e89b45da29e85087.jpg_e680.jpg" alt="群晖在非标端口运行https WordPress的教程"></a></p>
+<p>3. 去下载最新版的wordpress <a target="_blank" rel="noopener" href="https://cn.wordpress.org/latest-zh_CN.zip">https://cn.wordpress.org/latest-zh_CN.zip</a>，解压缩后复制到 群晖/web的目录下</p>
+<p><a target="_blank" rel="noopener" href="https://post.smzdm.com/p/ax02p0n2/pic_6/"><img src="https://am.zdmimg.com/202004/05/5e89b4ea37a7c8178.jpg_e680.jpg" alt="群晖在非标端口运行https WordPress的教程"></a></p>
+<p>4. 下载sqlite插件<a target="_blank" rel="noopener" href="https://downloads.wordpress.org/plugin/sqlite-integration.1.8.1.zip">qlite-integration.1.8.1</a>，解压后把文件夹复制到/web/wordpress/wp-content/plugins ,目录下</p>
+<p><a target="_blank" rel="noopener" href="https://post.smzdm.com/p/ax02p0n2/pic_7/"><img src="https://qnam.smzdm.com/202004/05/5e89b5000e276581.jpg_e680.jpg" alt="群晖在非标端口运行https WordPress的教程"></a></p>
+<p>5. 复制 /web/wordpress/wp-content/plugins/sqlite-integration 下的“db.php”到 /web/wordpress/wp-content 目录</p>
+<p><a target="_blank" rel="noopener" href="https://post.smzdm.com/p/ax02p0n2/pic_8/"><img src="https://qnam.smzdm.com/202004/05/5e89b5168a8b04440.jpg_e680.jpg" alt="群晖在非标端口运行https WordPress的教程"></a></p>
+<p>6. 把 /web/wordpress 文件夹下的 wp-config-s<a target="_blank" rel="noopener" href="https://pinpai.smzdm.com/36085/">ample</a>.php 拷贝一份，重命名为 wp-config.php</p>
+<p><a target="_blank" rel="noopener" href="https://post.smzdm.com/p/ax02p0n2/pic_9/"><img src="https://am.zdmimg.com/202004/05/5e89b532430df2759.jpg_e680.jpg" alt="群晖在非标端口运行https WordPress的教程"></a></p>
+<p>7. 对“File Station”对wordpress文件夹进行“写入”授权</p>
+<p><a target="_blank" rel="noopener" href="https://post.smzdm.com/p/ax02p0n2/pic_10/"><img src="https://qnam.smzdm.com/202004/05/5e89b7faf0eab9325.jpg_e680.jpg" alt="群晖在非标端口运行https WordPress的教程"></a></p>
+<p><a target="_blank" rel="noopener" href="https://post.smzdm.com/p/ax02p0n2/pic_11/"><img src="https://qnam.smzdm.com/202004/05/5e89bfad9b3b11841.jpg_e680.jpg" alt="群晖在非标端口运行https WordPress的教程"></a></p>
+<p><a target="_blank" rel="noopener" href="https://post.smzdm.com/p/ax02p0n2/pic_12/"><img src="https://qnam.smzdm.com/202004/05/5e89be5c61ea23452.jpg_e680.jpg" alt="群晖在非标端口运行https WordPress的教程"></a></p>
+<p><a target="_blank" rel="noopener" href="https://post.smzdm.com/p/ax02p0n2/pic_13/"><img src="https://qnam.smzdm.com/202004/05/5e89b5bb15430218.jpg_e680.jpg" alt="群晖在非标端口运行https WordPress的教程"></a></p>
+<h4 id="三、登录wordpress"><a href="#三、登录wordpress" class="headerlink" title="三、登录wordpress"></a>三、登录wordpress</h4><p>在浏览器里输入你的网址 <a target="_blank" rel="noopener" href="https://xxx.myds.me:10086/">https://xxx.myds.me:10086/</a> ，登陆你的wordpress</p>
+<p><a target="_blank" rel="noopener" href="https://post.smzdm.com/p/ax02p0n2/pic_14/"><img src="https://am.zdmimg.com/202004/05/5e89b5fd8ee084711.jpg_e680.jpg" alt="群晖在非标端口运行https WordPress的教程"></a></p>
+<p>Have fun!</p>
+<h5 id="小叮咛："><a href="#小叮咛：" class="headerlink" title="小叮咛："></a>小叮咛：</h5><ol>
+<li> wordpress的备份只需要copy这个文件夹就好了，数据库就在/web/wordpress/wp-content/database 文件夹里，随身携带</li>
+</ol>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/2/index.html">http://7086.site/page/2/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wordpress/" rel="tag">wordpress</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-nox控制措施及选用原则" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/975.html/">NOx控制措施及选用原则</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2020-07-02T08:52:00.000Z" itemprop="datePublished">2020年07月02日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E7%8E%AF%E5%A2%83%E8%AF%84%E4%BB%B7/">环境评价</a>
+  </div>
+
+      
+      
+<a href="/2020/975.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>大气污染物中，氮氧化物的量比较大，次于二氧化硫，能促进酸雨的形成，对动物的呼吸系统危害较大。煤燃烧是主要的工业生产中氮氧化物形成源。煤燃烧过程中，主要通过低氮燃烧技术从根本上减少氮氧化物的排放，当采用低氮燃烧器后氮氧化物的排放仍不达标的情况下，燃煤烟气还须采用非选择性催化还原技术SNCR和选择性催化还原技术SCR脱硝装置来控制氮氧化物的排放.SNCR和SCR技术主要是在有或没有催化剂时，将氮氧化物选择性地还原为水和氮气，前者的效率较低，一般在40%以下，后者可以达到90%以上的效率。燃煤电厂燃用烟煤、褐煤时，宜采用低氮燃烧技术；燃用贫煤、无烟煤以及环境敏感地区不能达到环保要求时，应增设烟气脱硝系统。<br>（1）低氮燃烧技术<br>低氮燃烧技术一直是应用最广泛、经济实用的措施。它是通过改变燃烧设备的燃烧条件来降低NOX，的形成，具体来说，是通过调节燃烧温度、烟气中的氧的浓度、烟气在高温区的停留时间等方法来抑制NOX，的生成或破坏已生成的NO2。低氮燃烧技术的方法很多，这里介绍两种常用的方法。</p>
+<p>①排烟再循环法。<br>利用一部分温度较低的烟气返回燃烧区，含氧量较低，从而降低燃烧区的温度和氧浓度，抑制氮氧化物的生成，此法对温度型NOx，比较有效，对燃烧型NOx，基本上没有效果。</p>
+<p>②二段燃烧法。<br>该法是目前应用最广泛的分段燃烧技术，将燃料的燃烧过程分阶段来完成。第一阶段燃烧中，只将总燃烧空气量的70%<del>75%（理论空气量的80%）供入炉膛，使燃料在缺氧的富燃料条件下燃烧，能抑制NOx，的生成；第二阶段通过足量的空气，使剩余燃料燃尽，此段中氧气过量，但温度低，生成的NOx，也较少。这种方法可使烟气中的NOx，减少25%</del>50%。<br>（2）选择性催化还原技术SCR SCR过程是以氨为还原剂，在催化剂作用下将NO，还原为N2和水。催化剂的活性材料通常由贵金属、碱性金属氧化物、沸石等组成。NO，按以下过程被选择性地还原为N2和水：</p>
+<p><a target="_blank" rel="noopener" href="http://chao.abc6.net:88/wp-content/uploads/2020/07/image-1.png"><img src="http://chao.abc6.net:88/wp-content/uploads/2020/07/image_thumb-1.png" alt="image" title="image"></a></p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/2/index.html">http://7086.site/page/2/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%B7%A5%E7%A8%8B%E6%8A%80%E6%9C%AF/" rel="tag">工程技术</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-wordpresssqlite3-轻量级博客系统搭建" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/969.html/">wordpress+sqlite3 轻量级博客系统搭建</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2020-06-30T10:21:00.000Z" itemprop="datePublished">2020年06月30日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/">博客建设</a>
+  </div>
+
+      
+      
+<a href="/2020/969.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>自行搭建php运行环境(如果你是小白,且是windows系统,我推荐使用<a target="_blank" rel="noopener" href="https://link.jianshu.com/?t=https://www.apachefriends.org/zh_cn/index.html">xampp</a>)</p>
+</blockquote>
+<h3 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1.准备工作"></a>1.准备工作</h3><h6 id="1-自行搭建php运行环境-如果你是小白-且是windows系统-我推荐使用xampp"><a href="#1-自行搭建php运行环境-如果你是小白-且是windows系统-我推荐使用xampp" class="headerlink" title="1.自行搭建php运行环境(如果你是小白,且是windows系统,我推荐使用xampp)"></a>1.自行搭建php运行环境(如果你是小白,且是windows系统,我推荐使用<a target="_blank" rel="noopener" href="https://link.jianshu.com/?t=https://www.apachefriends.org/zh_cn/index.html">xampp</a>)</h6><h6 id="2-下载wordpress"><a href="#2-下载wordpress" class="headerlink" title="2.下载wordpress"></a>2.下载<a target="_blank" rel="noopener" href="https://link.jianshu.com/?t=https://cn.wordpress.org/">wordpress</a></h6><h6 id="3-下载SQLite-Integration-插件"><a href="#3-下载SQLite-Integration-插件" class="headerlink" title="3.下载SQLite Integration 插件"></a>3.下载<a target="_blank" rel="noopener" href="https://link.jianshu.com/?t=https://wordpress.org/plugins/sqlite-integration/installation/">SQLite Integration 插件</a></h6><h3 id="2-安装wordpress"><a href="#2-安装wordpress" class="headerlink" title="2.安装wordpress"></a>2.安装wordpress</h3><h6 id="解压下载的wordpress压缩包到php-运行目录-我拿xampp为例目录是在xampp安装目录下的htdocs目录"><a href="#解压下载的wordpress压缩包到php-运行目录-我拿xampp为例目录是在xampp安装目录下的htdocs目录" class="headerlink" title="解压下载的wordpress压缩包到php 运行目录(我拿xampp为例目录是在xampp安装目录下的htdocs目录)"></a>解压下载的wordpress压缩包到php 运行目录(我拿xampp为例目录是在xampp安装目录下的htdocs目录)</h6><h6 id="将目录下的wp-config-sample-php复制粘贴一份重命名为wp-config-php"><a href="#将目录下的wp-config-sample-php复制粘贴一份重命名为wp-config-php" class="headerlink" title="将目录下的wp-config-sample.php复制粘贴一份重命名为wp-config.php"></a>将目录下的<strong>wp-config-sample.php</strong>复制粘贴一份重命名为<strong>wp-config.php</strong></h6><p><img src="http://upload-images.jianshu.io/upload_images/2675631-966c3dc0ecd3932e.png?imageMogr2/auto-orient/stripimageView2/2/w/799/format/webp"></p>
+<p>示例</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2675631-93932edcb0b64548.png?imageMogr2/auto-orient/stripimageView2/2/w/665/format/webp"></p>
+<p>示例</p>
+<h6 id="打开wp-config-php修改以下配置"><a href="#打开wp-config-php修改以下配置" class="headerlink" title="打开wp-config.php修改以下配置"></a>打开<strong>wp-config.php</strong>修改以下配置</h6><h6 id="原始文件"><a href="#原始文件" class="headerlink" title="原始文件:"></a>原始文件:</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">// ** MySQL 设置 - 具体信息来自您正在使用的主机 ** //</span><br><span class="line">/** WordPress数据库的名称 */</span><br><span class="line">define(&#x27;DB_NAME&#x27;, &#x27;database_name_here&#x27;);</span><br><span class="line"></span><br><span class="line">/** MySQL数据库用户名 */</span><br><span class="line">define(&#x27;DB_USER&#x27;, &#x27;username_here&#x27;);</span><br><span class="line"></span><br><span class="line">/** MySQL数据库密码 */</span><br><span class="line">define(&#x27;DB_PASSWORD&#x27;, &#x27;password_here&#x27;);</span><br><span class="line"></span><br><span class="line">/** MySQL主机 */</span><br><span class="line">define(&#x27;DB_HOST&#x27;, &#x27;localhost&#x27;);</span><br><span class="line"></span><br><span class="line">/** 创建数据表时默认的文字编码 */</span><br><span class="line">define(&#x27;DB_CHARSET&#x27;, &#x27;utf8&#x27;);</span><br><span class="line"></span><br><span class="line">/** 数据库整理类型。如不确定请勿更改 */</span><br><span class="line">define(&#x27;DB_COLLATE&#x27;, &#x27;&#x27;);</span><br></pre></td></tr></table></figure>
+
+<h6 id="修改为"><a href="#修改为" class="headerlink" title="修改为:"></a>修改为:</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">// ** MySQL 设置 - 具体信息来自您正在使用的主机 ** //</span><br><span class="line">/** WordPress数据库的名称 */</span><br><span class="line">define(&#x27;DB_NAME&#x27;, &#x27;MyBlog&#x27;);//MyBlog&lt;====这是数据库名,可以自定义</span><br><span class="line"></span><br><span class="line">/** MySQL数据库用户名 */</span><br><span class="line">define(&#x27;DB_USER&#x27;, &#x27;&#x27;);</span><br><span class="line"></span><br><span class="line">/** MySQL数据库密码 */</span><br><span class="line">define(&#x27;DB_PASSWORD&#x27;, &#x27;&#x27;);</span><br><span class="line"></span><br><span class="line">/** MySQL主机 */</span><br><span class="line">define(&#x27;DB_HOST&#x27;, &#x27;localhost&#x27;);</span><br><span class="line"></span><br><span class="line">/** 创建数据表时默认的文字编码 */</span><br><span class="line">define(&#x27;DB_CHARSET&#x27;, &#x27;utf8&#x27;);</span><br><span class="line"></span><br><span class="line">/** 数据库整理类型。如不确定请勿更改 */</span><br><span class="line">define(&#x27;DB_COLLATE&#x27;, &#x27;&#x27;);</span><br><span class="line">//define(&#x27;WP_ALLOW_REPAIR&#x27;, true);//数据库修复时使用</span><br><span class="line">define(&#x27;DB_TYPE&#x27;, &#x27;sqlite&#x27;);    //mysql or sqlite`</span><br></pre></td></tr></table></figure>
+
+<h6 id="解压SQLite-Integration到wordpress安装目录下wp-content-plugins"><a href="#解压SQLite-Integration到wordpress安装目录下wp-content-plugins" class="headerlink" title="解压SQLite Integration到wordpress安装目录下wp-content\plugins\"></a>解压<strong>SQLite Integration</strong>到wordpress安装目录下wp-content\plugins\</h6><p><img src="http://upload-images.jianshu.io/upload_images/2675631-b3bdb705cdf72bc8.png?imageMogr2/auto-orient/stripimageView2/2/w/657/format/webp"></p>
+<p>示例</p>
+<h6 id="找到db-php"><a href="#找到db-php" class="headerlink" title="找到db.php"></a>找到<strong>db.php</strong></h6><p><img src="http://upload-images.jianshu.io/upload_images/2675631-2dc6cdb4b67a9b8a.png?imageMogr2/auto-orient/stripimageView2/2/w/697/format/webp"></p>
+<p>无标题.png</p>
+<h6 id="复制到到wordpress安装目录下的wp-content目录中"><a href="#复制到到wordpress安装目录下的wp-content目录中" class="headerlink" title="复制到到wordpress安装目录下的wp-content目录中"></a>复制到到wordpress安装目录下的wp-content目录中</h6><p><img src="http://upload-images.jianshu.io/upload_images/2675631-c3d0b53f6470aeff.png?imageMogr2/auto-orient/stripimageView2/2/w/709/format/webp"></p>
+<p>示例</p>
+<h3 id="3-运行并配置博客"><a href="#3-运行并配置博客" class="headerlink" title="3.运行并配置博客"></a>3.运行并配置博客</h3><h6 id="如果你还未运行apache服务器-那就请先运行"><a href="#如果你还未运行apache服务器-那就请先运行" class="headerlink" title="如果你还未运行apache服务器 那就请先运行"></a>如果你还未运行apache服务器 那就请先运行</h6><h6 id="浏览器访问网站比如-http-127-0-0-1-8080"><a href="#浏览器访问网站比如-http-127-0-0-1-8080" class="headerlink" title="浏览器访问网站比如:http://127.0.0.1:8080/"></a>浏览器访问网站比如:<a target="_blank" rel="noopener" href="http://127.0.0.1:8080/">http://127.0.0.1:8080/</a></h6><h6 id="根据页面显示填写完整信息后点击底下安装"><a href="#根据页面显示填写完整信息后点击底下安装" class="headerlink" title="根据页面显示填写完整信息后点击底下安装"></a>根据页面显示填写完整信息后点击底下安装</h6><p><img src="http://upload-images.jianshu.io/upload_images/2675631-3a52c64e9676e734.png?imageMogr2/auto-orient/stripimageView2/2/w/1200/format/webp"></p>
+<p>示例</p>
+<h6 id="配置完成后会自动进入管理员界面"><a href="#配置完成后会自动进入管理员界面" class="headerlink" title="配置完成后会自动进入管理员界面"></a>配置完成后会自动进入管理员界面</h6><p><img src="http://upload-images.jianshu.io/upload_images/2675631-33531b35f6ee6d06.png?imageMogr2/auto-orient/stripimageView2/2/w/1200/format/webp"></p>
+<p>示例</p>
+<h3 id="4-开始你的wordpress博客之旅吧"><a href="#4-开始你的wordpress博客之旅吧" class="headerlink" title="4.开始你的wordpress博客之旅吧"></a>4.开始你的wordpress博客之旅吧</h3><p><a target="_blank" rel="noopener" href="http://chao.abc6.net:88/wp-content/uploads/2020/06/image.png"><img src="http://chao.abc6.net:88/wp-content/uploads/2020/06/image_thumb.png" alt="image" title="image"></a></p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/2/index.html">http://7086.site/page/2/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wordpress/" rel="tag">wordpress</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-解决群晖-synlolgy-上-wordpress-安装更新主题插件需要-ftp-的问题" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/962.html/">解决群晖 Synlolgy 上 WordPress 安装更新主题插件需要 FTP 的问题</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2020-06-30T04:42:00.000Z" itemprop="datePublished">2020年06月30日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/">博客建设</a>
+  </div>
+
+      
+      
+<a href="/2020/962.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>为什么运行在群晖 NAS 上的 WordPress 升级更新需要输入 FTP 用户名和密码？安装、更新 WordPress 插件也需要 FTP 用户名密码？到底该如何设置目录权限？本文将为你揭晓真正的原因。<br>作为一个程序员，我在把 PHP Web 开发环境搭在了 NAS 上，这样可以让家里和公司的电脑自动同步，另外开发机也不用安装环境，运行效率更好。但随之而来的是，明明在服务器或开发机上跑的很好的 WordPress，为什么在群晖 NAS 上却发生各种奇怪的问题。</p>
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
+      
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wordpress/" rel="tag">wordpress</a></li></ul>
+
         <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
+          <a href="/2020/962.html/#more">Read More</a>
         </p>
-      <% } else { %>
-        <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
-        </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-副路由有线连接组建局域网" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/961.html/">副路由有线连接组建局域网</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2020-06-30T04:40:00.000Z" itemprop="datePublished">2020年06月30日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8/">办公应用</a>
+  </div>
+
+      
+      
+<a href="/2020/961.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>断开主路由连接</p>
+<p>副路由lan口接电脑，进入设置，关闭dhcp，设置lan网络地址与主路由在同一个ip，如主是192.168.0.1，副可以设置为192.168.0.80</p>
+<p>副路由的wan不用设置</p>
+<p>设置完毕后，主路由lan口接副路由lan口，副路由wan口始终空置</p>
+<p>开机，则在同一个局域网了。</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/2/index.html">http://7086.site/page/2/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%B7%AF%E7%94%B1/" rel="tag">路由</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>
 
 
-  <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <article id="post-关于本站端口的选择" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/960.html/">关于本站端口的选择</a>
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2020-06-30T04:30:00.000Z" itemprop="datePublished">2020年06月30日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/">博客建设</a>
+  </div>
+
+      
+      
+<a href="/2020/960.html/#comments" class="article-comment-link">
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>外网80被封了，转发的时候要把80转发其他端口（假设88），</p>
+<p>如直接安装，那么外网访问的时候用：http://域名:88/wordpress。</p>
+<p>如果设置了虚拟机，并设置博客目录web/wordpress，设置好外部映射，则可以实现http://域名:88/访问，本站便是。</p>
+<p>如果设置了虚拟主机，且有443，外网用二级域名访问博客：<a target="_blank" rel="noopener" href="https://wp/">https://wp.域名.com</a>，也很完美。我自己没成功，可能443被封了。有待进一不研究。</p>
+
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/page/2/index.html">http://7086.site/page/2/index.html</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
     </div>
-	
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NAS/" rel="tag">NAS</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+      
     </footer>
   </div>
 </article>

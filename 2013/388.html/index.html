@@ -85,67 +85,135 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-印刷过程的主要污染来源" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      印刷过程的主要污染来源
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-09-21T12:43:11.000Z" itemprop="datePublished">2013年09月21日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E7%8E%AF%E5%A2%83%E8%AF%84%E4%BB%B7/">环境评价</a>
+  </div>
+
+      
+        <span class="article-views">
+  <i class="fa fa-views"></i>
+  <i id="busuanzi_container_page_pv">
+      <i id="busuanzi_value_page_pv"></i>
+  </i>
+</span>
+
+      
+      
+<a href="/2013/388.html/#comments" class="article-comment-link">
+  
+    
+      <span class="post-comments-count valine-comment-count" data-xid="/2013/388.html/" itemprop="commentCount"></span>
+    
+    
+    
+    
+    
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>首先是油墨。目前印刷行业中广泛使用的还是传统的溶剂型油墨，溶剂型油墨由颜料、连结料、溶剂、填充剂和辅助剂组成，所用的溶剂主要是芳香烃类、酯类、酮类、醚类等有机溶剂，这些溶剂大都具有毒性，会污染所包装的食品、药物和化妆品等物品；且具有挥发性，有较浓的刺激性气味，会污染环境并影响工人的身体健康；有机溶剂易燃易爆，存在着生产安全隐患。 第二是润版液。润版液是保证印版空白部分形成亲水盐层的必要条件，目前胶印机上普遍采用的是酒精润版系统，异丙醇是润版溶液的添加剂之一。相对于传统的水润版系统来说，这种润版方式可大大减少水的用量，又避免了因水过量引起的纸张变形和油墨的过量乳化，从而大大提高印刷效果。但是，由于异丙醇挥发后产生的醇蒸汽有毒，有不良的气味，会对人体健康造成有害的影响，许多发达国家规定异丙醇在工作场地的阈限值仅为每立方米200——400毫升；而且，异丙醇排放物还会污染环境，异丙醇是一种光化学氧化剂，它与存在地面附近的其它痕量气体一样，受阳光照射会形成臭氧，从而导致所谓“夏季烟雾”现象，光化学烟雾会刺激人的眼睛和呼吸系统，危害人们的身体健康和植物的生长，因此，异丙醇是一种对环境、人体均有害的化学品，在印刷中减少其用量是一种必然的趋势。 第三，胶片和废定影液。目前印刷中用得最多的还是胶印，而胶印中用以制版的多半还是通过照排机出胶片制成PS版来上机印刷。胶片是银盐感光材料，里面含有银离子，而定影后的废定影液里也含有大量的银离子，这些物质若直接进入环境中，重金属银离子能污染自然水体而造成对环境的危害，同时，胶片的片基是高分子化合物，在环境中极难降解而污染土壤。 第四，塑料覆膜。塑料覆膜因其耐折、耐磨、可保护印刷品、增加光泽且成本低而备受出版商和消费者的青睐，但是，塑料覆膜无法降解而成为白色污染，覆膜后的纸张无法回收而造成资源浪费，同时，覆膜过程中使用了甲苯、天那水等有毒的挥发性溶剂，会危害工人的身体健康和污染环境。 第五，油性上光材料。上光工艺是印刷品后表面整理加工的一种工艺，经过上光可增加印品表面的光泽度、光洁度和挺度，起到保护印品、增加美观的作用。但是，油性上光材料使用的稀释剂主要是甲苯，而甲苯是有毒的挥发性物质，人体吸入一定量的甲苯会导致呼吸系统和血液系统发生病变，因此，油性上光工艺不符合环境保护要求，尤其是药品、食品等商品的包装物和儿童玩具、儿童书籍等更不宜使用油性上光工艺。 第六，塑料印刷废品。随着印刷包装业的快速发展，塑料等有机高分子材料的印刷越来越普遍，印刷厂产生的塑料印刷废品是一种不可忽视的固体污染物，由于它们的水不溶性和在自然界中极难降解，若直接进入环境必然造成危害。如果将废弃物就近烧毁，会产生大量的二恶英等毒性很强的气体，在极低浓度下二恶英能使人和动物发生畸变，而且是一种强致癌物质，会严重污染周围的空气。因此，塑料印刷废品必须经过合理的处理。</p>
+
+        
+            <div id="toc-article">
+                
+  <div class="widget-wrap" id="toc-wrap">
+    <h3 class="widget-title"><i class="fa fa-toc"></i> 文章目录</h3>
+    <div class="widget">
+      
     </div>
-	
+  </div>
+
+
+            </div>
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/2013/388.html/">http://7086.site/2013/388.html/</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
+    </div>
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%8E%AF%E5%A2%83/" rel="tag">环境</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+        
+<nav id="article-nav">
+  
+    <a href="/2013/390.html/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">newer</strong>
+      <div class="article-nav-title">
+        
+          三星RV415笔记本用u盘启动winpe方法
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2013/387.html/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <div class="article-nav-title">如何改变wordpress分类目录排序</div>
+    </a>
+  
+</nav>
+
+      
+      
+        
+
+  <section id="comments" class="vcomment"></section>
+
+
+
+
+
+
+
+      
     </footer>
   </div>
 </article>

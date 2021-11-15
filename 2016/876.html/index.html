@@ -85,67 +85,137 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-去除-cad-教育版打印戳记后文件失效" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      去除 CAD 教育版打印戳记后文件失效
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2016-08-03T05:55:50.000Z" itemprop="datePublished">2016年08月03日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8A%9E%E5%85%AC%E5%BA%94%E7%94%A8/">办公应用</a>
+  </div>
+
+      
+        <span class="article-views">
+  <i class="fa fa-views"></i>
+  <i id="busuanzi_container_page_pv">
+      <i id="busuanzi_value_page_pv"></i>
+  </i>
+</span>
+
+      
+      
+<a href="/2016/876.html/#comments" class="article-comment-link">
+  
+    
+      <span class="post-comments-count valine-comment-count" data-xid="/2016/876.html/" itemprop="commentCount"></span>
+    
+    
+    
+    
+    
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>解决这个问题的方法就是利用cad迷你画图，打开文件后选中复制到autocad中即可，重新保存文件。</p>
+<p>以下是老方法</p>
+<p>打开的带有 Auto CAD 教育版打印戳记的图纸,开始,会弹出对话框提示:貌似:检测 到教育版打印错戳记.如果继续操作,图形在打印时将带有以下标题:”由 AUTODESK 教育 版产品生成”之类的话语. 而且, 从带有这个戳记的 CAD 文件里复制出东西到自己创建的新 的 CAD 文件里,貌似由 AUTODESK 教育版产品生成”之类的对话框也跟着过来了,很不爽!                  <br>如何解决去除 Auto CAD 教育版打印戳记的问题呢?  1、不需要借助任何外部软件,直接用 AUTOCAD 软件来解决.先将 DWG 格式文件另存为 dxf 格式,记住一定要关闭 AUTOCAD。<br>2、再重新启动 AUTOCAD,打开刚保存的 dxf 格式文件, 并另存为 dwg 格式的, 即可去除打印时的 Autodesk 教育版戳记。 <br>3、如果是天正建筑软件设计的图纸，还要选将图纸转换“t3.dwg”格式的文件，再按以上的步骤操作就可以了。<br>转换方法：启动天正建筑→屏幕菜单→文件布图→图形导出→保存较低本的文件。例如：把“景观广场平面图.dwg”通过转换后就成为“景观广场平面图_t3.dwg”了。把CAD2007的保存为CAD2004的或者更低的CAD2000就OK！了。<br>不转换，在进行第二步操作时AUTOCAD 软件认为是无效文件，打不开的。如果不知道要转换，你就认为上面的方法不管用。会恼火的。我摸索了很久才找到上面的方法。非常有效。<br>最后提醒: 转换后布局里的数据可能会丢失一部分数据，请大家要在布局里重新添加窗口，把不要的图层隐藏即可</p>
+
+        
+            <div id="toc-article">
+                
+  <div class="widget-wrap" id="toc-wrap">
+    <h3 class="widget-title"><i class="fa fa-toc"></i> 文章目录</h3>
+    <div class="widget">
+      
     </div>
-	
+  </div>
+
+
+            </div>
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/2016/876.html/">http://7086.site/2016/876.html/</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
+    </div>
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cad/" rel="tag">cad</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+        
+<nav id="article-nav">
+  
+    <a href="/2016/880.html/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">newer</strong>
+      <div class="article-nav-title">
+        
+          计算活性炭吸附塔内风压的方法（仅供参考）
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/874.html/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <div class="article-nav-title">PAM与PAC使用说明分析</div>
+    </a>
+  
+</nav>
+
+      
+      
+        
+
+  <section id="comments" class="vcomment"></section>
+
+
+
+
+
+
+
+      
     </footer>
   </div>
 </article>

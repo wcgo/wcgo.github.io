@@ -85,67 +85,135 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-wordpress搬家教程：换空间与换域名" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      WordPress搬家教程：换空间与换域名
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-09-23T15:56:14.000Z" itemprop="datePublished">2013年09月23日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E8%AE%BE/">博客建设</a>
+  </div>
+
+      
+        <span class="article-views">
+  <i class="fa fa-views"></i>
+  <i id="busuanzi_container_page_pv">
+      <i id="busuanzi_value_page_pv"></i>
+  </i>
+</span>
+
+      
+      
+<a href="/2013/86.html/#comments" class="article-comment-link">
+  
+    
+      <span class="post-comments-count valine-comment-count" data-xid="/2013/86.html/" itemprop="commentCount"></span>
+    
+    
+    
+    
+    
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>大体上来说搬家分为三步： 一、备份博客网站文件和数据库； 二、把网站文件传到新空间，在新空间导入数据库； 三、修改网站配置和数据库； 四、检查转移结果。 <strong>WordPress博客搬家的几种情况：</strong> 1. 换主机不换域名 2. 换域名不换主机 3. 换域名也换主机 <strong>第一步：备份博客网站文件和数据库</strong> 1.在原来的空间中把博客文件下载备份。要是原来空间支持在线解压缩，建议打包下载，这样下载大小变小了，时间也会节省很多。（本人基本时有什么文章更新，就用FTP同步备份到本地的，大家最好也有这个习惯，不然突然而来的事故会让追悔莫及！） 2.备份数据库。可以通过phpadmin，帝国备份王，或者WP-DBManager这样的数据库备份插件，您可以选择您会的，熟悉的一种方式来做。（建议对于sql，gz，zip多种格式尽量都备份一下，你不知道下一个主机会支持哪种） <strong>第二步：上传博客文件，导入数据库</strong> 1.把博客文件用FTP传到新空间，和下载一样，要是新空间支持在线解压缩，建议打包上传，这样时间节省了很多，流量也能节省一部分。（WordPress目录是public_html/下，所以只要把之前在public_html/目录下的文件，上传到新主机的public_html/下即可。） 2.导入数据库.PHPMyAdmin，帝国备份王都可以做到。（你需要在新主机内创建一个数据库，然后将你之前导出的数据库，导入即可） 如图： <a target="_blank" rel="noopener" href="http://upload.chinaz.com/2012/0903/1346643282301.png"><img src="http://upload.chinaz.com/2012/0903/1346643282301.png"></a> <strong>第三步：修改网站配置和数据库（关键）</strong> 1.修改wp-config文件，最好不要用记事本来修改，用notepad++或者UltraEdit等编辑器，把里面的数据库信息改为您新空间的数据库信息，如下： /** WordPress 数据库的名称 */ define(‘DB_NAME’, ‘你的新空间数据库名称’); /** MySQL 数据库用户名 */ define(‘DB_USER’, ‘你的数据库用户名’); /** MySQL 数据库密码 */ define(‘DB_PASSWORD’, ‘你的数据库登录密码’); /** MySQL 主机 */ define(‘DB_HOST’, ‘你的数据库地址’); 将你新的主机空间的数据库名称，数据库用户名和密码填进去即可。注意一下，MySQL主机这一项默认是’localhost’，如果你的是Windows主机，不用修改，如果是Linux主机，可能需要填上数据库的地址。 2. 进入新空间的phpadmin修改数据库：修改数据库表wp_options里的“siteurl”和“home”字段的值，改为你的新域名； 3.把用的域名解析到空间后，登录你wp后台，修改你blog的地址为你新的域名。 4.原来的文章里有链接或者图片是用以前域名的地址，所以还要修改那些地址。可以在phpadmin直接修改数据库或者velvet-blues-update-urls这个插件（推荐）。比如在phpadmin里，执行执行以下语句： UPDATE wp_options SET option_value = REPLACE(option_value,’旧地址’,’新地址’); UPDATE wp_posts SET post_content = replace(post_content,’旧地址’,’新地址’); UPDATE wp_posts SET post_excerpt= replace(post_excerpt,’旧地址’,’新地址’); UPDATE wp_posts SET guid= replace(guid, ‘旧地址’,’新地址’); <strong>第四步：检查转移结果，按照以上做了一般就完好的搬家成功了。</strong> 看看你的Blog，恭喜您成功搬家！</p>
+
+        
+            <div id="toc-article">
+                
+  <div class="widget-wrap" id="toc-wrap">
+    <h3 class="widget-title"><i class="fa fa-toc"></i> 文章目录</h3>
+    <div class="widget">
+      
     </div>
-	
+  </div>
+
+
+            </div>
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/2013/86.html/">http://7086.site/2013/86.html/</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
+    </div>
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wordpress/" rel="tag">wordpress</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+        
+<nav id="article-nav">
+  
+    <a href="/2013/92.html/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">newer</strong>
+      <div class="article-nav-title">
+        
+          如何把gif的头像换掉
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2013/69.html/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <div class="article-nav-title">大气环境防护距离与卫生防护距离</div>
+    </a>
+  
+</nav>
+
+      
+      
+        
+
+  <section id="comments" class="vcomment"></section>
+
+
+
+
+
+
+
+      
     </footer>
   </div>
 </article>

@@ -85,67 +85,137 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-计算活性炭吸附塔内风压的方法（仅供参考）" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      计算活性炭吸附塔内风压的方法（仅供参考）
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2016-08-09T06:18:17.000Z" itemprop="datePublished">2016年08月09日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E5%B7%A5%E7%A8%8B%E8%AE%BE%E8%AE%A1/">工程设计</a>
+  </div>
+
+      
+        <span class="article-views">
+  <i class="fa fa-views"></i>
+  <i id="busuanzi_container_page_pv">
+      <i id="busuanzi_value_page_pv"></i>
+  </i>
+</span>
+
+      
+      
+<a href="/2016/880.html/#comments" class="article-comment-link">
+  
+    
+      <span class="post-comments-count valine-comment-count" data-xid="/2016/880.html/" itemprop="commentCount"></span>
+    
+    
+    
+    
+    
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>通常用活性炭吸附塔来吸附有毒有害的气体，将废气处理至符合空气污染排放标准才允许排放，以免造成环境和人员危害。塔内的风压对于吸附性也是至关重要的，那么塔内风压如何计算呢?<br>一、<strong>活性炭罐的其他设计参数</strong>：A、炭层高度： 0.2-0.5M B、表观接触：0.2~2.0S 标准1.2SC、流速：一般的流速范围是5-50cm/s 流速慢，吸附层短，设备大。流速快，设备小，吸收层长，破过时间短，吸收期变短。所以，一般工业上采用范围是20-40CM/S。<br>二、<strong>压损计算</strong>，压力损失计算公式：<br>△p=K 。Z。U1.5，4-8 mesh破碎炭 k=0.011，6-10mesh 破碎炭 k=0.023，4-6 mm 造粒炭 k=0.0036。<br>P：压力损失 mm H2O，Z：活性炭层高 cm，U：气体线速度 cm/s，K：常数</p>
+<p>1mmHg=133Pa,Hg的密度是水的13.6倍,所以1mmH2O=133/13.6=9.78Pa</p>
+<p>按造粒炭计算，以风速0.6m/s，炭层高度H，则压力损失在1636H。<br>三、<strong>气相用活性炭形状和粒度</strong>：气相吸附时，溶剂回收恶臭处理等吸收塔填充方式所使用的活性炭：破碎状4-8目，造粒炭3-6mm ,对于压力损失和气体的均一性，造粒炭有独到之处。<br>四、<strong>气相吸附与水分的关系</strong>：含有不纯物的气体通过填充有活性炭的活性炭吸附塔，以达到净化气体的目的。和液相吸附一 样，吸附带和压力损失是重要的。气体吸附必须考虑到气体中的水分，活性炭本来是殊水性的，对水 没有亲和里，但是，气体具有较高的相对湿度时能吸附一定水分。在活性炭的表面，对有机物的吸附亲和力比对水吸附亲和力强，进入细孔内部的有机物和已被吸附 的水进行置换。<br>吸附是放热反应，虽然由于放热的影响吸收量有些减少，但被置换水的脱离和蒸发能抑制放热反应，所以水分的影响可以忽视。但是，相对湿度很高时水分的影响不 可忽视。如活性炭内部的水分很多，有机物必须通过水层才能到活性炭内表面的吸附点，由于水中的扩散速度远远小于气相的扩散速度，导致吸附层变长，破过时间 变短。<br>活性炭对水的吸附力，相对湿度超过70%，吸收量急剧增加，所以气体中水的相对湿度应在70%以下。气体温度上升，虽然相对湿度下降，但吸收能力也降低，所以效果一般。<br>五、<strong>吸附塔直径和碳层高度的计算</strong><br>直径应根据要处理的气量来确定，一般选空塔气体速度(如选0.5米/秒)则就确定了塔径。碳层高度是根据进塔时在气体中要吸附物量的多少与出塔时在气体中要吸附物要控制量的多少来确定，一般用气体在活性碳中停留时间的确定而定出碳层高度。再根据结构需要确定塔的高度。<br>了解活性炭吸附塔的直径和碳层高度以及塔内风压有助于了解设备的吸附能力，因此这都是必要的步骤。</p>
+
+        
+            <div id="toc-article">
+                
+  <div class="widget-wrap" id="toc-wrap">
+    <h3 class="widget-title"><i class="fa fa-toc"></i> 文章目录</h3>
+    <div class="widget">
+      
     </div>
-	
+  </div>
+
+
+            </div>
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/2016/880.html/">http://7086.site/2016/880.html/</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
+    </div>
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%B4%BB%E6%80%A7%E7%82%AD/" rel="tag">活性炭</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+        
+<nav id="article-nav">
+  
+    <a href="/2016/882.html/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">newer</strong>
+      <div class="article-nav-title">
+        
+          热风循环烘箱的工作原理
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/876.html/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <div class="article-nav-title">去除 CAD 教育版打印戳记后文件失效</div>
+    </a>
+  
+</nav>
+
+      
+      
+        
+
+  <section id="comments" class="vcomment"></section>
+
+
+
+
+
+
+
+      
     </footer>
   </div>
 </article>

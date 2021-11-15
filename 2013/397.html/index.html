@@ -85,67 +85,153 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-能源当量值、等价值及折标煤的计算-2" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
-    <%- partial('post/gallery') %>
-    <% if (post.link || post.title){ %>
+    
+    
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'p-name article-title'}) %>
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      能源当量值、等价值及折标煤的计算
+    </h1>
+  
+
+
       </header>
-    <% } %>
+    
     <div class="article-meta">
-      <% if (post.top){ %>
-        <span class='article-top'>【<%- __('topped') %>】</span>
-      <% } %>
-      <%- partial('post/date', {class_name: 'article-date', date_format: theme.date_formats.post }) %>
-      <%- partial('post/category') %>
-      <% if (!index){ %>
-        <%- partial('post/views-count') %>
-      <% } %>
-      <%- partial('post/comments-count') %>
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2013-11-01T04:20:37.000Z" itemprop="datePublished">2013年11月01日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/%E6%B8%85%E6%B4%81%E7%94%9F%E4%BA%A7/">清洁生产</a>
+  </div>
+
+      
+        <span class="article-views">
+  <i class="fa fa-views"></i>
+  <i id="busuanzi_container_page_pv">
+      <i id="busuanzi_value_page_pv"></i>
+  </i>
+</span>
+
+      
+      
+<a href="/2013/397.html/#comments" class="article-comment-link">
+  
+    
+      <span class="post-comments-count valine-comment-count" data-xid="/2013/397.html/" itemprop="commentCount"></span>
+    
+    
+    
+    
+    
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index) { %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link) { %>
-          <p class="article-more-link">
-            <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <% var br = post.content.indexOf('\n') %>
-        <% if(br < 0 || !index) { %>
-          <%- post.content %>
-        <% } else { %>
-          <%- post.content.substring(0, br) %>
-          <% if (theme.excerpt_link) { %>
-            <p class="article-more-link">
-              <a href="<%- config.root %><%- post.path %>#more"><%= theme.excerpt_link %></a>
-            </p>
-          <% } %>
-        <% } %>
-      <% } %>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>清洁生产工作中，我们经常需要对企业做能源分析，难免就需要涉及到能源当量值与等价值，今天博主就谈一谈这个。</p>
+<hr>
+<h1 id="1、基本概念"><a href="#1、基本概念" class="headerlink" title="1、基本概念"></a>1、基本概念</h1><p>能量的当量值（energy calorific value），又称理论热值（或实际发热值），是指某种能源本身所含热量，按热量的多少可以折算成标准煤。当量热值的计算原则上要进行实测，按国家标准是根据试样在充氧的弹筒中完全燃烧所放出的热量测算的。</p>
+<p>能量的等价值（energy equivalent value），是指为了得到一个单位的二次能源（或载热工质）实际要消耗的一次能源的热量，即加工转换产出的某种能源与相应投入的能源的当量。</p>
+<p>能源等价热值 = 二次能源具有的能源/转换效率（%）。<br>当量值与等价值的区别<br>“当量值”是单位能源本身所具有的热量；</p>
+<p>“等价值”则是生产一个单位的能源产品所消耗的另外一种能源产品的热量。</p>
+<p>2、何为1千克标准煤？</p>
+<p>我国规定，低（位）发热量等于29.27 MJ（或7000 kcal）的固体燃料，称1 kgce。即是1千克标准煤。</p>
+<p>3、当量系数、等价系数</p>
+<p>能源折标系数也有当量系数与等价系数之分，当量系数是按照燃料的当量热值（理论发热量）与标准煤发热量之比；等价系数是指二次能源的等价热值与标准热值之比。</p>
+<p>4、关于电的折标计算</p>
+<p>(1)电力折标当量系数<br>基层企业计算电力能源消费量时，电力消费折标则采用当量值核算（即每千瓦小时电本身的热量860大卡/7000大卡=0.1229克标准煤量，也就是每万千瓦小时电折1.229吨标煤）。<br>(2)电力折标等价系数<br>电力等价热值是火电厂每供应1千瓦时电所消耗的热量，故电力折标准煤等价系数就是供电标准煤耗，供电的标准煤耗，随着发电机组效率的提高而逐年下降，电力等价热值的折标系数以当年的火力发电平均供电标准煤耗计算。折标煤等价系数随着发电煤耗的变化而变化，当量系数则是一定的，就数值大小而言，电力的等价系数是当量系数的3倍。自2006年起，能源统计中“电力”的折标系数，统一采用当量系数0.1229，即1万千瓦时电力，折合1.229吨标准煤，在此之前为4.04吨标准煤。</p>
+<p>计算依据：2005年《国家统计局关于布置2005年统计年报和2006年定期统计报表制度的通知》（国家统计局[2005]85号文），2008年6月1日实施的《综合能耗计算通则》（GB/T 2589—2008）</p>
+<p>5、关于水的折标计算</p>
+<p>在企业能源统计中一般不给水折标计算。热水可以折标，常温水属于资源，不按能源统计。</p>
+<p>工业用水通常属于耗能工质。新水折标煤系数取0.0857kgce/t。</p>
+<p>耗能工质：在生产过程中所消耗的不作为原料使用、也不进入产品，在生产或制取时需要直接消耗能源的工作物质。</p>
+<hr>
+<p>具体的各种折标系数，请查询《综合能耗计算通则》（GB/T 2589—2008）</p>
+
+        
+            <div id="toc-article">
+                
+  <div class="widget-wrap" id="toc-wrap">
+    <h3 class="widget-title"><i class="fa fa-toc"></i> 文章目录</h3>
+    <div class="widget">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1%E3%80%81%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">1、基本概念</span></a></li></ol>
     </div>
-	
+  </div>
+
+
+            </div>
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://7086.site/2013/397.html/">http://7086.site/2013/397.html/</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
+    </div>
     <footer class="article-footer">
-      <% if (post.excerpt && index && theme.excerpt_link){ %>
-        <%- partial('post/tag') %>
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-        </p>
-      <% } else { %>
+      
         <div class="article-tag-wrap">
-          <%- partial('post/reward') %>
-          <%- partial('post/tag') %>
-          <%- partial('post/share') %>
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%B8%85%E6%B4%81%E7%94%9F%E4%BA%A7/" rel="tag">清洁生产</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
         </div>
-      <% } %>
-      <% if (!index){ %>
-        <%- partial('post/nav') %>
-      <% } %>
-      <% if (!index && post.comments){ %>
-        <%- partial('post/comments') %>
-      <% } %>
+      
+      
+        
+<nav id="article-nav">
+  
+    <a href="/2013/399.html/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">newer</strong>
+      <div class="article-nav-title">
+        
+          CAD2008转成PDF之后，字体变粗解决方案
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2013/358.html/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <div class="article-nav-title">在Word2010中快速插入microsoft公式3.0</div>
+    </a>
+  
+</nav>
+
+      
+      
+        
+
+  <section id="comments" class="vcomment"></section>
+
+
+
+
+
+
+
+      
     </footer>
   </div>
 </article>
